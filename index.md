@@ -4282,7 +4282,9 @@ Ilovada Toast chiqishini taminlaydi va o‘zgartirishni kiritgach, faylni
 saqlang. Endi esa ilovani qayta kompilyatsiya qilish uchun quyidagi
 buyruqdan foydalaning.
 
-```apktool b app-release -o app-modded.apk```
+```bash
+apktool b app-release -o app-modded.apk
+```
 
 Qayta kompilyatsiya jarayonida buyruq berilayotgan papka nomi, ya’ni
 app-release, bu ilgari apktool vositasi orqali dekompilyatsiya qilingan
@@ -4298,8 +4300,10 @@ sertifikati kerak bo‘ladi. Agar sizda mavjud bo‘lmasa, uni yaratish
 uchun keytool vositasidan foydalanamiz. Quyidagi buyruq orqali yangi
 sertifikat yaratishingiz mumkin.
 
-```keytool -genkey -v -keystore my-key.jks -alias myalias -keyalg RSA
--keysize 2048 -validity 10000```
+```bash
+keytool -genkey -v -keystore my-key.jks -alias myalias -keyalg RSA
+-keysize 2048 -validity 10000
+```
 
 <img src="media/media/image91.png"
 style="width:6.5in;height:2.82014in" />
@@ -4314,7 +4318,9 @@ ilovaning samarali ishlashini ta’minlaydi va Google Play kabi
 platformalarda tekshiruvdan muammosiz o‘tishiga yordam beradi. Quyidagi
 buyruq orqali app-modded.apk faylni zipalign qilamiz.
 
-```zipalign -p -f 4 app-modded.apk app-aligned.apk```
+```bash
+zipalign -p -f 4 app-modded.apk app-aligned.apk
+```
 
 <img src="media/media/image92.png"
 style="width:6.58865in;height:0.47636in" />
@@ -4328,8 +4334,10 @@ Imzolash uchun biz apksigner vositasidan foydalanamiz. Quyidagi buyruq
 orqali siz app-aligned.apk faylni avval yaratgan my-key.jks sertifikati
 yordamida imzolab olishingiz mumkin.
 
-```apksigner sign --ks my-release-key.jks --ks-key-alias myalias --out
-app-signed.apk app-aligned.apk```
+```bash
+apksigner sign --ks my-release-key.jks --ks-key-alias myalias --out
+app-signed.apk app-aligned.apk
+```
 
 <img src="media/media/image93.png"
 style="width:5.14655in;height:1.14599in" />
@@ -4343,7 +4351,9 @@ hisoblanadi.
 Imzo holatini tekshirish uchun terminalga quyidagi buyruqni kiritish
 kifoya.
 
-```keytool -list -v -keystore my-release-key.jks```
+```bash
+keytool -list -v -keystore my-release-key.jks
+```
 
 <img src="media/media/image94.png"
 style="width:6.5in;height:1.76042in" />
@@ -4448,7 +4458,9 @@ tushunishdir. Adb orqali ilova log malumotlarini ko’rishi mumkin.
 Quydagi buyruqni o’z terminalingizga kiriting va enter buyrug’uni
 bosing.
 
-```adb logcat \| grep com.exmaple.app```
+```bash
+adb logcat \| grep com.exmaple.app
+```
 
 <img src="media/media/image96.png"
 style="width:6.49919in;height:2.19764in" />
@@ -4698,7 +4710,9 @@ Bu muhim bosqichda biz sertifikatimiz formatini o‘zgartirib olishimiz
 kerak bo‘ladi buni amalga oshirishimiz uchun OpenSSL orqali amalga
 oshiramiz.
 
-```openssl x509 -inform DER -in cacert.der -out cacert.pem```
+```bash
+openssl x509 -inform DER -in cacert.der -out cacert.pem
+```
 
 Endi esa bizga sertifikatning issuer (beruvchi tashkilot) hash qiymatini
 olish kerak bo‘ladi. Quyidagi buyruq bu ishda bizga yordam beradi.

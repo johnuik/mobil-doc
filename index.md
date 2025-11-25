@@ -474,7 +474,9 @@ zaifliklar roʻyxati keltirilgan.
 <div align="center">
   <img src="media/media/image5.png" width="400">
 </div>
+<div align="center">
 1-rasm. OWASP Mobile Top 10
+</div>
 
 **Improper Credential Usage (**Login ma’lumotlaridan noto‘g‘ri
 foydalanish.**)** – Aksariyat mobil ilovalar hali ham hisob
@@ -1308,7 +1310,8 @@ Oddiy(Normal)
 
 Oddiy(Normal) ruxsatlar qurilmaning xavfsizligiga yoki foydalanuvchi
 maxfiyligiga katta xavf tug‘dirmaydi.
-
+<div align="center">
+  
 | **Permission**                                | **Vazifasi**                                         |
 |-----------------------------------------------|------------------------------------------------------|
 | android.permission.INTERNET                   | internetga ulanish                                   |
@@ -1339,13 +1342,13 @@ maxfiyligiga katta xavf tug‘dirmaydi.
 | android.permission.WRITE_SYNC_SETTINGS        | Sync sozlamalarini o‘zgartirish                      |
 | android.permission.EXPAND_STATUS_BAR          | Status barni ochish yoki yopish                      |
 | android.permission.GET_PACKAGE_SIZE           | Ilovaning o‘lchamini aniqlash                        |
-
+</div>
 Bu ruxsatlar avtomatik beriladi, foydalanuvchi alohida tasdiqlamaydi.
 
 Xavfli (Dangerous) ruxsatlar – Foydalanuvchi shaxsiy ma’lumotlariga yoki
 qurilma resurslariga kira oladi. Bu ruxsatlar foydalanuvchidan
 so‘raladi.
-
+<div align="center">
 | **Permission**                                        | **Vazifasi**                                                       |
 |-------------------------------------------------------|--------------------------------------------------------------------|
 | android.permission.RECORD_AUDIO                       | Mikrofon orqali ovoz yozish                                        |
@@ -1386,7 +1389,7 @@ so‘raladi.
 | android.permission.REORDER_TASKS                      | Ilovalar tasklarini o'zgartirish (Activity Stack)                  |
 | android.permission.RESTART_PACKAGES                   | Ilovalarni to'xtatish va qayta ishga tushirish (deprecated)        |
 | android.permission.DEVICE_POWER                       | Qurilmani o'chirish yoki yoqish (faqat system apps uchun)          |
-
+</div>
 ## **iOS arxitekturasi**
 
 iOS operatsion tizimining tuzilishi qatlamli (layered) asosda qurilgan.
@@ -1473,7 +1476,7 @@ ko‘rinishida keltirilgan. Har bir permission nomi, *Info.plist* dagi
 kaliti va u nima vazifani bajarishi tushuntirilgan. Bu ruxsatlar
 *Info.plist* faylida majburiy ko‘rsatilishi kerak. Aks holda ilova
 ruxsatni so‘ray olmaydi va to‘xtashi mumkin.
-
+<div align="center">
 | **Permission nomi**               | **Kodda yozilishi**                                           | **Vazifasi**                                                       |
 |-----------------------------------|---------------------------------------------------------------|--------------------------------------------------------------------|
 | Kamera (Camera)                   | NSCameraUsageDescription                                      | Kameraga kirish uchun ruxsat so‘rash.                              |
@@ -1491,7 +1494,7 @@ ruxsatni so‘ray olmaydi va to‘xtashi mumkin.
 | Harakat va fitness                | NSMotionUsageDescription                                      | Qurilma harakati (accelerometer, gyroscope) haqida ma’lumot olish. |
 | Foydalanuvchi kutubxonasi (Media) | NSMediaLibraryUsageDescription                                | Foydalanuvchi musiqa/media kutubxonasiga kirish.                   |
 | Face ID / Touch ID                | NSFaceIDUsageDescription                                      | Biometrik autentifikatsiya ishlatish.                              |
-
+</div>
 
 # **III-BOB. Mobil ilovalar pentestingi**
 
@@ -1963,7 +1966,7 @@ barcha asosiy buyruqlari (komandalar) kategoriyalar bo‘yicha
 tartiblangan holda taqdim etilgan.
 
 *1. Qurilma bilan aloqa va holatini tekshirish*
-
+<div align="center">
 | **Buyruq**                  | **Tavsifi**                                   |
 |-----------------------------|-----------------------------------------------|
 | adb devices                 | Qurilmalar ro‘yxatini ko‘rsatadi              |
@@ -1971,9 +1974,9 @@ tartiblangan holda taqdim etilgan.
 | adb get-state               | Qurilma holatini ko‘rsatadi (device, offline) |
 | adb connect \<ip\>:\<port\> | Wi-Fi orqali qurilmaga ulanadi                |
 | adb disconnect              | Wi-Fi orqali ulanishni uzadi                  |
-
+</div>
 *2. Ilova bilan ishlash*
-
+<div align="center">
 | **Buyruq**                           | **Tavsifi**                                                  |
 |--------------------------------------|--------------------------------------------------------------|
 | adb install \<app.apk\>              | APK faylni o‘rnatadi                                         |
@@ -1982,17 +1985,17 @@ tartiblangan holda taqdim etilgan.
 | adb shell pm list packages           | Ilovalar (package) ro‘yxati                                  |
 | adb shell pm path \<package\>        | Ilova APK joylashuvini ko‘rsatadi                            |
 | adb shell monkey -p \<package\> -v 1 | Ilovani ishga tushiradi (test uchun)                         |
-
+</div>
 *3. Fayl uzatish*
-
+<div align="center">
 | **Buyruq**                    | **Tavsifi**                               |
 |-------------------------------|-------------------------------------------|
 | adb push \<local\> \<remote\> | Faylni kompyuterdan qurilmaga yuboradi    |
 | adb pull \<remote\> \<local\> | Faylni qurilmadan kompyuterga yuklaydi    |
 | adb shell ls \<path\>         | Qurilmadagi fayl va papkalarni ko‘rsatadi |
-
+</div>
 *4. Qurilma nazorati*
-
+<div align="center">
 | **Buyruq**            | **Tavsifi**                                 |
 |-----------------------|---------------------------------------------|
 | adb reboot            | Qurilmani qayta ishga tushiradi             |
@@ -2000,9 +2003,9 @@ tartiblangan holda taqdim etilgan.
 | adb reboot recovery   | Qurilmani recovery rejimiga o‘tkazadi       |
 | adb root              | Qurilmani root huquqi bilan ishga tushiradi |
 | adb shell             | Qurilmada terminal sessiyasini ochadi       |
-
+</div>
 *5. Tizim va loglar bilan ishlash*
-
+<div align="center">
 | **Buyruq**                                | **Tavsifi**                                 |
 |-------------------------------------------|---------------------------------------------|
 | adb logcat                                | Qurilmadagi loglarni ko‘rsatadi (real-time) |
@@ -2011,32 +2014,32 @@ tartiblangan holda taqdim etilgan.
 | adb shell top                             | CPU ishlash statistikasi                    |
 | adb shell screencap /sdcard/screen.png    | Ekran rasmi olish                           |
 | adb shell screenrecord /sdcard/record.mp4 | Ekran yozuvi qilish                         |
-
+</div>
 *6. Port forwarding va Networking*
-
+<div align="center">
 | **Buyruq**                       | **Tavsifi**                       |
 |----------------------------------|-----------------------------------|
 | adb forward \<local\> \<remote\> | Port forwarding qiladi            |
 | adb reverse \<remote\> \<local\> | Qurilmadan kompyuterga port ulash |
 | adb shell netstat                | Tarmoq ulanishlarini ko‘rsatadi   |
-
+</div>
 *7. Foydalanuvchi ma’lumotlar*
-
+<div align="center">
 | **Buyruq**                                     | **Tavsifi**                                                         |
 |------------------------------------------------|---------------------------------------------------------------------|
 | adb shell settings list system                 | Tizim sozlamalarini ko‘rsatadi                                      |
 | adb shell am start -n \<package\>/\<activity\> | Belgilangan activity ni ishga tushiradi                             |
 | adb shell input text “Hello”                   | Qurilmaga matn yuboradi                                             |
 | adb shell input keyevent 26                    | Qurilmaning tugmalarini emulyatsiya qiladi (masalan, Power tugmasi) |
-
+</div>
 *8. Developer va debugging uchun*
-
+<div align="center">
 | **Buyruq**        | **Tavsifi**                                         |
 |-------------------|-----------------------------------------------------|
 | adb bugreport     | Qurilma xatoliklari haqida batafsil hisobot         |
 | adb shell getprop | Qurilma xususiyatlari (build info, model va h.k.)   |
 | adb tcpip 5555    | Qurilmani Wi-Fi orqali ulanadigan holatga o‘tkazadi |
-
+</div>
 ### **APKAnalyser**
 
 ApkAnalyzer — bu Android ilovalarini (APK fayllarini) tahlil qilish
@@ -2480,7 +2483,7 @@ jarayonni qaytarish uchun *-U* opsiyasini qo‘shing.
 <img src="media/media/image69.png"
 style="width:6.07989in;height:2.8125in" />
 </div>
-
+<div align="center">
 | **Buyruq**                           | **Izoh**                                     |
 |--------------------------------------|----------------------------------------------|
 | frida-ps                             | Ishlayotgan processlar ro‘yxati              |
@@ -2492,7 +2495,7 @@ style="width:6.07989in;height:2.8125in" />
 | frida -U -n \<package\>              | Interaktiv muhitda ilovaga ulanish           |
 | frida -U -f \<package\>              | Ilovani ishga tushirib ulanish               |
 | frida -U -n \<package\> -l script.js | JavaScript faylni hook sifatida yuklash      |
-
+</div>
 ### **MAVS**
 
 MAVS bu Mobile Application Vulnerability Scanner so‘zining qisqartmasi
@@ -3766,7 +3769,7 @@ mumkin. Bunda kod darajasiga tushmasdan turib segmentlar, funksiyalar,
 selectorlar, syscall lar va himoya mexanizmlarini chuqur ko‘rish
 imkoniyati mavjud. Quyida barcha buyruqlarini jadval ko’rishida
 ko’rishimiz mumkin bo’ladi.
-
+<div align="center">
 | *Buyruq*        | *Tavsifi*                                        |
 |-----------------|--------------------------------------------------|
 | *r2 \<file\>*   | Faylni radare2 ga yuklash                        |
@@ -3793,7 +3796,7 @@ ko’rishimiz mumkin bo’ladi.
 | *wx \<hex\>*    | Hex kodni yozish / patch qilish                  |
 | *oo+*           | Faylni writeable qilish (o‘zgartirish uchun)     |
 | *q*             | Chiqish                                          |
-
+</div>
 Xulosa qilib aytganda, radare2 — bu iOS ilovalarning binar tuzilmasini
 tahlil qilish, xavfsizlik konfiguratsiyasini baholash, zaif
 funksiyalarni topish va ekspluatatsiya tayyorgarligini tekshirish uchun
@@ -3815,7 +3818,7 @@ objdump -d MyApp.app
 
 Quyida objdump dasturiy vositasini barcha buyruqlarini ko\`rishimiz
 mumkin.
-
+<div align="center">
 | *Buyruq*                             | *Tavsif*                                                         |
 |--------------------------------------|------------------------------------------------------------------|
 | *--adjust-vma=offset*                | Ko‘rsatilgan manzilga offset qo‘shadi                            |
@@ -3844,7 +3847,8 @@ mumkin.
 | *--section=\<value\> / -j \<value\>* | Faqat ko‘rsatilgan bo‘limlar ustida ishlaydi                     |
 | *--no-leading-addr*                  | Disassemblyda manzillarni ko‘rsatmaydi                           |
 | *--macho / -m*                       | Mach-O fayllarini parsing qilish                                 |
-
+</div>
+<div align="center">
 | *Buyruq*                      | *Tavsif*                                                        |
 |-------------------------------|-----------------------------------------------------------------|
 | *--arch=\<value\>*            | Mach-O arxitekturasini tanlash                                  |
@@ -3864,7 +3868,7 @@ mumkin.
 | *--rpaths*                    | Runtime search path larini ko‘rsatadi                           |
 | *--weak-bind*                 | Weak binding ma’lumotlarini chiqaradi                           |
 | *--universal-headers*         | Mach-O universal headerlarini ko‘rsatadi                        |
-
+</div>
 ### **Cycript**
 
 Cycript bu Objective-C + JavaScript sintaksisini birlashtirgan powerful
@@ -3884,7 +3888,7 @@ cycript -p \<ilova_nomi_yoki_ilova_PID_raqami\>
 
 Ulanganingizdan so‘ng *cy#* ko‘rinishi chiqsa — Cycript shell ochilgan
 bo‘ladi.
-
+<div align="center">
 | *Vazifa*                         | *Buyruq*                                          |
 |----------------------------------|---------------------------------------------------|
 | *UI elementlarni ko‘rish*        | UIApp.keyWindow.recursiveDescription().toString() |
@@ -3894,7 +3898,7 @@ bo‘ladi.
 | *O'zgaruvchini o‘zgartirish*     | cy# \[Obj setValue:@"test"\]                      |
 | *JavaScript API dan foydalanish* | cy# var x = 5; x \* 2                             |
 | *Funksiya hook qilish*           | cy# function test() { console.log("hooked") }     |
-
+</div>
 Misol uchun UI tahlilini ko\`rib chiqaylik bunda quyidagicha boladi:
 
 ```bash
@@ -4545,7 +4549,7 @@ tahlil qilishda bu papkalarni ko‘zdan kechirish xavfsizlik zaifliklarini
 aniqlash uchun muhim bosqichdir.
 
 **res** — ilovaga biriktirilgan statik resurslar saqlanadigan joy.
-
+<div align="center">
 | **Papka** | **Tahlil ahamiyati**                                                                          |
 |-----------|-----------------------------------------------------------------------------------------------|
 | layout/   | UI tuzilmalari (.xml) — maxfiy tugmalar, yashirin funksiya                                    |
@@ -4553,18 +4557,18 @@ aniqlash uchun muhim bosqichdir.
 | drawable/ | Ilovadagi rasm fayllari — phishing belgilar yoki logotiplar borligini tekshirish mumkin       |
 | menu/     | Ilova menyulari — yashirin funktsiyalar mavjudligini aniqlash mumkin                          |
 | xml/      | Qo‘shimcha sozlamalar, network_security_config.xml — HTTPS cheklovlari mavjudmi, tekshiriladi |
-
+</div>
 **assets** papkasi — ilovaga to‘liq kiritilgan foydalanuvchi tomonidan
 belgilangan fayllar saqlanadi. Bu fayllar ilovaning o‘zida to‘liq
 ko‘rinishda mavjud bo‘ladi va APK ichida bexavotir ochiladi.
-
+<div align="center">
 | **Fayl turi** | **Xavfsizlikdagi roli**                                                     |
 |---------------|-----------------------------------------------------------------------------|
 | .json, .xml   | API konfiguratsiyasi, URL, port, tarmoqqa ulanish sozlamalari               |
 | .js, .html    | Ilova ichida ishlatiladigan WebView hujumlari (XSS, LFI) uchun tekshiriladi |
 | .db, .sqlite  | Mahalliy ma’lumotlar ombori — parollar, tokenlar, foydalanuvchi malumotlari |
 | .pem, .crt    | TLS sertifikatlar — qonuniylik va amal qilish muddatini tekshirish mumkin   |
-
+</div>
 Ko‘pincha bu katalogda noto‘g‘ri joylashtirilgan API kalitlar, parollar,
 serverga bog‘lanish nuqtalari bo‘ladi. Bu esa tahlilchi yoki hujumchiga
 ilovaning backend tizimiga hujum qilish imkonini beradi.

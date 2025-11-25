@@ -1308,7 +1308,11 @@ Oddiy(Normal)
 
 Oddiy(Normal) ruxsatlar qurilmaning xavfsizligiga yoki foydalanuvchi
 maxfiyligiga katta xavf tug‘dirmaydi.
-  
+
+
+
+
+
 | **Permission**                                | **Vazifasi**                                         |
 |-----------------------------------------------|------------------------------------------------------|
 | android.permission.INTERNET                   | internetga ulanish                                   |
@@ -1340,11 +1344,20 @@ maxfiyligiga katta xavf tug‘dirmaydi.
 | android.permission.EXPAND_STATUS_BAR          | Status barni ochish yoki yopish                      |
 | android.permission.GET_PACKAGE_SIZE           | Ilovaning o‘lchamini aniqlash                        |
 
+
+
+
+
 Bu ruxsatlar avtomatik beriladi, foydalanuvchi alohida tasdiqlamaydi.
 
 Xavfli (Dangerous) ruxsatlar – Foydalanuvchi shaxsiy ma’lumotlariga yoki
 qurilma resurslariga kira oladi. Bu ruxsatlar foydalanuvchidan
 so‘raladi.
+
+
+
+
+
 
 | **Permission**                                        | **Vazifasi**                                                       |
 |-------------------------------------------------------|--------------------------------------------------------------------|
@@ -1386,6 +1399,9 @@ so‘raladi.
 | android.permission.REORDER_TASKS                      | Ilovalar tasklarini o'zgartirish (Activity Stack)                  |
 | android.permission.RESTART_PACKAGES                   | Ilovalarni to'xtatish va qayta ishga tushirish (deprecated)        |
 | android.permission.DEVICE_POWER                       | Qurilmani o'chirish yoki yoqish (faqat system apps uchun)          |
+
+
+
 
 ## **iOS arxitekturasi**
 
@@ -1473,6 +1489,9 @@ ko‘rinishida keltirilgan. Har bir permission nomi, *Info.plist* dagi
 kaliti va u nima vazifani bajarishi tushuntirilgan. Bu ruxsatlar
 *Info.plist* faylida majburiy ko‘rsatilishi kerak. Aks holda ilova
 ruxsatni so‘ray olmaydi va to‘xtashi mumkin.
+
+
+
 | **Permission nomi**               | **Kodda yozilishi**                                           | **Vazifasi**                                                       |
 |-----------------------------------|---------------------------------------------------------------|--------------------------------------------------------------------|
 | Kamera (Camera)                   | NSCameraUsageDescription                                      | Kameraga kirish uchun ruxsat so‘rash.                              |
@@ -1490,6 +1509,12 @@ ruxsatni so‘ray olmaydi va to‘xtashi mumkin.
 | Harakat va fitness                | NSMotionUsageDescription                                      | Qurilma harakati (accelerometer, gyroscope) haqida ma’lumot olish. |
 | Foydalanuvchi kutubxonasi (Media) | NSMediaLibraryUsageDescription                                | Foydalanuvchi musiqa/media kutubxonasiga kirish.                   |
 | Face ID / Touch ID                | NSFaceIDUsageDescription                                      | Biometrik autentifikatsiya ishlatish.                              |
+
+
+
+
+
+
 
 # **III-BOB. Mobil ilovalar pentestingi**
 

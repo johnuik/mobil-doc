@@ -208,9 +208,8 @@ deteksiya, SSL pinning)](#xavfsizlik-cheklovlarini-sinash-root-emulator-vpn-zara
 
 [API](#api)
 
-**1**
 
-# **Mobil ilovalar xavfsizligi** 
+# **I-BOB. Mobil ilovalar xavfsizligi** 
 
 ## **Smartfonlarni bozoridagi ulushi**
 

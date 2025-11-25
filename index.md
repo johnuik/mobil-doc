@@ -45,92 +45,83 @@
 
 [Java virtual mashina](#java-virtual-mashina)
 
-[Dalvik virtual mashina](#dalvik-virtual-mashina)](#android-ruxsatlari)](#android-ruxsatlari)
+[Dalvik virtual mashina](#android-ruxsatlari)
 
-[Ios arxitekturasi [52](#ios-arxitekturasi)](#ios-arxitekturasi)
+[Ios arxitekturasi](#ios-arxitekturasi)
 
-[Cocoa Touch [54](#cocoa-touch)](#cocoa-touch)
+[Cocoa Touch](#cocoa-touch)
 
-[Media [54](#media)](#media)
+[Media](#media)
 
-[Core services [54](#core-services)](#core-services)
+[Core services](#core-services)
 
-[Core Os [54](#core-os)](#core-os)
+[Core Os](#core-os)
 
-[iOS SDK va Xcode [55](#ios-sdk-va-xcode)](#ios-sdk-va-xcode)
+[iOS SDK va Xcode](#ios-sdk-va-xcode)
 
-[iOS ruxsatlari [55](#ios-ruxsatlari)](#ios-ruxsatlari)
+[iOS ruxsatlari](#ios-ruxsatlari)
 
-**III-BOB.** [**Mobil ilovalar pentestingi**
-[57](#mobil-ilovalar-pentestingi)](#mobil-ilovalar-pentestingi)
+**III-BOB.** [**Mobil ilovalar pentestingi**](#mobil-ilovalar-pentestingi)
 
-[Android Studio va SDK
-[57](#android-studio-va-sdk)](#android-studio-va-sdk)
+[Android Studio va SDK](#android-studio-va-sdk)
 
-[Emulator, simulatorlar, va real qurulmalar
-[60](#emulator-simulatorlar-va-real-qurulmalar)](#emulator-simulatorlar-va-real-qurulmalar)
+[Emulator, simulatorlar, va real qurulmalar](#emulator-simulatorlar-va-real-qurulmalar)
 
-[Emulatorlar [61](#emulatorlar)](#emulatorlar)
+[Emulatorlar](#emulatorlar)
 
-[Simulatorlar [61](#simulatorlar)](#simulatorlar)
+[Simulatorlar](#simulatorlar)
 
-[Real qurulmalar [61](#real-qurulmalar)](#real-qurulmalar)
+[Real qurulmalar](#real-qurulmalar)
 
-**IV-BOB.** [**Mobil Pentesting Vositalari**
-[62](#mobil-pentesting-vositalari)](#mobil-pentesting-vositalari)
+**IV-BOB.** [**Mobil Pentesting Vositalari**](#mobil-pentesting-vositalari)
 
-[Android xavfsizlik vositalari [62](#_Toc205200143)](#_Toc205200143)
+[Android xavfsizlik vositalari](#_Toc205200143)
 
-[Android Debug Bridge
-[62](#android-debug-bridge)](#android-debug-bridge)
+[Android Debug Bridge](#android-debug-bridge)
 
-[Adbni o‘rnatish [62](#adbni-ornatish)](#adbni-ornatish)
+[Adbni o‘rnatish](#adbni-ornatish)
 
-[Qurulmaga ulanish [67](#qurulmaga-ulanish)](#qurulmaga-ulanish)
+[Qurulmaga ulanish](#qurulmaga-ulanish)
 
-[Qurilmaga ilova o‘rnatish
-[68](#qurilmaga-ilova-ornatish)](#qurilmaga-ilova-ornatish)
+[Qurilmaga ilova o‘rnatish](#qurilmaga-ilova-ornatish)
 
-[Qurilmadan fayllarni olish
-[70](#qurilmadan-fayllarni-olish)](#qurilmadan-fayllarni-olish)
+[Qurilmadan fayllarni olish](#qurilmadan-fayllarni-olish)
 
-[Fayllarni qurilmaga saqlash
-[70](#fayllarni-qurilmaga-saqlash)](#fayllarni-qurilmaga-saqlash)
+[Fayllarni qurilmaga saqlash](#fayllarni-qurilmaga-saqlash)
 
-[Log ma’lumotlarini ko‘rish
-[71](#log-malumotlarini-korish)](#log-malumotlarini-korish)
+[Log ma’lumotlarini ko‘rish](#log-malumotlarini-korish)
 
-[Adb buyruqlari [74](#adb-buyruqlari)](#adb-buyruqlari)
+[Adb buyruqlari](#adb-buyruqlari)
 
-[APKAnalyser [77](#apkanalyser)](#apkanalyser)
+[APKAnalyser](#apkanalyser)
 
-[APKTool [78](#apktool)](#apktool)
+[APKTool](#apktool)
 
-[Androguard [80](#androguard)](#androguard)
+[Androguard](#androguard)
 
-[MobSF [81](#mobsf)](#mobsf)
+[MobSF](#mobsf)
 
-[APKleaks [83](#apkleaks)](#apkleaks)
+[APKleaks](#apkleaks)
 
-[Frida [84](#frida)](#frida)
+[Frida](#frida)
 
-[MAVS [88](#mavs)](#mavs)
+[MAVS](#mavs)
 
-[APKHunt [90](#apkhunt)](#apkhunt)
+[APKHunt](#apkhunt)
 
-[Tapjacker [91](#tapjacker)](#tapjacker)
+[Tapjacker](#tapjacker)
 
-[Logcat [92](#logcat)](#logcat)
+[Logcat](#logcat)
 
-[APKDeepLens [94](#apkdeeplens)](#apkdeeplens)
+[APKDeepLens](#apkdeeplens)
 
-[Reqable [95](#reqable)](#reqable)
+[Reqable](#reqable)
 
-[Objection [96](#objection)](#objection)
+[Objection](#objection)
 
-[HTTP Toolkit [98](#http-toolkit)](#http-toolkit)
+[HTTP Toolkit](#http-toolkit)
 
-[Burpsuite [99](#burpsuite)](#burpsuite)
+[Burpsuite](#burpsuite)
 
 [Drozer [101](#drozer)](#drozer)
 

@@ -5162,7 +5162,9 @@ strings /data/misc/keystore/user_0/\*
 Ba’zi ilovalar xatoliklar yoki log yozuvlar orqali sezilarli darajadagi
 ma’lumotlarni ochib yuborishi mumkin.
 
-```adb logcat \| grep com.example.app```
+```bash
+adb logcat \| grep com.example.app
+```
 
 ### **API so‘rovlarini kuzatish**
 
@@ -5234,7 +5236,9 @@ alt="Rooted Android traffic proxied with VPN" />
 intercept vosita. Kam resurs talab qiladi. Foydalanish uchun terminalga
 quydagi kodni yozish kerak.
 
-```mitmproxy --mode transparent --listen-port 8080```
+```bash
+mitmproxy --mode transparent --listen-port 8080
+```
 
 - Qurilmada proksi: kompyuter_ip:8080
 

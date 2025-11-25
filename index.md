@@ -4254,7 +4254,9 @@ keldi. Bu jarayonda biz apktool vositasidan foydalanamiz u Android
 ilovalarini dekompilyatsiya va qayta kompilyatsiya qilishda eng
 ishonchli va qulay vositalardan biridir.
 
-```apktool d original.apk -o app-release```
+```bash
+apktool d original.apk -o app-release
+```
 
 <img src="media/media/image90.png"
 style="width:6.5in;height:1.86597in" />
@@ -4266,7 +4268,8 @@ fayllar ko‘rinishida joylashgan bo‘ladi. Har qanday .smali faylni oching
 (masalan, MainActivity.smali), so‘ng unga kichik o‘zgarish kiriting bu
 matn, log yozuvi yoki shart operatori bo‘lishi mumkin.
 
-```const-string v0, "You Have Hacked Been"
+```bash
+const-string v0, "You Have Hacked Been"
 
 const/4 v1, 0x1
 
@@ -4275,7 +4278,8 @@ Landroid/widget/Toast;-\>makeText(Landroid/content/Context;Ljava/lang/CharSequen
 
 move-result-object v0
 
-invoke-virtual {v0}, Landroid/widget/Toast;-\>show()V```
+invoke-virtual {v0}, Landroid/widget/Toast;-\>show()V
+```
 
 Masalan yuqoridagi kodni MainActivity faylga joylashtiring bu kod
 Ilovada Toast chiqishini taminlaydi va o‘zgartirishni kiritgach, faylni

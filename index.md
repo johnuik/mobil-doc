@@ -4893,7 +4893,9 @@ Bu funksiyani chetlab o‘tish uchun quydagi usullar keng qo‘llaniladi.
 
 - Frida skript bilan:
 
-- ```frida -U -n com.example.app -l frida-ssl-pinning-bypass.js```
+- ```bash
+frida -U -n com.example.app -l frida-ssl-pinning-bypass.js
+```
 
 - Ilovani dekompilyatsiya qilish.
 
@@ -4921,7 +4923,9 @@ olishi mumkin. Zaiflikni kelib chiqishi sababi quydagilar.
 
 Zaiflikdan foydalanish uchun terminalga quydagi kodni yozing.
 
-```adb shell am start -n com.example.app/.SecretActivity```
+```bash
+adb shell am start -n com.example.app/.SecretActivity
+```
 
 Zaiflik oqibatida quydagi xavflar sodir bo‘ladi.
 
@@ -4935,7 +4939,9 @@ muloqot qilishi mumkin. Zaiflikni kelib chiqishi sababi Service ochiq va
 hech qanday tekshiruvsiz ishlov beruvchi bo‘lsa quydagi kodni bajarib
 zaiflikni tekshirish mumkin.
 
-```adb shell am startservice -n com.example.app/.MyService```
+```bash
+adb shell am startservice -n com.example.app/.MyService
+```
 
 Zayiflikdan foydalanish uchun terminalga quydagi kodni yozing.
 
@@ -4954,12 +4960,16 @@ quydagilar.
 
 Zaiflikdan foydalanish uchun terminalga quydagi kodni yozing.
 
-```adb shell am broadcast -a com.example.app.CUSTOM_BROADCAST```
+```bash
+adb shell am broadcast -a com.example.app.CUSTOM_BROADCAST
+```
 
 Agar extra parametr kerak bo‘lsa:
 
-```adb shell am broadcast -a com.example.app.CUSTOM_BROADCAST --es key
-value```
+```bash
+adb shell am broadcast -a com.example.app.CUSTOM_BROADCAST --es key
+value
+```
 
 ### **Ma’lumotlar oqimini kuzatish (runtime debugging)**
 
@@ -4983,9 +4993,12 @@ Ma’lumotlar oqimini kuzatish uchun quydagi vositalar kerak bo‘ladi.
 funktsiyalarni tutib, ularning argument va natijalarini ko‘rish imkonini
 beradi.
 
-```frida -U -n com.example.app -l intercept.js```
+```bash
+frida -U -n com.example.app -l intercept.js
+```
 
-```//intercept.js
+```bash
+//intercept.js
 
 Java.perform(function () {
 
@@ -5002,7 +5015,8 @@ password) {
 
     };
 
-});```
+});
+```
 
 Bu kod bajarilishi natijasida ilova ishga tushganda foydalanuvchi login
 parolini real vaqt rejimida terminalda ko‘rasiz.
@@ -5024,7 +5038,9 @@ objection -g com.example.app explore
 **Logcat –** Ilova ish vaqtida chiqarayotgan loglar orqali ma’lumot
 oqimini passiv ravishda kuzatish.
 
-```adb logcat \| grep com.example.app```
+```bash
+adb logcat \| grep com.example.app
+```
 
 ### **Umumiy xotira malumotlarini ko‘rish**
 

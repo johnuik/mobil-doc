@@ -4007,15 +4007,21 @@ orqali ilovada zararli dasturlar yoki kodlar bor yoki yo‘qligini
 aniqlash mumkin. VirusTotal havolasi:
 <https://www.virustotal.com/gui/home/upload>
 
+
+<div align="center">
 <img src="media/media/image73.png"
 style="width:5.32624in;height:2.4135in" />
+</div>
+
 
 Ilovani tekshirish uchun ilovani kampyuterga ko‘chirib oling va
 virustotal saytiga .apk faylni yuboring bir necha soniyadan keyin sizga
 rasmdagi kabi natija qaytarish kerak bo‘ladi.
 
+<div align="center">
 <img src="media/media/image74.png"
 style="width:6.5in;height:3.08958in" />
+</div>
 
 Ilovada hech qanday zararli kod aniqlanmaganligini chiqardi. Sizda buni
 aksi bo‘lishi ham mumkin.
@@ -4034,20 +4040,27 @@ uchun windows.zip farmatdagisini yuklab oling va uni zipdan chiqarib
 ichidagi .exe faylni ishga tushuring. Jadx dasturi sizda dastlab ishga
 tushganda quydagicha oyna ochiladi.
 
+
+<div align="center">
 <img src="media/media/image75.png"
 style="width:6.50346in;height:3.76615in" />
+</div>
 
 Ushbu oynadan Open file qilib apk faylni tanlab oling, rasmdagi kabi apk
 faylni tanlab oling.
 
+<div align="center">
 <img src="media/media/image76.png"
 style="width:6.5255in;height:3.8831in" />
+</div>
 
 Ilova apk faylni tanlab olganingizda sizda rasmdagi kabi bu faylni
 dekomplatsiya qilib beriladi.
 
+<div align="center">
 <img src="media/media/image77.png"
 style="width:6.5in;height:3.4625in" />
+</div>
 
 Jadx-gui dasturida .apk fayl ochilgach, chap tomonda quyidagi asosiy
 bo‘limlar (katta menyular) ko‘rinadi. Ularning har biri APK fayl
@@ -4074,8 +4087,10 @@ bo‘lim.
 - Bu yerda MainActivity.java, LoginActivity.java kabi asosiy faoliyat
   fayllarni ko‘rib chiqasiz.
 
+<div align="center">
 <img src="media/media/image78.png"
 style="width:5.37841in;height:2.56164in" />
+</div>
 
 Asosiy joy dasturchining logikasi, API chaqiriqlari, tokenlar, kalitlar
 shu yerda bo‘ladi.
@@ -4089,8 +4104,11 @@ oladi:
 - Dastur interfeysining qanday ko‘rinishini, ranglar, matnlar, tasvirlar
   qayerda ishlatilganini shu yerda bilib olish mumkin.
 
+
+<div align="center">
 <img src="media/media/image79.png"
 style="width:5.88212in;height:2.6545in" />
+</div>
 
 UI dizayn va interfeysga oid ma’lumotlar bu yerda bo‘ladi.
 
@@ -4104,8 +4122,12 @@ haqida ma’lumot beradi:
 - Agar siz modifikatsiya qilgan bo‘lsangiz, bu yerda imzo noto‘g‘ri yoki
   “Signed: No” ko‘rsatiladi.
 
+
+
+<div align="center">
 <img src="media/media/image80.png"
 style="width:5.66098in;height:2.92605in" />
+</div>
 
 Bu yer APK originalmi yoki yo‘qligini tekshirish uchun muhim.
 
@@ -4125,8 +4147,11 @@ ma’lumotlarni beradi:
 Tez tahlil uchun foydali bo‘lim. Dastur nima qiladi, qaysi ruxsatlarni
 so‘raydi – shularni ko‘rsatadi.
 
+
+<div align="center">
 <img src="media/media/image81.png"
 style="width:5.70934in;height:3.33773in" />
+</div>
 
 Apktool
 
@@ -4141,8 +4166,11 @@ yonida apk fayl nomi bilan bir xil papka paydo bo‘ladi, bu papka ichida
 rasmdagi kabi fayllar paydo bo‘ladi bua pk faylingizni dekomplatsiya
 ko‘rinishidir.
 
+
+<div align="center">
 <img src="media/media/image82.png"
 style="width:6.5in;height:2.00486in" />
+</div>
 
 ### **Obfusikatsiya**
 
@@ -4171,8 +4199,10 @@ Keling endi, obfuskatsiya qilinmagan dastur kodi bilan obfuskatsiya
 qilingan kod o‘rtasidagi farqlarni solishtirib, bu jarayonning dastur
 tuzilmasiga qanday ta’sir qilganini ko‘rib chiqamiz.
 
+<div align="center">
 <img src="media/media/image83.png"
 style="width:3.52857in;height:2.0398in" />
+</div>
 
 JADX dasturi orqali obfuskatsiya qilinmagan ilovani tahlil qilganimizda,
 kod tuzilmasi aniq, tartibli va o‘qilishi oson holatda bo‘ladi.
@@ -4180,8 +4210,11 @@ Ilovaning har bir komponenti o‘z nomi bilan ochiq-oydin ajratilgan
 bo‘lib, klasslar, metodlar va o‘zgaruvchilar semantik ma’noga ega nomlar
 bilan nomlangan.
 
+
+<div align="center">
 <img src="media/media/image84.png"
 style="width:6.5in;height:2.93194in" />
+</div>
 
 Yuqoridagi rasmda biz obfuskatsiya qilinmagan ilovaning kodi bilan
 tanishdik. Unda hamma narsa aniq, tartibli va tushunarli ko‘rinishda
@@ -4199,11 +4232,16 @@ Kodlar o‘zaro qanday bog‘langanini anglash qiyinlashadi. Ko‘plab
 joylarda funksiyalar o‘z vazifasini yashirish uchun murakkab tuzilmaga
 aylantirilgan bo‘ladi.
 
+<div align="center">
 <img src="media/media/image85.png"
 style="width:3.52384in;height:3.0299in" />
+</div>
 
+
+<div align="center">
 <img src="media/media/image86.png"
 style="width:6.5in;height:3.01181in" />
+</div>
 
 Rasmda ko‘rib turganingizdek, obfuskatsiya jarayonidan so‘ng ilova kodi
 mutlaqo tushunarsiz holga keltirilgan. Klass va metod nomlari endi hech

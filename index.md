@@ -2253,11 +2253,15 @@ APKTool, masalan, ilovani test maqsadida modifikatsiya qilish yoki
 xavfsizlik testlarini o‘tkazishda juda foydalidir. APKToolni ishlatish
 uchun komanda satrida quyidagi kabi buyruqlardan foydalaniladi.
 
-```apktool d app.apk yoki apktool d app.apk -o my_app```
+```bash
+ apktool d app.apk yoki apktool d app.apk -o my_app
+```
 
 Bu ilovani dekompilyatsiya qiladi.
 
-```apktool b app_folder -o modifed.apk yoki apktool b app_folder```
+```bash
+apktool b app_folder -o modifed.apk yoki apktool b app_folder
+```
 
 Bu kod teskari muhandislik qilingan papkani yana APK faylga yig‘adi.
 APKTool Javada yozilgan bo‘lib, kross-platformalidir — ya’ni Windows,

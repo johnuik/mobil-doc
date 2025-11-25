@@ -2294,14 +2294,18 @@ lozim. Birinchi navbatda kali linux Ichida git o‘rnatilganiga ishon
 hosil qilib oling agar o‘rnatilmagan bo‘lsa uni quydagicha yuklab
 olishingiz mumkin.
 
-```sudo apt-get install git```
+```bash
+sudo apt-get install git
+```
 
 Keyin quydagi buyruqlar orqali kerakli barcha vositalarni o‘rnatib
 olishingiz mumkin.
 
-```sudo apt install python3-dev python3-venv python3-pip build-essential
+```bash
+sudo apt install python3-dev python3-venv python3-pip build-essential
 libffi-dev libssl-dev libxml2-dev libxslt1-dev libjpeg62-turbo-dev
-zlib1g-dev wkhtmltopdf```
+zlib1g-dev wkhtmltopdf
+```
 
 Quyida keltirilgan buyruq yordamida MobSF ni yuklab oling.
 
@@ -2360,7 +2364,9 @@ quyidagi narsalarni topish mumkin.
 APKLeaksni ishlatish juda oddiy. Masalan, quyidagicha buyruq orqali
 tahlilni boshlash mumkin:
 
-```apkleaks -f app.apk -o result.txt```
+```bash 
+apkleaks -f app.apk -o result.txt
+```
 
 <img src="media/media/image66.png"
 style="width:4.27277in;height:3.64966in" />
@@ -2391,9 +2397,13 @@ SSL Pinning bypass, va boshqalar amalga oshiriladi. Fridani yuklab olish
 uchun rasmiy sayt *<https://frida.re>* yoki python orqali yuklab
 olsangiz bo‘ladi.
 
-```pip install frida-tools```
+```bash 
+pip install frida-tools
+```
 
-```pip install frida```
+```bash 
+pip install frida
+```
 
 Frida serverni <https://github.com/frida/frida/releases> oraqali yuklab
 olishingiz mumkin. Frida serverni yuklab olayotganda qurulma masalan
@@ -2432,15 +2442,25 @@ versiyasi bilan siz yuklab olmoqchi bo‘lgan Frida server versiyasi bir
 xil bo‘lishi kerak. Frida serverni quydagicha qilib o‘z qurulmangizga
 o‘rnatib ishga tushursangiz bo‘ladi.
 
-```adb push frida-server /data/local/tmp/```
+```bash 
+adb push frida-server /data/local/tmp/
+```
 
-```adb shell```
+```bash 
+adb shell
+```
 
-```su```
+```bash 
+su
+```
 
-```chmod 755 /data/local/tmp/frida-server```
+```bash
+chmod 755 /data/local/tmp/frida-server
+```
 
-```/data/local/tmp/frida-server```
+```bash
+./data/local/tmp/frida-server
+```
 
 Bazi bir ilovalarda Frida-serverni anilashga kod yozilgan bo‘ladi va
 Frida serverni siz ishga tushurganingizda ilova ishdan chiqadi bu paytda
@@ -3081,11 +3101,15 @@ himoyalanmagan, va qaysi xizmatlar zaif bo‘lishi mumkinligini aniqlash
 imkonini beradi. Misol uchun, siz quyidagi kabi oddiy buyruq orqali
 maqsadli serverda ochiq portlarni tekshirishingiz mumkin:
 
-```nmap api.example.com```
+```bash 
+nmap api.example.com
+```
 
 Agar siz xizmat versiyalarini ham aniqlamoqchi bo‘lsangiz:
 
-```nmap -sV api.example.com```
+```bash 
+nmap -sV api.example.com
+```
 
 Bu holatda sizga API serverda ochiq bo‘lgan portlar (masalan, 80, 443,
 22, 3306) va ular orqali ishlayotgan xizmatlar (Apache, nginx, SSH,
@@ -3096,7 +3120,9 @@ skriptlarni ishga tushirishingiz mumkin. Masalan, siz --script=vuln
 bayrog‘i orqali serverdagi mashhur zaifliklarga (SQL injection,
 Heartbleed, Shellshock, va boshqalar) tekshiruv o‘tkazishingiz mumkin:
 
-```nmap --script vuln api.example.com```
+```bash
+nmap --script vuln api.example.com
+```
 
 Mobil xavfsizlik kontekstida Nmap quyidagi ishlarda qo‘l keladi. Ilova
 ulanishga harakat qilayotgan API serverlar tahlili. Ichki tarmoqlarda
@@ -3136,7 +3162,9 @@ katalog yoki fayl mavjud degani. Dirb juda sodda ishlaydi, lekin kuchli
 recursive (rekursiv) qidiruvga ega emas, shuning uchun u faqat birinchi
 darajali kataloglarni yaxshi ochadi.
 
-```dirb https://example.com /usr/share/wordlists/dirb/common.txt```
+```bash 
+dirb https://example.com /usr/share/wordlists/dirb/common.txt
+```
 
 Bu buyruq orqali Dirb common.txt faylidagi katalog nomlarini
 https://example.com saytiga birma-bir so‘rov qilib sinaydi. DirBuster
@@ -3164,8 +3192,9 @@ hatto cookie va header’lardagi qiymatlarni ham brutforce qilishingiz
 mumkin. Bu vosita ko‘proq zamonaviy tahlilchilarga mo‘ljallangan bo‘lib,
 juda ko‘p sozlamalarni qo‘llab-quvvatlaydi.
 
-```ffuf -u https://example.com/FUZZ -w
-/usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt```
+```bash
+ffuf -u https://example.com/FUZZ -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
+```
 
 Bu yerda *FUZZ* brutforce qilinadigan joy. *FFUF* ushbu *URL*da *FUZZ*
 o‘rniga so‘zlar ro‘yxatidagi har bir qiymatni qo‘yadi va javob holatini
@@ -3204,7 +3233,9 @@ ba’zida versiyasini ham aniqlab beradi.
 
 Misol uchun, siz quyidagi buyruqni ishga tushirishingiz mumkin:
 
-```wafw00f https://example.com```
+```bash
+wafw00f https://example.com
+```
 
 Natijada WAFW00F sizga quyidagi kabi ma’lumotlarni beradi.
 

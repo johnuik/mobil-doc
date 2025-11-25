@@ -1,7 +1,6 @@
-**I-BOB.** [**Mobil ilovalar xavfsizligi**
-](#mobil-ilovalar-xavfsizligi)
+**I-BOB.** [**Mobil ilovalar xavfsizligi**](#mobil-ilovalar-xavfsizligi)
 
-[Smartfonlarni bozoridagi ulushi](#smartfonlarni-bozoridagi-ulushi)
+[Smartfonlarni bozoridagi ulushi](#_Toc214979318)
 
 [Android operatsion tizimi](#android-operatsion-tizimi)
 
@@ -21,13 +20,11 @@
 
 [Mobil ilovalarni buzish va teskari muhandislik](#mobil-ilovalarni-buzish-va-teskari-muhandislik)
 
-[Android ilovalardagi zaifliklari](#android-ilovalardagi-zaifliklari)
-
-[iOS ilovalardagi zaifliklari](#ios-ilovalardagi-zaifliklari)
+[Android va iOS ilovalardagi zaifliklari](#android-va-ios-ilovalardagi-zaifliklari)
 
 **II-BOB.** [**Android va iOS arxitekturasi**](#android-va-ios-arxitekturasi)
 
-[Android arxitekturasi](#_Toc205200120)
+[*Android arxitekturasi*](#_Toc214979330)
 
 [Linux kernel](#linux-kernel)
 
@@ -41,9 +38,11 @@
 
 [Java virtual mashina](#java-virtual-mashina)
 
-[Dalvik virtual mashina](#android-ruxsatlari)
+[Dalvik virtual mashina](#dalvik-virtual-mashina)
 
-[Ios arxitekturasi](#ios-arxitekturasi)
+[Android ruxsatlari](#android-ruxsatlari)
+
+[iOS arxitekturasi](#ios-arxitekturasi)
 
 [Cocoa Touch](#cocoa-touch)
 
@@ -71,7 +70,7 @@
 
 **IV-BOB.** [**Mobil Pentesting Vositalari**](#mobil-pentesting-vositalari)
 
-[Android xavfsizlik vositalari](#_Toc205200143)
+[Android xavfsizlik vositalari](#_Toc214979353)
 
 [Android Debug Bridge](#android-debug-bridge)
 
@@ -145,6 +144,12 @@
 
 [Class-dump-z](#class-dump-z)
 
+[radare2](#radare2)
+
+[objdump](#objdump)
+
+[Cycript](#cycript)
+
 **V-BOB.** [**Mobil Ilovalar Pentesting Bosqichlari**](#mobil-ilovalar-pentesting-bosqichlari)
 
 [Statik tahlil](#statik-tahlil)
@@ -207,7 +212,6 @@ deteksiya, SSL pinning)](#xavfsizlik-cheklovlarini-sinash-root-emulator-vpn-zara
 [iOS](#ios)
 
 [API](#api)
-
 
 # **I-BOB. Mobil ilovalar xavfsizligi** 
 

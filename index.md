@@ -2869,7 +2869,9 @@ buyruqlar yordamida unga ulanib, ilovani “hujum ostida” sinab ko‘rasiz.
 Masalan, quyidagi buyruq bilan siz ilovani ishga tushirishingiz va unga
 ulanishingiz mumkin:
 
-```objection -g com.example.app explore```
+```bash
+objection -g com.example.app explore
+```
 
 Bu buyruqdan so‘ng sizga qulay CLI interfeys ochiladi va u orqali
 quyidagilarni amalga oshirishingiz mumkin. env — ilova ichki muhitidagi
@@ -3643,11 +3645,15 @@ va undan odatda terminal orqali foydalaniladi.
 Masalan, quyidagi buyruq bilan qurilmadagi barcha ilovalarni ko‘rish
 mumkin:
 
-```clutch -i```
+```bash 
+clutch -i
+```
 
 Va ma’lum bir ilovani decrypted qilish uchun:
 
-```clutch -d com.example.app```
+```bash
+clutch -d com.example.app
+```
 
 Natijada decrypted bo‘lgan .ipa fayl */var/tmp/clutch* ichida hosil
 bo‘ladi va siz uni Ghidra, Hopper, class-dump, yoki oTool orqali tahlil
@@ -3685,7 +3691,9 @@ qilish yoki kuzatish kerakligini tushunishga yordam beradi. Masalan,
 quyidagi buyruq orqali siz ilovaning barcha classlarini chiqarib
 olishingiz mumkin:
 
-```class-dump-z -H MyApp -o headers/```
+```bash
+class-dump-z -H MyApp -o headers
+```
 
 Natijada siz headers/ papkasida ilovadagi barcha .h fayllarni olasiz. Bu
 fayllar ilovaning interface qismini ko‘rsatadi va siz kodni aslida
@@ -3750,13 +3758,19 @@ mumkin:
 Ishlatish buyruqlariga o‘tadigan bo‘lsak, quyidagi buyruq orqali biz
 avtomatik analiz qilishimiz mumkin:
 
-```r2 -A Runner.app```
+```bash 
+r2 -A Runner.app
+```
 
-```otool -L MyApp```
+```bash
+otool -L MyApp
+```
 
 Keyin esa biz kutubxonalarni quyidagicha aniqlashimiz mumkin bo‘ladi.
 
-```il```
+```bash
+il
+```
 
 Bu sizga ilova ishlatayotgan barcha .dylib (Dynamic Library) fayllarni
 ro‘yxat qilib beradi. Bu juda muhim, chunki ba’zida zararli yoki nojo‘ya
@@ -3764,7 +3778,9 @@ kutubxonalar orqali ilovaga ekspluatatsiya yo‘llari ochilishi mumkin.
 Quyidagi bu buyruq orqali esa import qilingan funksiyalarni ko‘rishimiz
 mumkin bo‘ladi:
 
-```ii```
+```bash
+ii
+```
 
 *ii*~*objc_msgSend* funksiyasi ilovada dynamic metod chaqiruvlar
 mavjudligini bildiradi. Bu turdagi chaqiruvlar kompilyatsiya vaqtida
@@ -3773,7 +3789,9 @@ bo‘ladi.Frida yoki debugger orqali hook qilib metodni o‘zgartirish yoki
 ma’lumotni o‘g‘irlash mumkin. Quyidagi buyruq orqali esa eksport
 qilingan funksiyalarni aniqlashimiz mumkin bo‘ladi:
 
-```ie```
+```bash
+ie
+```
 
 *ie* buyrug‘i ilovadan tashqi tomonga eksport qilinadigan funksiyalarni
 ko‘rsatadi. Agar bu ro‘yxatda xavfsizlikka oid funksiyalar (system,
@@ -3783,7 +3801,9 @@ uchun ochiq nuqtalar hisoblanadi. Shuning uchun ie orqali zaif joylarni
 topish va eksploit yozish uchun muhim ma’lumotlar olinadi. Quyidagi
 buyruq orqali esa biz stringlar ro‘yhatini olishimiz mumkin bo‘ladi.
 
-```iz```
+```bash
+iz
+```
 
 *iz* buyrug‘i binar ichidagi matn (string) ma’lumotlarni ko‘rsatadi. Bu
 orqali login parollar, API kalitlari, URL, token, debugging ma’lumotlar
@@ -3846,7 +3866,9 @@ objdump — bu Unix va Linux tizimlarida ishlatiladigan kuchli statik
 tahlil vositasi bo‘lib, u binar fayllar (masalan, ELF, Mach-O, PE)
 haqida turli ma’lumotlarni ko‘rsatadi.
 
-```objdump -d MyApp.app```
+```bash
+objdump -d MyApp.app
+```
 
 Quyida objdump dasturiy vositasini barcha buyruqlarini ko\`rishimiz
 mumkin.
@@ -3907,11 +3929,15 @@ scripting shell bo‘lib, iOS ilovalari ustida real vaqtda dinamik tahlil
 qilish imkoniyatini beradi. U ayniqsa jailbreak qilingan iPhone/iPad da
 ishlatiladi. Ilovani PIDni toppish.
 
-```ps aux \| grep \<ilova_nomi\>```
+```bash
+ps aux \| grep \<ilova_nomi\>
+```
 
 Cycript orqali ulanish:
 
-```cycript -p \<ilova_nomi_yoki_ilova_PID_raqami\>```
+```bash
+cycript -p \<ilova_nomi_yoki_ilova_PID_raqami\>
+```
 
 Ulanganingizdan so‘ng *cy#* ko‘rinishi chiqsa — Cycript shell ochilgan
 bo‘ladi.
@@ -3928,32 +3954,50 @@ bo‘ladi.
 
 Misol uchun UI tahlilini ko\`rib chiqaylik bunda quyidagicha boladi:
 
-```cy# UIApp.keyWindow.recursiveDescription().toString()```
+```bash
+cy# UIApp.keyWindow.recursiveDescription().toString()
+```
 
 Barcha classlarni chiqarish.
 
-```cy# objc_getClassList()```
+```bash
+cy# objc_getClassList()
+```
 
 Classdagi metodlar uchun quyidagi buyruqni qo\`llaymiz.
 
-```cy# CYClassDump("LoginViewController")```
+```bash
+cy# CYClassDump("LoginViewController")
+```
 
 Login / parol bypass qilish.
 
-```cy# \[LoginManager isLoggedIn\] false```
+```bash 
+cy# \[LoginManager isLoggedIn\] false
+```
 
-```cy# \[LoginManager setLoggedIn:true\]```
+```bash
+cy# \[LoginManager setLoggedIn:true\]
+```
 
-```cy# \[LoginManager isLoggedIn\] true```
+```bash
+cy# \[LoginManager isLoggedIn\] true
+```
 
 Misol uchun JailBreak Detectionni ochirish bunda quyidagicha yondashuv
 qilsak bo‘ladi.
 
-```cy# \[AntiJailbreakManager isDeviceJailbroken\] true```
+```bash
+cy# \[AntiJailbreakManager isDeviceJailbroken\] true
+```
 
-```cy# \[AntiJailbreakManager setDeviceJailbroken:false\]```
+```bash
+cy# \[AntiJailbreakManager setDeviceJailbroken:false\]
+```
 
-```cy# \[AntiJailbreakManager isDeviceJailbroken\] false```
+```bash
+cy# \[AntiJailbreakManager isDeviceJailbroken\] false
+```
 
 Cycript — iOS ilovalari ustida dynamic analysis qilish uchun
 ishlatiladigan kuchli pentesting vositasidir. U ilovaning ishlayotgan
@@ -4319,7 +4363,9 @@ keldi. Bu jarayonda biz apktool vositasidan foydalanamiz u Android
 ilovalarini dekompilyatsiya va qayta kompilyatsiya qilishda eng
 ishonchli va qulay vositalardan biridir.
 
-```bash apktool d original.apk -o app-release```
+```bash
+apktool d original.apk -o app-release
+```
 
 <img src="media/media/image90.png"
 style="width:6.5in;height:1.86597in" />

@@ -5,7 +5,7 @@
 **I-BOB.** [**Mobil ilovalar xavfsizligi**
 [6](#mobil-ilovalar-xavfsizligi)](#mobil-ilovalar-xavfsizligi)
 
-[Smartfonlarni bozoridagi ulushi [6](#_Toc205200107)](#_Toc205200107)
+[Smartfonlarni bozoridagi ulushi](#smartfonlarni-bozoridagi-ulushi)
 
 [Android operatsion tizimi
 [7](#android-operatsion-tizimi)](#android-operatsion-tizimi)

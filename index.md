@@ -482,8 +482,11 @@ niyatli foydalanuvchilarni ruxsatsiz kirishi va foydalanuvchi hisoblari
 va maxfiy ma’lumotlardan noto‘g‘ri maqsadlarda foydalanishga olib
 kelishi mumkin.
 
-<img src="media/media/image6.jpeg"
+
+<div align="center">
+  <img src="media/media/image6.jpeg"
 style="width:3.91383in;height:2.4479in" />
+</div>
 
 Hisob ma’lumotlari ya’ni foydalanuvchi login va parollarini noto‘g‘ri
 ishlatilishi ilovaning xavfsizligini jiddiy zaiflashtiradi. Agar hisob
@@ -500,8 +503,11 @@ qo‘shishga yordam beradi. Biroq, agar ushbu uchinchi tomon
 komponentlaridan birortasi eskirgan yoki zaif bo’lsa, ular ilovaga
 jiddiy zaifliklarni kiritishi mumkin.
 
-<img src="media/media/image7.jpeg"
+
+<div align="center">
+  <img src="media/media/image7.jpeg"
 style="width:4.48983in;height:2.79161in" />
+</div>
 
 Zaif ta’minot zanjiri bu uchinchi tomon komponentlari va kutubxonalar
 orqali tarqaladigan zaifliklarning mavjudligi, mobil ilovalarni
@@ -517,8 +523,11 @@ anglatadiki, hujumchilar foydalanuvchi identifikatorlarini
 tekshirishning dastlabki bosqichini chetlab o‘tishlari mumkin (masalan:
 bitta login ostida bir nechta odam autentifikatsiya qilinganda). 
 
-<img src="media/media/image8.jpeg"
+
+<div align="center">
+ <img src="media/media/image8.jpeg"
 style="width:4.19933in;height:2.79955in" />
+</div>
 
 Zaif parol siyosati, seansni noto‘g‘ri boshqarish, kirishni noto‘g‘ri
 boshqarish va ko‘p faktorli autentifikatsiyaning yo‘qligi ba’zi bir keng

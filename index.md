@@ -7,61 +7,45 @@
 
 [Smartfonlarni bozoridagi ulushi](#smartfonlarni-bozoridagi-ulushi)
 
-[Android operatsion tizimi
-[7](#android-operatsion-tizimi)](#android-operatsion-tizimi)
+[Android operatsion tizimi](#android-operatsion-tizimi)
 
-[iOS operatsion tizimi
-[7](#ios-operatsion-tizimi)](#ios-operatsion-tizimi)
+[iOS operatsion tizimi](#ios-operatsion-tizimi)
 
-[Mobil ilovalarning turlari
-[8](#mobil-ilovalarning-turlari)](#mobil-ilovalarning-turlari)
+[Mobil ilovalarning turlari](#mobil-ilovalarning-turlari)
 
-[Native ilovalar [9](#native-ilovalar)](#native-ilovalar)
+[Native ilovalar](#native-ilovalar)
 
-[Mobil web ilovalar [9](#mobil-web-ilovalar)](#mobil-web-ilovalar)
+[Mobil web ilovalar](#mobil-web-ilovalar)
 
-[Gibrid ilovalar [9](#gibrid-ilovalar)](#gibrid-ilovalar)
+[Gibrid ilovalar](#gibrid-ilovalar)
 
-[Ommaviy Android va iOS zaifliklari
-[10](#ommaviy-android-va-ios-zaifliklari)](#ommaviy-android-va-ios-zaifliklari)
+[Ommaviy Android va iOS zaifliklari](#ommaviy-android-va-ios-zaifliklari)
 
-[OWASP Mobil Top 10 [11](#owasp-mobil-top-10)](#owasp-mobil-top-10)
+[OWASP Mobil Top 10](#owasp-mobil-top-10)
 
-[Mobil ilovalarni buzish va teskari muhandislik
-[18](#mobil-ilovalarni-buzish-va-teskari-muhandislik)](#mobil-ilovalarni-buzish-va-teskari-muhandislik)
+[Mobil ilovalarni buzish va teskari muhandislik](#mobil-ilovalarni-buzish-va-teskari-muhandislik)
 
-[Android ilovalardagi zaifliklari
-[19](#android-ilovalardagi-zaifliklari)](#android-ilovalardagi-zaifliklari)
+[Android ilovalardagi zaifliklari](#android-ilovalardagi-zaifliklari)
 
-[iOS ilovalardagi zaifliklari
-[27](#ios-ilovalardagi-zaifliklari)](#ios-ilovalardagi-zaifliklari)
+[iOS ilovalardagi zaifliklari](#ios-ilovalardagi-zaifliklari)
 
-**II-BOB.** [**Android va iOS arxitekturasi**
-[36](#android-va-ios-arxitekturasi)](#android-va-ios-arxitekturasi)
+**II-BOB.** [**Android va iOS arxitekturasi**](#android-va-ios-arxitekturasi)
 
-[Android arxitekturasi [36](#_Toc205200120)](#_Toc205200120)
+[Android arxitekturasi](#_Toc205200120)
 
-[Linux kernel [38](#linux-kernel)](#linux-kernel)
+[Linux kernel](#linux-kernel)
 
-[Hardware Abstraction Layer
-[39](#hardware-abstraction-layer)](#hardware-abstraction-layer)
+[Hardware Abstraction Layer](#hardware-abstraction-layer)
 
-[Android Runtime (Dalvik va ART)
-[41](#android-runtime-dalvik-va-art)](#android-runtime-dalvik-va-art)
+[Android Runtime (Dalvik va ART)](#android-runtime-dalvik-va-art)
 
-[Application Framework
-[42](#application-framework)](#application-framework)
+[Application Framework](#application-framework)
 
-[Applications (Ilovalar)
-[45](#applications-ilovalar)](#applications-ilovalar)
+[Applications (Ilovalar)](#applications-ilovalar)
 
-[Java virtual mashina
-[48](#java-virtual-mashina)](#java-virtual-mashina)
+[Java virtual mashina](#java-virtual-mashina)
 
-[Dalvik virtual mashina
-[48](#dalvik-virtual-mashina)](#dalvik-virtual-mashina)
-
-[Android ruxsatlari [49](#android-ruxsatlari)](#android-ruxsatlari)
+[Dalvik virtual mashina](#dalvik-virtual-mashina)](#android-ruxsatlari)](#android-ruxsatlari)
 
 [Ios arxitekturasi [52](#ios-arxitekturasi)](#ios-arxitekturasi)
 

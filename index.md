@@ -3,7 +3,7 @@
 # 
 
 **I-BOB.** [**Mobil ilovalar xavfsizligi**
-[6](#mobil-ilovalar-xavfsizligi)](#mobil-ilovalar-xavfsizligi)
+](#mobil-ilovalar-xavfsizligi)
 
 [Smartfonlarni bozoridagi ulushi](#smartfonlarni-bozoridagi-ulushi)
 

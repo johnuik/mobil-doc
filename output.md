@@ -1,5 +1,3 @@
-**Mobil Pentesting Qo‘llanmasi**
-
 # ***MUNDARIJA***
 
 # 

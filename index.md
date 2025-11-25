@@ -4278,8 +4278,12 @@ imzosi buzilgan-buzilmaganini aniqlash, zararli o‘zgarishlar
 kiritilganini tekshirish va umumiy xavfsizlik darajasini baholash
 imkonini beradi.
 
+
+
+<div align="center">
 <img src="media/media/image87.png"
 style="width:6.5in;height:2.03819in" />
+</div>
 
 Agar ilova faqat V1 imzo sxemasi asosida imzolangan bo‘lsa, bu katta
 xavfsizlik zaifligi hisoblanadi. Chunki bunday imzolangan ilovalar
@@ -4313,8 +4317,12 @@ MessageActivity sinfida rasmda ko‘rsatilgan tarzda kerakli ma’lumotlar
 joylashganini ko‘rish mumkin. Bu tahlil flagni aniqlashda asosiy qadam
 hisoblanadi.
 
+
+
+<div align="center">
 <img src="media/media/image88.png"
 style="width:6.58701in;height:2.85361in" />
+</div>
 
 Kodni tahlil qilish jarayonida ko‘rinib turibdiki, ma’lumot ptlab_key
 nomli kalit orqali ekranga chiqarilmoqda. Bu esa shuni anglatadiki,
@@ -4327,8 +4335,11 @@ ko‘rishimiz mumkin. Bu bosqich flagni aniqlash yo‘lida hal qiluvchi
 ahamiyatga ega bo‘lib, rasmda keltirilgan ko‘rinishda aniq va ravshan
 tarzda aks etgan.
 
+
+<div align="center">
 <img src="media/media/image89.png"
 style="width:6.5in;height:2.49167in" />
+</div>
 
 Bizga kerakli flag *be5be0f9-9c0a-404d-8440-c72193a7b396* qiymati
 bo‘lib, u ilovaning strings.xml faylida ptlab_key kaliti ostida
@@ -4344,8 +4355,11 @@ ishonchli va qulay vositalardan biridir.
 apktool d original.apk -o app-release
 ```
 
+
+<div align="center">
 <img src="media/media/image90.png"
 style="width:6.5in;height:1.86597in" />
+</div>
 
 Endi esa ilovani amalda o‘zgartirish va qayta yig‘ish jarayoniga
 o‘tamiz. Dastlab, .apk faylni dekompilyatsiya qilganingizdan so‘ng,
@@ -4395,8 +4409,10 @@ keytool -genkey -v -keystore my-key.jks -alias myalias -keyalg RSA
 -keysize 2048 -validity 10000
 ```
 
+<div align="center">
 <img src="media/media/image91.png"
 style="width:6.5in;height:2.82014in" />
+</div>
 
 Siz yaratgan my-key.jks sertifikati yordamida endi ilovani imzolash
 mumkin bo‘ladi. Biroq imzolashdan oldin muhim bosqichlardan biri
@@ -4412,8 +4428,10 @@ buyruq orqali app-modded.apk faylni zipalign qilamiz.
 zipalign -p -f 4 app-modded.apk app-aligned.apk
 ```
 
+<div align="center">
 <img src="media/media/image92.png"
 style="width:6.58865in;height:0.47636in" />
+</div>
 
 Zipalign jarayoni muvaffaqiyatli yakunlangach, endi biz ilovani imzolash
 bosqichiga o‘tamiz. Bu jarayon ilovaning yaxlitligini va ishonchliligini
@@ -4429,8 +4447,11 @@ apksigner sign --ks my-release-key.jks --ks-key-alias myalias --out
 app-signed.apk app-aligned.apk
 ```
 
+
+<div align="center">
 <img src="media/media/image93.png"
 style="width:5.14655in;height:1.14599in" />
+</div>
 
 Yuqorida bayon etilgan barcha bosqichlar dekompilyatsiya, o‘zgartirish,
 zipalign va imzolash muvaffaqiyatli yakunlangach, endi ilovaning to‘g‘ri

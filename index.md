@@ -1575,9 +1575,6 @@ style="width:5.12614in;height:4.00278in" />
 9.  O‘rnatish tugagach, siz Android Studioni ishga tushira olasiz, bu
     quyidagi ekranda ko‘rsatilgan.
 
-<img src="media/media/image37.png"
-style="width:4.67685in;height:4.09896in" />
-
 <div align="center">
 <img src="media/media/image37.png"
 style="width:4.67685in;height:4.09896in" />
@@ -1879,8 +1876,10 @@ bo‘lsangiz, quyidagi buyruqdan foydalanishingiz mumkin.
 adb shell pm list packages -3
 ```
 
+<div align="center">
 <img src="media/media/image56.png"
 style="width:6.5in;height:2.16667in" />
+</div>
 
 Agar siz qurilmaga biror bir .apk faylini o‘rnatmoqchi bo‘lsangiz,
 quyidagi buyruq orqali bu jarayonni amalga oshirishingiz mumkin.
@@ -1889,8 +1888,10 @@ quyidagi buyruq orqali bu jarayonni amalga oshirishingiz mumkin.
 adb install Android01.apk
 ```
 
+<div align="center">
 <img src="media/media/image57.png"
 style="width:5.51706in;height:1.06097in" />
+</div>
 
 Agar sizda ilova bir nechta .apk fayllardan iborat bo‘lsa, masalan,
 base.apk va arxitekturaga mos qo‘shimcha modullar (masalan,
@@ -1901,8 +1902,13 @@ ilovani quyidagi buyruq orqali to‘g‘ri tarzda o‘rnatishingiz mumkin.
 adb install-multiple base.apk split_config.arm64_v8a.apk split_config.xhdpi.apk
 ```
 
+
+
+<div align="center">
 <img src="media/media/image58.png"
 style="width:6.60099in;height:0.55784in" />
+</div>
+
 
 Agar siz qurilmada allaqachon o‘rnatilgan ilovaning yangilangan (yoki
 yangi) versiyasini o‘rnatmoqchi bo‘lsangiz, ilovani butunlay o‘chirib
@@ -1912,8 +1918,12 @@ yubormasdan, quyidagi buyruq orqali uni qayta o‘rnatishingiz mumkin.
 adb install -r Android01.apk
 ```
 
+
+
+<div align="center">
 <img src="media/media/image59.png"
 style="width:6.638in;height:1.09691in" />
+</div>
 
 Agar siz qurilmadagi mavjud ilovani ishga tushirmoqchi bo‘lsangiz,
 terminalga quyidagi buyruqni kiriting va Enter tugmasini bosing.
@@ -1922,8 +1932,11 @@ terminalga quyidagi buyruqni kiriting va Enter tugmasini bosing.
 adb shell monkey -p uz.anormobile.retail -v 1
 ```
 
+
+<div align="center">
 <img src="media/media/image60.png"
 style="width:5.64398in;height:2.23588in" />
+</div>
 
 Agar siz qurilmada Google ilovasini ishga tushirib, unda biror matn
 yozmoqchi bo‘lsangiz, bu jarayonni quyidagi ketma-ket buyruqlar orqali
@@ -1933,8 +1946,11 @@ amalga oshirishingiz mumkin.
 bash adb shell input text "Salom Google"
 ```
 
+
+<div align="center">
 <img src="media/media/image61.png"
 style="width:6.5in;height:0.50903in" />
+</div>
 
 ### **Adb buyruqlari**
 
@@ -2066,8 +2082,10 @@ ApkAnalyserni Android Studio orqali ishlatsa ham bo’ladi ishlatish uchun
 Android studioni ochasiz ba Build/Apk Analyser ni tanlab tekshirmoqchi
 bo‘lgan ilovani tanlab olasiz natija quydagicha chiqishi kerak.
 
+<div align="center">
 <img src="media/media/image62.png"
 style="width:5.68481in;height:3.79351in" />
+</div>
 
 ### **APKTool**
 
@@ -2148,8 +2166,10 @@ yaratadi. Misol uchun, siz Androguard yordamida ilova qaysi ruxsatlar
 (permissions) so‘rayotganini, qaysi API chaqiruvlari ishlatilayotganini
 yoki qanday kutubxonalar ishlatilayotganini aniqlay olasiz.
 
+<div align="center">
 <img src="media/media/image63.png"
 style="width:6.5in;height:4.07847in" />
+</div>
 
 Androguardda agar ilova ma’lumotlarni olish uchun *androguard apkid
 ilova_nomi.apk* kamandasi orqali ko’rishimiz mumkin bo‘ladi. Agar
@@ -2221,11 +2241,18 @@ zlib1g-dev wkhtmltopdf
 
 Quyida keltirilgan buyruq yordamida MobSF ni yuklab oling.
 
+
+
+<div align="center">
 <img src="media/media/image64.png"
 style="width:6.5in;height:0.71319in" />
+</div>
 
+
+<div align="center">
 <img src="media/media/image65.png"
 style="width:6.5in;height:1.70833in" />
+</div>
 
 Github repozitoryni yuklab olganingizdan keyin *cd
 Mobile-Security-Framework-MobSF* katologiga kirib oling va *./setup.sh*
@@ -2280,8 +2307,11 @@ tahlilni boshlash mumkin:
 apkleaks -f app.apk -o result.txt
 ```
 
+
+<div align="center">
 <img src="media/media/image66.png"
 style="width:4.27277in;height:3.64966in" />
+</div>
 
 Bu yerda ***-f*** tahlil qilinadigan APK fayl, ***-o*** natijani yozib
 olinadigan fayl. Shuningdek, foydalanuvchi o‘zining maxsus regex
@@ -2342,8 +2372,11 @@ Fridani o‘rnatib olganingizdan keyin uni to‘g‘ri ishlayotgani va
 versiyasini tekshirish uchun quydagi buyruqni terminalda bajarib
 ko‘ring.
 
+
+<div align="center">
 <img src="media/media/image67.png"
 style="width:3.63592in;height:0.87512in" />
+</div>
 
 Android qurilmangiz arxitekturasiga mos keladigan Frida serverini yuklab
 olishingiz kerak. Masalan, qurilmangiz *arm, arm64, x86* yoki *x86_64*
@@ -2385,8 +2418,10 @@ o‘zgartirish uchun quydagicha amallarni bajarishingiz kerak. Adb orqali
 qurulmaga ulanib oling va Frida server joylashgan joyga borib quydagicha
 yozing.
 
+<div align="center">
 <img src="media/media/image68.png"
 style="width:5.95686in;height:1.43194in" />
+</div>
 
 Endi sizning Frida serveringiz ***27042*** portdan emas balki
 ***12345*** portdan malumot chiqaradi va qabul qiladi bu orqali siz
@@ -2394,23 +2429,30 @@ Frida serverga qo’yilgan cheklovni aylanib o‘tishingiz mumkin. Agar siz
 qurulmadagi barcha ilovalar idlarni ko‘rmoqchi bo‘lsangiz terminalga
 quydagicha buyruq yozing va enter tugmasini bosing.
 
+<div align="center">
 <img src="media/media/image69.png"
 style="width:4.40625in;height:1.91667in" />
+</div>
 
 Quyidagi buyruqlar yordamida biz tashqi skriptlarni (JavaScript
 fayllarini) ilovaga yuklay olamiz. Buning uchun ***-l*** opsiyasi orqali
 JavaScript faylini ko‘rsatamiz. ***-f*** opsiyasi esa ilovani topish va
 unga *hook* qilish (ya’ni ulanib, nazorat qilish) uchun ishlatiladi.
 
+<div align="center">
 <img src="media/media/image70.png"
 style="width:6.5in;height:2.87847in" />
+</div>
 
 Diqqat bu ishlashi uchun siz Frida serverni o‘z qurulmangizni masalan
 emulatoringizni *data/local/tmp* fayliga joylashirgan bo‘lishingiz va
 adb orqali Frida serverni ishlatib qo‘yishingiz kerak bo‘ladi.
 
+
+<div align="center">
 <img src="media/media/image71.png"
 style="width:4.56314in;height:1.27101in" />
+</div>
 
 Frida vositasining eng yaxshi jihatlari shundaki, u bepul va ochiq
 manbali, hamda Windows, Linux va macOS kabi turli platformalarni
@@ -2420,15 +2462,20 @@ funksiyalarni, hatto ilova manba kodi bo‘lmasa ham, API darajasida hook
 qilishimiz mumkin. Sizning kampyuteringizga ulangan barcha qurulmalar
 ro‘yhatini olish uchun quydagi buyruqni terminalga yozing.
 
+<div align="center">
 <img src="media/media/image72.png"
 style="width:6.13542in;height:1.0625in" />
+</div>
 
 Ushbu buyruq barcha ishlaydigan jarayonlarni qaytaradigan jarayonlarni
 ro‘yxatga olish uchun ishlatiladi. USB orqali ulangan qurilmadan
 jarayonni qaytarish uchun *-U* opsiyasini qo‘shing.
 
+
+<div align="center">
 <img src="media/media/image69.png"
 style="width:6.07989in;height:2.8125in" />
+</div>
 
 | **Buyruq**                           | **Izoh**                                     |
 |--------------------------------------|----------------------------------------------|

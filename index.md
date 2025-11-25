@@ -1,7 +1,3 @@
-# ***MUNDARIJA***
-
-# 
-
 **I-BOB.** [**Mobil ilovalar xavfsizligi**
 ](#mobil-ilovalar-xavfsizligi)
 
@@ -123,120 +119,94 @@
 
 [Burpsuite](#burpsuite)
 
-[Drozer [101](#drozer)](#drozer)
+[Drozer](#drozer)
 
-[Genymotion [103](#genymotion)](#genymotion)
+[Genymotion](#genymotion)
 
-[Nmap [104](#nmap)](#nmap)
+[Nmap](#nmap)
 
-[Dirb / Dirbuster / FFUF
-[106](#dirb-dirbuster-ffuf)](#dirb-dirbuster-ffuf)
+[Dirb / Dirbuster / FFUF](#dirb-dirbuster-ffuf)
 
-[WAFW00F [107](#wafw00f)](#wafw00f)
+[WAFW00F](#wafw00f)
 
-[Janus Vulnerability Tester
-[109](#janus-vulnerability-tester)](#janus-vulnerability-tester)
+[Janus Vulnerability Tester](#janus-vulnerability-tester)
 
-[iOS xavfsizlik vositalari
-[110](#ios-xavfsizlik-vositalari)](#ios-xavfsizlik-vositalari)
+[iOS xavfsizlik vositalari](#ios-xavfsizlik-vositalari)
 
-[oTool [110](#otool)](#otool)
+[oTool](#otool)
 
-[SSL Kill Switch [112](#ssl-kill-switch)](#ssl-kill-switch)
+[SSL Kill Switch](#ssl-kill-switch)
 
-[Keychain dumper [114](#keychain-dumper)](#keychain-dumper)
+[Keychain dumper](#keychain-dumper)
 
-[LLDB [116](#lldb)](#lldb)
+[LLDB](#lldb)
 
-[Clutch [116](#clutch)](#clutch)
+[Clutch](#clutch)
 
-[Class-dump-z [118](#class-dump-z)](#class-dump-z)
+[Class-dump-z](#class-dump-z)
 
-**V-BOB.** [**Mobil Ilovalar Pentesting Bosqichlari**
-[120](#mobil-ilovalar-pentesting-bosqichlari)](#mobil-ilovalar-pentesting-bosqichlari)
+**V-BOB.** [**Mobil Ilovalar Pentesting Bosqichlari**](#mobil-ilovalar-pentesting-bosqichlari)
 
-[Statik tahlil [120](#statik-tahlil)](#statik-tahlil)
+[Statik tahlil](#statik-tahlil)
 
-[Ilovani virustotal orqali tekshirish
-[121](#ilovani-virustotal-orqali-tekshirish)](#ilovani-virustotal-orqali-tekshirish)
+[Ilovani virustotal orqali tekshirish](#ilovani-virustotal-orqali-tekshirish)
 
-[Ilovani dekompilyatsiya qilish (apktool, jadx-gui)
-[122](#ilovani-dekompilyatsiya-qilish-apktool-jadx-gui)](#ilovani-dekompilyatsiya-qilish-apktool-jadx-gui)
+[Ilovani dekompilyatsiya qilish (apktool, jadx-gui)](#ilovani-dekompilyatsiya-qilish-apktool-jadx-gui)
 
-[Obfusikatsiya [128](#obfusikatsiya)](#obfusikatsiya)
+[Obfusikatsiya](#obfusikatsiya)
 
-[Ilova imzosini tekshirish.
-[131](#ilova-imzosini-tekshirish.)](#ilova-imzosini-tekshirish.)
+[Ilova imzosini tekshirish.](#ilova-imzosini-tekshirish.)
 
-[Ilova kodini tahlil qilish va o‘zgartirish
-[132](#ilova-kodini-tahlil-qilish-va-ozgartirish)](#ilova-kodini-tahlil-qilish-va-ozgartirish)
+[Ilova kodini tahlil qilish va o‘zgartirish](#ilova-kodini-tahlil-qilish-va-ozgartirish)
 
-[Eskirgan va zaif kutubxonalarni aniqlash
-[137](#eskirgan-va-zaif-kutubxonalarni-aniqlash)](#eskirgan-va-zaif-kutubxonalarni-aniqlash)
+[Eskirgan va zaif kutubxonalarni aniqlash](#eskirgan-va-zaif-kutubxonalarni-aniqlash)
 
-[AndroidManifest.xml faylini tahlil qilish
-[138](#androidmanifest.xml-faylini-tahlil-qilish)](#androidmanifest.xml-faylini-tahlil-qilish)
+[AndroidManifest.xml faylini tahlil qilish](#androidmanifest.xml-faylini-tahlil-qilish)
 
-[Hard kod qilib yozilgan malumotlar
-[138](#hard-kod-qilib-yozilgan-malumotlar)](#hard-kod-qilib-yozilgan-malumotlar)
+[Hard kod qilib yozilgan malumotlar](#hard-kod-qilib-yozilgan-malumotlar)
 
-[Resurs fayllarni ko‘rish (res/, assets/)
-[139](#resurs-fayllarni-korish-res-assets)](#resurs-fayllarni-korish-res-assets)
+[Resurs fayllarni ko‘rish (res/, assets/)](#resurs-fayllarni-korish-res-assets)
 
-[Log malumotlarni tekshirish
-[139](#log-malumotlarni-tekshirish)](#log-malumotlarni-tekshirish)
+[Log malumotlarni tekshirish](#log-malumotlarni-tekshirish)
 
-[Debug modni tekshirish
-[140](#debug-modni-tekshirish)](#debug-modni-tekshirish)
+[Debug modni tekshirish](#debug-modni-tekshirish)
 
-[Zaif WebViewdan foydalanish
-[140](#zaif-webviewdan-foydalanish)](#zaif-webviewdan-foydalanish)
+[Zaif WebViewdan foydalanish](#zaif-webviewdan-foydalanish)
 
-[Zaif hashlash va shifrlash algorithmlari
-[141](#zaif-hashlash-va-shifrlash-algorithmlari)](#zaif-hashlash-va-shifrlash-algorithmlari)
+[Zaif hashlash va shifrlash algorithmlari](#zaif-hashlash-va-shifrlash-algorithmlari)
 
-[Backup olishga ruxsat berish oqibatida
-[141](#backup-olishga-ruxsat-berish-oqibatida)](#backup-olishga-ruxsat-berish-oqibatida)
+[Backup olishga ruxsat berish oqibatida](#backup-olishga-ruxsat-berish-oqibatida)
 
-[Statik zaifliklar [142](#statik-zaifliklar)](#statik-zaifliklar)
+[Statik zaifliklar](#statik-zaifliklar)
 
-[Dinamik tahlil [143](#dinamik-tahlil)](#dinamik-tahlil)
+[Dinamik tahlil](#dinamik-tahlil)
 
-[Ilovani qurilmaga yoki emulyatorda o‘rnatish
-[144](#ilovani-qurilmaga-yoki-emulyatorda-ornatish)](#ilovani-qurilmaga-yoki-emulyatorda-ornatish)
+[Ilovani qurilmaga yoki emulyatorda o‘rnatish](#ilovani-qurilmaga-yoki-emulyatorda-ornatish)
 
-[Tarmoq trafikni kuzatish (burp suite, mitmproxy)
-[147](#tarmoq-trafikni-kuzatish-burp-suite-mitmproxy)](#tarmoq-trafikni-kuzatish-burp-suite-mitmproxy)
+[Tarmoq trafikni kuzatish (burp suite, mitmproxy)](#tarmoq-trafikni-kuzatish-burp-suite-mitmproxy)
 
 [Xavfsizlik cheklovlarini sinash (root, emulator, vpn, zararli kod
-deteksiya, SSL pinning)
-[151](#xavfsizlik-cheklovlarini-sinash-root-emulator-vpn-zararli-kod-deteksiya-ssl-pinning)](#xavfsizlik-cheklovlarini-sinash-root-emulator-vpn-zararli-kod-deteksiya-ssl-pinning)
+deteksiya, SSL pinning)](#xavfsizlik-cheklovlarini-sinash-root-emulator-vpn-zararli-kod-deteksiya-ssl-pinning)
 
-[Faoliyatlarni sinash (Activity, Service, BroadcastReceiver)
-[154](#faoliyatlarni-sinash-activity-service-broadcastreceiver)](#faoliyatlarni-sinash-activity-service-broadcastreceiver)
+[Faoliyatlarni sinash (Activity, Service, BroadcastReceiver)](#faoliyatlarni-sinash-activity-service-broadcastreceiver)
 
-[Ma’lumotlar oqimini kuzatish (runtime debugging)
-[156](#malumotlar-oqimini-kuzatish-runtime-debugging)](#malumotlar-oqimini-kuzatish-runtime-debugging)
+[Ma’lumotlar oqimini kuzatish (runtime debugging)](#malumotlar-oqimini-kuzatish-runtime-debugging)
 
-[Umumiy xotira malumotlarini ko‘rish
-[157](#umumiy-xotira-malumotlarini-korish)](#umumiy-xotira-malumotlarini-korish)
+[Umumiy xotira malumotlarini ko‘rish](#umumiy-xotira-malumotlarini-korish)
 
-[API so‘rovlarini kuzatish
-[160](#api-sorovlarini-kuzatish)](#api-sorovlarini-kuzatish)
+[API so‘rovlarini kuzatish](#api-sorovlarini-kuzatish)
 
-[Tapjacking hujumiga tekshirish
-[163](#tapjacking-hujumiga-tekshirish)](#tapjacking-hujumiga-tekshirish)
+[Tapjacking hujumiga tekshirish](#tapjacking-hujumiga-tekshirish)
 
 [Dinamik zaifliklar [165](#dinamik-zaifliklar)](#dinamik-zaifliklar)
 
-**VI-BOB.** [**Hisobot shakllantirish**
-[167](#hisobot-shakllantirish)](#hisobot-shakllantirish)
+**VI-BOB.** [**Hisobot shakllantirish**](#hisobot-shakllantirish)
 
-[Android [167](#android)](#android)
+[Android](#android)
 
-[iOS [167](#ios)](#ios)
+[iOS](#ios)
 
-[API [168](#api)](#api)
+[API](#api)
 
 **1**
 

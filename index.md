@@ -4886,9 +4886,7 @@ Bu funksiyani chetlab o‘tish uchun quydagi usullar keng qo‘llaniladi.
 
 - Frida skript bilan:
 
-- ```bash
-frida -U -n com.example.app -l frida-ssl-pinning-bypass.js
-```
+- frida -U -n com.example.app -l frida-ssl-pinning-bypass.js
 
 - Ilovani dekompilyatsiya qilish.
 

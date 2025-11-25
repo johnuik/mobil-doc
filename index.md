@@ -1140,9 +1140,7 @@ zaif autentifikatsiya yoki auth bypass holatiga olib kelishi mumkin.
 <img src="media/media/image29.png"
 style="width:5.72997in;height:4.70899in" />
 
-**2**
-
-# **Android va iOS arxitekturasi**
+# **II-BOB. Android va iOS arxitekturasi**
 
 ## ***Android arxitekturasi***
 
@@ -1654,9 +1652,8 @@ ruxsatni so‘ray olmaydi va to‘xtashi mumkin.
 | Foydalanuvchi kutubxonasi (Media) | NSMediaLibraryUsageDescription                                | Foydalanuvchi musiqa/media kutubxonasiga kirish.                   |
 | Face ID / Touch ID                | NSFaceIDUsageDescription                                      | Biometrik autentifikatsiya ishlatish.                              |
 
-**3**
 
-# **Mobil ilovalar pentestingi**
+# **III-BOB. Mobil ilovalar pentestingi**
 
 ## **Android Studio va SDK**
 
@@ -1789,9 +1786,7 @@ sinab ko‘rishingiz real qurilmada test hisoblanadi. Bu test qilishning
 eng aniq va ishonchli yo‘li, chunki ilova foydalanuvchiga aynan shu
 qurilmalarda yetib boradi.
 
-**4**
-
-# **Mobil Pentesting Vositalari**
+# **IV-BOB. Mobil Pentesting Vositalari**
 
 ## **Android xavfsizlik vositalari**
 
@@ -3906,9 +3901,7 @@ JavaScript sintaksisini birlashtirib, ilovaga zarar yetkazmasdan real
 vaqt tahlil qilishga yordam beradi. Shu sababli u iOS pentestingda
 reverse engineering uchun muhim vositalardan biri hisoblanadi.
 
-**5**
-
-# **Mobil Ilovalar Pentesting Bosqichlari**
+# **V-BOB. Mobil Ilovalar Pentesting Bosqichlari**
 
 Android ilovasini pentest qilish bu ilovaning zaifliklarini aniqlash va
 tuzatish orqali xavfsizlikni mustahkamlash jarayonidir. Uning maqsadi
@@ -5366,9 +5359,7 @@ cheksiz so‘rov yuborish mumkin.
 
 # 
 
-**6**
-
-#  **Hisobot shakllantirish**
+#  **VI-BOB. Hisobot shakllantirish**
 
 Mazkur hisobot mobil ilovalarning xavfsizlik holatini baholash, mavjud
 zaifliklarni aniqlash va ularni bartaraf etish bo‘yicha tavsiyalar

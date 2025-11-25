@@ -1991,7 +1991,7 @@ bo‘lsangiz *adb push fayl_manzili
 faylni_qurulmaga_joylashtirish_manzili* shu kamanda orqali
 joylashtirishingiz mumkin bo‘ladi.
 
-adb push ./Android.docx /sdcard/Documents
+```adb push ./Android.docx /sdcard/Documents```
 
 <img src="media/media/image52.png"
 style="width:6.2431in;height:3.57048in" />
@@ -2005,7 +2005,7 @@ log yozuvlarini ko‘rish uchun terminalga adb logcat buyrug‘ini kiritish
 kifoya. Ushbu buyruq orqali tizimda sodir bo‘layotgan barcha jarayonlar,
 xatoliklar va bildirishnomalar real vaqt rejimida aks etadi.
 
-adb logcat
+```adb logcat```
 
 <img src="media/media/image53.png"
 style="width:5.59138in;height:2.80584in" />
@@ -2013,7 +2013,7 @@ style="width:5.59138in;height:2.80584in" />
 Agar siz faqatgina ma’lum bir ilovaga tegishli log yozuvlarini
 ko‘rmoqchi bo‘lsangiz, quyidagi buyruqdan foydalanishingiz mumkin.
 
-adb logcat \| grep uz.anormobile.retail
+```adb logcat \| grep uz.anormobile.retail```
 
 <img src="media/media/image54.png"
 style="width:6.5in;height:2.20208in" />
@@ -2025,7 +2025,7 @@ bog‘lanishingiz kerak bo‘ladi. Buning uchun birinchi navbatda
 qurilmaning IP manzilini aniqlab, so‘ngra quyidagi buyruq yordamida
 ulanishni amalga oshirasiz.
 
-adb connect 192.168.160.125:5555
+```adb connect 192.168.160.125:5555```
 
 <img src="media/media/image55.png"
 style="width:6.5346in;height:1.53339in" />
@@ -2036,7 +2036,7 @@ bemalol yuborishingiz mumkin bo‘ladi.
 Agar siz qurilmadan ma’lum bir ilovani butunlay o‘chirib tashlamoqchi
 bo‘lsangiz, quyidagi buyruqdan foydalanishingiz mumkin.
 
-adb shell pm list packages -3
+```adb shell pm list packages -3```
 
 <img src="media/media/image56.png"
 style="width:6.5in;height:2.16667in" />
@@ -2044,7 +2044,7 @@ style="width:6.5in;height:2.16667in" />
 Agar siz qurilmaga biror bir .apk faylini o‘rnatmoqchi bo‘lsangiz,
 quyidagi buyruq orqali bu jarayonni amalga oshirishingiz mumkin.
 
-adb install Android01.apk
+```adb install Android01.apk```
 
 <img src="media/media/image57.png"
 style="width:5.51706in;height:1.06097in" />
@@ -2054,8 +2054,8 @@ base.apk va arxitekturaga mos qo‘shimcha modullar (masalan,
 arm64_v8a.apk, x86.apk va boshqalar) ko‘rinishida bo‘lsa, u holda bu
 ilovani quyidagi buyruq orqali to‘g‘ri tarzda o‘rnatishingiz mumkin.
 
-adb install-multiple base.apk split_config.arm64_v8a.apk
-split_config.xhdpi.apk
+```adb install-multiple base.apk split_config.arm64_v8a.apk
+split_config.xhdpi.apk```
 
 <img src="media/media/image58.png"
 style="width:6.60099in;height:0.55784in" />
@@ -2064,7 +2064,7 @@ Agar siz qurilmada allaqachon o‘rnatilgan ilovaning yangilangan (yoki
 yangi) versiyasini o‘rnatmoqchi bo‘lsangiz, ilovani butunlay o‘chirib
 yubormasdan, quyidagi buyruq orqali uni qayta o‘rnatishingiz mumkin.
 
-adb install -r Android01.apk
+```adb install -r Android01.apk```
 
 <img src="media/media/image59.png"
 style="width:6.638in;height:1.09691in" />
@@ -2072,7 +2072,7 @@ style="width:6.638in;height:1.09691in" />
 Agar siz qurilmadagi mavjud ilovani ishga tushirmoqchi bo‘lsangiz,
 terminalga quyidagi buyruqni kiriting va Enter tugmasini bosing.
 
-adb shell monkey -p uz.anormobile.retail -v 1
+```adb shell monkey -p uz.anormobile.retail -v 1```
 
 <img src="media/media/image60.png"
 style="width:5.64398in;height:2.23588in" />
@@ -2081,7 +2081,7 @@ Agar siz qurilmada Google ilovasini ishga tushirib, unda biror matn
 yozmoqchi bo‘lsangiz, bu jarayonni quyidagi ketma-ket buyruqlar orqali
 amalga oshirishingiz mumkin.
 
-adb shell input text "Salom Google"
+```adb shell input text "Salom Google"```
 
 <img src="media/media/image61.png"
 style="width:6.5in;height:0.50903in" />
@@ -2253,11 +2253,11 @@ APKTool, masalan, ilovani test maqsadida modifikatsiya qilish yoki
 xavfsizlik testlarini o‘tkazishda juda foydalidir. APKToolni ishlatish
 uchun komanda satrida quyidagi kabi buyruqlardan foydalaniladi.
 
-apktool d app.apk yoki apktool d app.apk -o my_app
+```apktool d app.apk yoki apktool d app.apk -o my_app```
 
 Bu ilovani dekompilyatsiya qiladi.
 
-apktool b app_folder -o modifed.apk yoki apktool b app_folder
+```apktool b app_folder -o modifed.apk yoki apktool b app_folder```
 
 Bu kod teskari muhandislik qilingan papkani yana APK faylga yig‘adi.
 APKTool Javada yozilgan bo‘lib, kross-platformalidir — ya’ni Windows,
@@ -2352,14 +2352,14 @@ lozim. Birinchi navbatda kali linux Ichida git o‘rnatilganiga ishon
 hosil qilib oling agar o‘rnatilmagan bo‘lsa uni quydagicha yuklab
 olishingiz mumkin.
 
-sudo apt-get install git
+```sudo apt-get install git```
 
 Keyin quydagi buyruqlar orqali kerakli barcha vositalarni o‘rnatib
 olishingiz mumkin.
 
-sudo apt install python3-dev python3-venv python3-pip build-essential
+```sudo apt install python3-dev python3-venv python3-pip build-essential
 libffi-dev libssl-dev libxml2-dev libxslt1-dev libjpeg62-turbo-dev
-zlib1g-dev wkhtmltopdf
+zlib1g-dev wkhtmltopdf```
 
 Quyida keltirilgan buyruq yordamida MobSF ni yuklab oling.
 
@@ -2418,7 +2418,7 @@ quyidagi narsalarni topish mumkin.
 APKLeaksni ishlatish juda oddiy. Masalan, quyidagicha buyruq orqali
 tahlilni boshlash mumkin:
 
-apkleaks -f app.apk -o result.txt
+```apkleaks -f app.apk -o result.txt```
 
 <img src="media/media/image66.png"
 style="width:4.27277in;height:3.64966in" />
@@ -2449,9 +2449,9 @@ SSL Pinning bypass, va boshqalar amalga oshiriladi. Fridani yuklab olish
 uchun rasmiy sayt *<https://frida.re>* yoki python orqali yuklab
 olsangiz bo‘ladi.
 
-pip install frida-tools
+```pip install frida-tools```
 
-pip install frida
+```pip install frida```
 
 Frida serverni <https://github.com/frida/frida/releases> oraqali yuklab
 olishingiz mumkin. Frida serverni yuklab olayotganda qurulma masalan
@@ -2490,15 +2490,15 @@ versiyasi bilan siz yuklab olmoqchi bo‘lgan Frida server versiyasi bir
 xil bo‘lishi kerak. Frida serverni quydagicha qilib o‘z qurulmangizga
 o‘rnatib ishga tushursangiz bo‘ladi.
 
-adb push frida-server /data/local/tmp/
+```adb push frida-server /data/local/tmp/```
 
-adb shell
+```adb shell```
 
-su
+```su```
 
-chmod 755 /data/local/tmp/frida-server
+```chmod 755 /data/local/tmp/frida-server```
 
-/data/local/tmp/frida-server
+```/data/local/tmp/frida-server```
 
 Bazi bir ilovalarda Frida-serverni anilashga kod yozilgan bo‘ladi va
 Frida serverni siz ishga tushurganingizda ilova ishdan chiqadi bu paytda
@@ -2609,7 +2609,7 @@ MAVS vositasi juda yengil va soddalashtirilgan CLI (komanda qatori
 interfeysi) orqali ishlaydi. Asosan Linux yoki macOS tizimlarida
 ishlatiladi. Quyidagi buyruq orqali oddiy tahlil boshlab yuboriladi.
 
-python3 mavs.py -f path/to/app.apk -o output/
+```python3 mavs.py -f path/to/app.apk -o output/```
 
 Bu yerda *-f* tahlil qilinadigan APK fayl, *-o* hisobot saqlanadigan
 papka.
@@ -2885,7 +2885,7 @@ buyruqlar yordamida unga ulanib, ilovani “hujum ostida” sinab ko‘rasiz.
 Masalan, quyidagi buyruq bilan siz ilovani ishga tushirishingiz va unga
 ulanishingiz mumkin:
 
-objection -g com.example.app explore
+```objection -g com.example.app explore```
 
 Bu buyruqdan so‘ng sizga qulay CLI interfeys ochiladi va u orqali
 quyidagilarni amalga oshirishingiz mumkin. env — ilova ichki muhitidagi
@@ -3139,11 +3139,11 @@ himoyalanmagan, va qaysi xizmatlar zaif bo‘lishi mumkinligini aniqlash
 imkonini beradi. Misol uchun, siz quyidagi kabi oddiy buyruq orqali
 maqsadli serverda ochiq portlarni tekshirishingiz mumkin:
 
-nmap api.example.com
+```nmap api.example.com```
 
 Agar siz xizmat versiyalarini ham aniqlamoqchi bo‘lsangiz:
 
-nmap -sV api.example.com
+```nmap -sV api.example.com```
 
 Bu holatda sizga API serverda ochiq bo‘lgan portlar (masalan, 80, 443,
 22, 3306) va ular orqali ishlayotgan xizmatlar (Apache, nginx, SSH,
@@ -3154,7 +3154,7 @@ skriptlarni ishga tushirishingiz mumkin. Masalan, siz --script=vuln
 bayrog‘i orqali serverdagi mashhur zaifliklarga (SQL injection,
 Heartbleed, Shellshock, va boshqalar) tekshiruv o‘tkazishingiz mumkin:
 
-nmap --script vuln api.example.com
+```nmap --script vuln api.example.com```
 
 Mobil xavfsizlik kontekstida Nmap quyidagi ishlarda qo‘l keladi. Ilova
 ulanishga harakat qilayotgan API serverlar tahlili. Ichki tarmoqlarda
@@ -3194,7 +3194,7 @@ katalog yoki fayl mavjud degani. Dirb juda sodda ishlaydi, lekin kuchli
 recursive (rekursiv) qidiruvga ega emas, shuning uchun u faqat birinchi
 darajali kataloglarni yaxshi ochadi.
 
-dirb https://example.com /usr/share/wordlists/dirb/common.txt
+```dirb https://example.com /usr/share/wordlists/dirb/common.txt```
 
 Bu buyruq orqali Dirb common.txt faylidagi katalog nomlarini
 https://example.com saytiga birma-bir so‘rov qilib sinaydi. DirBuster
@@ -3222,8 +3222,8 @@ hatto cookie va header’lardagi qiymatlarni ham brutforce qilishingiz
 mumkin. Bu vosita ko‘proq zamonaviy tahlilchilarga mo‘ljallangan bo‘lib,
 juda ko‘p sozlamalarni qo‘llab-quvvatlaydi.
 
-ffuf -u https://example.com/FUZZ -w
-/usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
+```ffuf -u https://example.com/FUZZ -w
+/usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt```
 
 Bu yerda *FUZZ* brutforce qilinadigan joy. *FFUF* ushbu *URL*da *FUZZ*
 o‘rniga so‘zlar ro‘yxatidagi har bir qiymatni qo‘yadi va javob holatini
@@ -3262,7 +3262,7 @@ ba’zida versiyasini ham aniqlab beradi.
 
 Misol uchun, siz quyidagi buyruqni ishga tushirishingiz mumkin:
 
-wafw00f https://example.com
+```wafw00f https://example.com```
 
 Natijada WAFW00F sizga quyidagi kabi ma’lumotlarni beradi.
 
@@ -3373,20 +3373,20 @@ ko‘rishingiz mumkin:
 Misol uchun, siz quyidagi buyruq orqali biror ilovaning binarida
 ishlatilayotgan kutubxonalarni ko‘rishingiz mumkin.
 
-otool -L MyApp
+```otool -L MyApp```
 
 Bu sizga ilova ishlatayotgan barcha .dylib (Dynamic Library) fayllarni
 ro‘yxat qilib beradi. Bu juda muhim, chunki ba’zida zararli yoki nojo‘ya
 kutubxonalar orqali ilovaga ekspluatatsiya yo‘llari ochilishi mumkin.
 
-otool -Vt MyApp
+```otool -Vt MyApp```
 
 Bu orqali siz ilovadagi barcha function symbol va ularning xotira
 manzillarini ko‘rishingiz mumkin, ya’ni bu kodni disassembling
 darajasida tahlil qilish imkonini beradi. Shuningdek, quyidagilar ham
 tahlil qilish mumkin.
 
-otool -arch arm64 -Iv MyApp
+```otool -arch arm64 -Iv MyApp```
 
 Bu esa ilovaning Info.plist ichidagi entitlements (masalan:
 com.apple.security.application-groups, get-task-allow, aps-environment)
@@ -3539,7 +3539,7 @@ beradi. Keychain Dumper foydali bo‘lgan holatlar:
 
 Oddiy foydalanish:
 
-./keychain_dumper
+```./keychain_dumper```
 
 Natijada sizga quyidagilar haqida to‘liq ma’lumot chiqadi:
 
@@ -3601,11 +3601,11 @@ tahlil qilish imkoniyatiga ega bo‘lasiz. Masalan, expr buyrug‘i
 yordamida runtimeda biror o‘zgaruvchining qiymatini ko‘rish yoki
 o‘zgartirish mumkin:
 
-expr myVar = 123
+```expr myVar = 123```
 
 Yoki ilova ishga tushganida viewDidLoad funksiyasida to‘xtash uchun:
 
-breakpoint set --name viewDidLoad
+```breakpoint set --name viewDidLoad```
 
 LLDB terminal asosida ishlaydi va odatda Xcode, debugserver, yoki Frida
 kabi vositalar bilan birga qo‘llaniladi. iOS ilovalarda tahlil olib
@@ -3636,11 +3636,11 @@ va undan odatda terminal orqali foydalaniladi.
 Masalan, quyidagi buyruq bilan qurilmadagi barcha ilovalarni ko‘rish
 mumkin:
 
-clutch -i
+```clutch -i```
 
 Va ma’lum bir ilovani decrypted qilish uchun:
 
-clutch -d com.example.app
+```clutch -d com.example.app```
 
 Natijada decrypted bo‘lgan .ipa fayl */var/tmp/clutch* ichida hosil
 bo‘ladi va siz uni Ghidra, Hopper, class-dump, yoki oTool orqali tahlil
@@ -3678,7 +3678,7 @@ qilish yoki kuzatish kerakligini tushunishga yordam beradi. Masalan,
 quyidagi buyruq orqali siz ilovaning barcha classlarini chiqarib
 olishingiz mumkin:
 
-class-dump-z -H MyApp -o headers/
+```class-dump-z -H MyApp -o headers/```
 
 Natijada siz headers/ papkasida ilovadagi barcha .h fayllarni olasiz. Bu
 fayllar ilovaning interface qismini ko‘rsatadi va siz kodni aslida
@@ -3743,13 +3743,13 @@ mumkin:
 Ishlatish buyruqlariga o‘tadigan bo‘lsak, quyidagi buyruq orqali biz
 avtomatik analiz qilishimiz mumkin:
 
-r2 -A Runner.app
+```r2 -A Runner.app```
 
-otool -L MyApp
+```otool -L MyApp```
 
 Keyin esa biz kutubxonalarni quyidagicha aniqlashimiz mumkin bo‘ladi.
 
-il
+```il```
 
 Bu sizga ilova ishlatayotgan barcha .dylib (Dynamic Library) fayllarni
 ro‘yxat qilib beradi. Bu juda muhim, chunki ba’zida zararli yoki nojo‘ya
@@ -3757,7 +3757,7 @@ kutubxonalar orqali ilovaga ekspluatatsiya yo‘llari ochilishi mumkin.
 Quyidagi bu buyruq orqali esa import qilingan funksiyalarni ko‘rishimiz
 mumkin bo‘ladi:
 
-ii
+```ii```
 
 *ii*~*objc_msgSend* funksiyasi ilovada dynamic metod chaqiruvlar
 mavjudligini bildiradi. Bu turdagi chaqiruvlar kompilyatsiya vaqtida
@@ -3766,7 +3766,7 @@ bo‘ladi.Frida yoki debugger orqali hook qilib metodni o‘zgartirish yoki
 ma’lumotni o‘g‘irlash mumkin. Quyidagi buyruq orqali esa eksport
 qilingan funksiyalarni aniqlashimiz mumkin bo‘ladi:
 
-ie
+```ie```
 
 *ie* buyrug‘i ilovadan tashqi tomonga eksport qilinadigan funksiyalarni
 ko‘rsatadi. Agar bu ro‘yxatda xavfsizlikka oid funksiyalar (system,
@@ -3776,7 +3776,7 @@ uchun ochiq nuqtalar hisoblanadi. Shuning uchun ie orqali zaif joylarni
 topish va eksploit yozish uchun muhim ma’lumotlar olinadi. Quyidagi
 buyruq orqali esa biz stringlar ro‘yhatini olishimiz mumkin bo‘ladi.
 
-iz
+```iz```
 
 *iz* buyrug‘i binar ichidagi matn (string) ma’lumotlarni ko‘rsatadi. Bu
 orqali login parollar, API kalitlari, URL, token, debugging ma’lumotlar
@@ -3839,7 +3839,7 @@ objdump — bu Unix va Linux tizimlarida ishlatiladigan kuchli statik
 tahlil vositasi bo‘lib, u binar fayllar (masalan, ELF, Mach-O, PE)
 haqida turli ma’lumotlarni ko‘rsatadi.
 
-objdump -d MyApp.app
+```objdump -d MyApp.app```
 
 Quyida objdump dasturiy vositasini barcha buyruqlarini ko\`rishimiz
 mumkin.
@@ -3900,11 +3900,11 @@ scripting shell bo‘lib, iOS ilovalari ustida real vaqtda dinamik tahlil
 qilish imkoniyatini beradi. U ayniqsa jailbreak qilingan iPhone/iPad da
 ishlatiladi. Ilovani PIDni toppish.
 
-ps aux \| grep \<ilova_nomi\>
+```ps aux \| grep \<ilova_nomi\>```
 
 Cycript orqali ulanish:
 
-cycript -p \<ilova_nomi_yoki_ilova_PID_raqami\>
+```cycript -p \<ilova_nomi_yoki_ilova_PID_raqami\>```
 
 Ulanganingizdan so‘ng *cy#* ko‘rinishi chiqsa — Cycript shell ochilgan
 bo‘ladi.
@@ -3921,32 +3921,32 @@ bo‘ladi.
 
 Misol uchun UI tahlilini ko\`rib chiqaylik bunda quyidagicha boladi:
 
-cy# UIApp.keyWindow.recursiveDescription().toString()
+```cy# UIApp.keyWindow.recursiveDescription().toString()```
 
 Barcha classlarni chiqarish.
 
-cy# objc_getClassList()
+```cy# objc_getClassList()```
 
 Classdagi metodlar uchun quyidagi buyruqni qo\`llaymiz.
 
-cy# CYClassDump("LoginViewController")
+```cy# CYClassDump("LoginViewController")```
 
 Login / parol bypass qilish.
 
-cy# \[LoginManager isLoggedIn\] false
+```cy# \[LoginManager isLoggedIn\] false```
 
-cy# \[LoginManager setLoggedIn:true\]
+```cy# \[LoginManager setLoggedIn:true\]```
 
-cy# \[LoginManager isLoggedIn\] true
+```cy# \[LoginManager isLoggedIn\] true```
 
 Misol uchun JailBreak Detectionni ochirish bunda quyidagicha yondashuv
 qilsak bo‘ladi.
 
-cy# \[AntiJailbreakManager isDeviceJailbroken\] true
+```cy# \[AntiJailbreakManager isDeviceJailbroken\] true```
 
-cy# \[AntiJailbreakManager setDeviceJailbroken:false\]
+```cy# \[AntiJailbreakManager setDeviceJailbroken:false\]```
 
-cy# \[AntiJailbreakManager isDeviceJailbroken\] false
+```cy# \[AntiJailbreakManager isDeviceJailbroken\] false```
 
 Cycript — iOS ilovalari ustida dynamic analysis qilish uchun
 ishlatiladigan kuchli pentesting vositasidir. U ilovaning ishlayotgan
@@ -4314,7 +4314,7 @@ keldi. Bu jarayonda biz apktool vositasidan foydalanamiz u Android
 ilovalarini dekompilyatsiya va qayta kompilyatsiya qilishda eng
 ishonchli va qulay vositalardan biridir.
 
-apktool d original.apk -o app-release
+```apktool d original.apk -o app-release```
 
 <img src="media/media/image90.png"
 style="width:6.5in;height:1.86597in" />
@@ -4326,7 +4326,7 @@ fayllar ko‘rinishida joylashgan bo‘ladi. Har qanday .smali faylni oching
 (masalan, MainActivity.smali), so‘ng unga kichik o‘zgarish kiriting bu
 matn, log yozuvi yoki shart operatori bo‘lishi mumkin.
 
-const-string v0, "You Have Hacked Been"
+```const-string v0, "You Have Hacked Been"
 
 const/4 v1, 0x1
 
@@ -4335,14 +4335,14 @@ Landroid/widget/Toast;-\>makeText(Landroid/content/Context;Ljava/lang/CharSequen
 
 move-result-object v0
 
-invoke-virtual {v0}, Landroid/widget/Toast;-\>show()V
+invoke-virtual {v0}, Landroid/widget/Toast;-\>show()V```
 
 Masalan yuqoridagi kodni MainActivity faylga joylashtiring bu kod
 Ilovada Toast chiqishini taminlaydi va o‘zgartirishni kiritgach, faylni
 saqlang. Endi esa ilovani qayta kompilyatsiya qilish uchun quyidagi
 buyruqdan foydalaning.
 
-apktool b app-release -o app-modded.apk
+```apktool b app-release -o app-modded.apk```
 
 Qayta kompilyatsiya jarayonida buyruq berilayotgan papka nomi, ya’ni
 app-release, bu ilgari apktool vositasi orqali dekompilyatsiya qilingan
@@ -4358,8 +4358,8 @@ sertifikati kerak bo‘ladi. Agar sizda mavjud bo‘lmasa, uni yaratish
 uchun keytool vositasidan foydalanamiz. Quyidagi buyruq orqali yangi
 sertifikat yaratishingiz mumkin.
 
-keytool -genkey -v -keystore my-key.jks -alias myalias -keyalg RSA
--keysize 2048 -validity 10000
+```keytool -genkey -v -keystore my-key.jks -alias myalias -keyalg RSA
+-keysize 2048 -validity 10000```
 
 <img src="media/media/image91.png"
 style="width:6.5in;height:2.82014in" />
@@ -4374,7 +4374,7 @@ ilovaning samarali ishlashini ta’minlaydi va Google Play kabi
 platformalarda tekshiruvdan muammosiz o‘tishiga yordam beradi. Quyidagi
 buyruq orqali app-modded.apk faylni zipalign qilamiz.
 
-zipalign -p -f 4 app-modded.apk app-aligned.apk
+```zipalign -p -f 4 app-modded.apk app-aligned.apk```
 
 <img src="media/media/image92.png"
 style="width:6.58865in;height:0.47636in" />
@@ -4388,8 +4388,8 @@ Imzolash uchun biz apksigner vositasidan foydalanamiz. Quyidagi buyruq
 orqali siz app-aligned.apk faylni avval yaratgan my-key.jks sertifikati
 yordamida imzolab olishingiz mumkin.
 
-apksigner sign --ks my-release-key.jks --ks-key-alias myalias --out
-app-signed.apk app-aligned.apk
+```apksigner sign --ks my-release-key.jks --ks-key-alias myalias --out
+app-signed.apk app-aligned.apk```
 
 <img src="media/media/image93.png"
 style="width:5.14655in;height:1.14599in" />
@@ -4403,7 +4403,7 @@ hisoblanadi.
 Imzo holatini tekshirish uchun terminalga quyidagi buyruqni kiritish
 kifoya.
 
-keytool -list -v -keystore my-release-key.jks
+```keytool -list -v -keystore my-release-key.jks```
 
 <img src="media/media/image94.png"
 style="width:6.5in;height:1.76042in" />
@@ -4508,7 +4508,7 @@ tushunishdir. Adb orqali ilova log malumotlarini ko’rishi mumkin.
 Quydagi buyruqni o’z terminalingizga kiriting va enter buyrug’uni
 bosing.
 
-adb logcat \| grep com.exmaple.app
+```adb logcat \| grep com.exmaple.app```
 
 <img src="media/media/image96.png"
 style="width:6.49919in;height:2.19764in" />
@@ -4758,18 +4758,18 @@ Bu muhim bosqichda biz sertifikatimiz formatini o‘zgartirib olishimiz
 kerak bo‘ladi buni amalga oshirishimiz uchun OpenSSL orqali amalga
 oshiramiz.
 
-openssl x509 -inform DER -in cacert.der -out cacert.pem
+```openssl x509 -inform DER -in cacert.der -out cacert.pem```
 
 Endi esa bizga sertifikatning issuer (beruvchi tashkilot) hash qiymatini
 olish kerak bo‘ladi. Quyidagi buyruq bu ishda bizga yordam beradi.
 
-openssl x509 -inform PEM -subject_hash_old -in cacert.pem \|head -1
+```openssl x509 -inform PEM -subject_hash_old -in cacert.pem \|head -1```
 
 Keling, avvalgi buyruq natijasi 9a5ba575 deb faraz qilaylik. Endi siz
 sertifikat faylini aynan shu qiymatga qayta nomlashingiz va oxiriga .0
 kengaytmasini qo‘shishingiz kerak bo‘ladi.
 
-mv cacert.pem 9a5ba575.0
+```mv cacert.pem 9a5ba575.0```
 
 Keyin bu sertifikatni adb orqali qurulmaga o‘rnatish kerak bo‘ladi bu
 qurulma root qurulma bo‘lishi kerak agar root qurulma bo‘lmasa xatolik
@@ -4946,7 +4946,7 @@ Bu funksiyani chetlab o‘tish uchun quydagi usullar keng qo‘llaniladi.
 
 - Frida skript bilan:
 
-- frida -U -n com.example.app -l frida-ssl-pinning-bypass.js
+- ```frida -U -n com.example.app -l frida-ssl-pinning-bypass.js```
 
 - Ilovani dekompilyatsiya qilish.
 
@@ -4974,7 +4974,7 @@ olishi mumkin. Zaiflikni kelib chiqishi sababi quydagilar.
 
 Zaiflikdan foydalanish uchun terminalga quydagi kodni yozing.
 
-adb shell am start -n com.example.app/.SecretActivity
+```adb shell am start -n com.example.app/.SecretActivity```
 
 Zaiflik oqibatida quydagi xavflar sodir bo‘ladi.
 
@@ -4988,7 +4988,7 @@ muloqot qilishi mumkin. Zaiflikni kelib chiqishi sababi Service ochiq va
 hech qanday tekshiruvsiz ishlov beruvchi bo‘lsa quydagi kodni bajarib
 zaiflikni tekshirish mumkin.
 
-adb shell am startservice -n com.example.app/.MyService
+```adb shell am startservice -n com.example.app/.MyService```
 
 Zayiflikdan foydalanish uchun terminalga quydagi kodni yozing.
 
@@ -5007,12 +5007,12 @@ quydagilar.
 
 Zaiflikdan foydalanish uchun terminalga quydagi kodni yozing.
 
-adb shell am broadcast -a com.example.app.CUSTOM_BROADCAST
+```adb shell am broadcast -a com.example.app.CUSTOM_BROADCAST```
 
 Agar extra parametr kerak bo‘lsa:
 
-adb shell am broadcast -a com.example.app.CUSTOM_BROADCAST --es key
-value
+```adb shell am broadcast -a com.example.app.CUSTOM_BROADCAST --es key
+value```
 
 ### **Ma’lumotlar oqimini kuzatish (runtime debugging)**
 
@@ -5036,9 +5036,9 @@ Ma’lumotlar oqimini kuzatish uchun quydagi vositalar kerak bo‘ladi.
 funktsiyalarni tutib, ularning argument va natijalarini ko‘rish imkonini
 beradi.
 
-frida -U -n com.example.app -l intercept.js
+```frida -U -n com.example.app -l intercept.js```
 
-//intercept.js
+```//intercept.js
 
 Java.perform(function () {
 
@@ -5055,7 +5055,7 @@ password) {
 
     };
 
-});
+});```
 
 Bu kod bajarilishi natijasida ilova ishga tushganda foydalanuvchi login
 parolini real vaqt rejimida terminalda ko‘rasiz.
@@ -5077,7 +5077,7 @@ objection -g com.example.app explore
 **Logcat –** Ilova ish vaqtida chiqarayotgan loglar orqali ma’lumot
 oqimini passiv ravishda kuzatish.
 
-adb logcat \| grep com.example.app
+```adb logcat \| grep com.example.app```
 
 ### **Umumiy xotira malumotlarini ko‘rish**
 
@@ -5093,13 +5093,13 @@ ilovaning xususiy fayllari (internal storage) saqlanadi. Faqat rootli
 qurilmada kirish mumkin. Terminal orqali quydagi buyruqlar
 ketma-ketligini yozish kerak bo‘ladi.
 
-adb shell
+```adb shell```
 
-su
+```su```
 
-cd /data/data/com.example.app/
+```cd /data/data/com.example.app/```
 
-ls -la
+```ls -la```
 
 <img src="media/media/image116.png"
 style="width:5.72409in;height:1.37411in" />
@@ -5150,16 +5150,16 @@ Agar ilova Android keystore yoki credential storagedan foydalansa,
 ma’lumotlar tizim darajasida shifrlangan bo‘ladi. Biroq noto‘g‘ri
 sozlamalarda ularga ham kirish mumkin.
 
-adb shell
+```adb shell```
 
-su
+```su```
 
 strings /data/misc/keystore/user_0/\*
 
 Ba’zi ilovalar xatoliklar yoki log yozuvlar orqali sezilarli darajadagi
 ma’lumotlarni ochib yuborishi mumkin.
 
-adb logcat \| grep com.example.app
+```adb logcat \| grep com.example.app```
 
 ### **API so‘rovlarini kuzatish**
 
@@ -5231,7 +5231,7 @@ alt="Rooted Android traffic proxied with VPN" />
 intercept vosita. Kam resurs talab qiladi. Foydalanish uchun terminalga
 quydagi kodni yozish kerak.
 
-mitmproxy --mode transparent --listen-port 8080
+```mitmproxy --mode transparent --listen-port 8080```
 
 - Qurilmada proksi: kompyuter_ip:8080
 

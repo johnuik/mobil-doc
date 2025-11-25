@@ -694,8 +694,8 @@ JADX-GUIni ochish uchun siz shunchaki jadx-guiterminalga kirishingiz
 mumkin. Ushbu vosita bizga APKdan ma’lumot olish va dekompilyatsiya
 qilingan kodni ko‘rish imkonini beradi.
 
-*Maxfiy ma’lumotlarning shifrlanmagan holda ilova ichki xotirasiga
-saqlash*
+**Maxfiy ma’lumotlarning shifrlanmagan holda ilova ichki xotirasiga
+saqlash**
 
 Android mobil ilovada kritik ma'lumotlarni ochiq holatda saqlash — bu
 xavfsizlik zaifligi hisoblanadi. Mazkur turdagi zaiflik *“MASWE-0006”*
@@ -711,7 +711,7 @@ xavfsizligini ta’minlashning ochiq loyihasi)ning *OWASP Mobile Top 10
 
 *Tavsiya:* Kritik ma’lumotlarni shifrlangan holatda saqlash
 
-*Xavfsiz bo‘lmagan sertifikat tekshiruvi*
+**Xavfsiz bo‘lmagan sertifikat tekshiruvi**
 
 Ekpertiza davrida mobil ilova va server o‘rtasida uchinchi tomonning
 aralashuvi bilan tarmoqdagi trafikni qo‘lga olish va ta’sir o‘tkazish
@@ -734,7 +734,7 @@ chiqish holatiga olib kelishi mumkin.
 *Tavsiya:* Ma’lumotlarni uzatish jarayonini “SSL pinning”
 texnologiyasidan foydalanish.
 
-*Ilova so‘nggi platforma talqiniga moslashtirilmaganligi*
+**Ilova so‘nggi platforma talqiniga moslashtirilmaganligi**
 
 Mobil ilova android operatsion tizimining 5 versiyasi uchun xavfsizlik
 yangilanishlari to‘xtatilgan bo‘lib, mobil ilovani joriy muhitda ishga
@@ -758,7 +758,7 @@ o‘rnatish. Mobil ilova ish jarayonida, ilova o‘rnatilgan muhitning
 xavfsiz ekanligini tekshiruvchi metod va funksiyalardan foydalanish
 orqali ma’lumotlar xavfsizligni ta’minlashni joriy etish.
 
-*Maxfiy ma’lumotlar jurnalga yozilishi*
+**Maxfiy ma’lumotlar jurnalga yozilishi**
 
 Mobil ilovada muhim turdagi ma’lumotlarni jurnallarga yozish xavfsizlik
 xavfini tug‘diradi. Mazkur turdagi zaiflik *“MASWE-0001”* (inglizcha.
@@ -779,7 +779,7 @@ zaiflashtirishi mumkin.
 qilish uchun foydalanilishi kerak. Ilova foydalanuvchilarga
 foydalanishga chiqarilganda jurnalni olib tashlash talab etiladi.
 
-*Xavfsiz bo‘lmagan havolalar*
+**Xavfsiz bo‘lmagan havolalar**
 
 Ilovadagi URL manzillar teskari muhandislik usulini ishlatgan holda
 oxirgi nuqtalar va kutubxonalar haqida maʼlumotlarni olish imkoniyatini
@@ -804,7 +804,7 @@ qo‘lga kiritish holatiga olib kelishi mumkin.
 *Tavsiya:* Ilovada foydalanilayotgan tashqi va ichki resurs havolalarini
 ochiq matn shaklida saqlamaslik.
 
-*Xeshlash jarayoni noto‘g‘ri bajarilishi*
+**Xeshlash jarayoni noto‘g‘ri bajarilishi**
 
 Mobil ilovada *SHA-1, MD5* kabi zaif xeshlash algoritmlaridan
 foydalanilgan*. SHA-1* hozirda zaif hisoblanadi va bir xil xesh
@@ -825,7 +825,7 @@ qiladigan holatlarga olib kelishi mumkin.
 *Tavsiya:* Zaif bo‘lmagan *SHA256 , SHA512 , SHA3* kabi algoritmlardan
 foydalanish.
 
-*Root/Jailbreak tekshiruvi joriy etilmaganligi*
+**Root/Jailbreak tekshiruvi joriy etilmaganligi**
 
 Ekspertiza davrida mobil ilovada qurilma muhiti rootlangan ekanligini
 aniqlash uchun zarur xavfsizlik tekshiruvlari yetarli darajada amalga
@@ -845,7 +845,7 @@ beradi.
 darajadagi(Native c++) dasturlash tillaridan foydalangan holda tekshiruv
 mexanizmini joriy etish.
 
-*Emulator tekshiruvi joriy etilmaganligi*
+**Emulator tekshiruvi joriy etilmaganligi**
 
 Ekspertiza davrida mobil ilovada qurilma muhiti emulyator ekanligini
 aniqlash uchun zarur xavfsizlik tekshiruvlari yetarli darajada amalga
@@ -863,7 +863,7 @@ uchun tayyorlangan muhitda ishga tushirish imkonini beradi.
 mexanizmini quyi darajadagi(Native c++) dasturlash tillaridan
 foydalangan holda joriy etish.
 
-*Debugga tegishli belgilar o‘chirilmaganligi*
+**Debugga tegishli belgilar o‘chirilmaganligi**
 
 Ekspertiza davrida mobil ilovaning ommaga chiqarilgan (production)
 talqinida debug rejimi yoqilganligi yoki debug-ga tegishli belgilar
@@ -883,7 +883,7 @@ skriptlar yozish uchun foydalanishi mumkin
 *Tavsiya:* Ilova kodini qayta ko'rib chiqish, debuggable flagni
 o‘chirish.
 
-*Maxfiy ma’lumotlar zaxira nusxasida saqlanishi*
+**Maxfiy ma’lumotlar zaxira nusxasida saqlanishi**
 
 Mobil ilova ekspertizasi davrida *android:allowBackup="true"* parametri
 “*AndroidManifest.xml*”da mavjudligi aniqlandi. Bu android tizimiga
@@ -900,7 +900,7 @@ zaxira faylini olish, o'g'irlash yoki qayta ishlatish mumkin.
 *Tavsiya:* *android:allowBackup="false"* qilish va API orqali
 foydalanuvchi ma'lumotlarini zaxiralash tizimini yaratish.
 
-*Shifrlanmagan tarmoq trafiki*
+**Shifrlanmagan tarmoq trafiki**
 
 Ilovada *\[android:usesCleartextTraffic=true\]* holatda belgilangan. Bu
 esa ilovada shifrlanmagan trafikni o‘tishiga ruxsat beradi. Zaiflik
@@ -917,7 +917,7 @@ mumkin.
 belgilash, https va boshqa shunday himoyalangan trafikdan foydalanish
 kerak.
 
-*Shifrlanmagan tarmoq trafiki*
+**Shifrlanmagan tarmoq trafiki**
 
 “App Transport Security” (ATS) muhim iOS xavfsizlik xususiyati boʻlib,
 ilova va server oʻrtasidagi tarmoq ulanishlarini xavfsiz bo‘lishini va

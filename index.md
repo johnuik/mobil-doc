@@ -4254,9 +4254,7 @@ keldi. Bu jarayonda biz apktool vositasidan foydalanamiz u Android
 ilovalarini dekompilyatsiya va qayta kompilyatsiya qilishda eng
 ishonchli va qulay vositalardan biridir.
 
-```bash
-apktool d original.apk -o app-release
-```
+```bash apktool d original.apk -o app-release```
 
 <img src="media/media/image90.png"
 style="width:6.5in;height:1.86597in" />

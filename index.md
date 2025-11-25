@@ -5432,7 +5432,7 @@ imkoniyatlari chuqur tahlil qilinadi. Har bir zaiflik izchil yoritilib,
 tegishli xavf darajasi va bartaraf etish bo‘yicha aniq tavsiyalar
 beriladi.
 
-## **API**
+## API
 
 API tahlili esa ilovaning orqa fonidagi xizmatlar xavfsizligini
 o‘rganishga qaratilgan. Hisobotda API URL manzili, autentifikatsiya va

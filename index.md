@@ -356,10 +356,6 @@ bo‘lim sizni Android va iOSni operatsion tizim sifatida tanishtiradi va
 mobil ilovalar xavfsizligi bo‘yicha tajriba orttirish uchun tushunilishi
 kerak bo‘lgan turli fundamental tushunchalarni qamrab oladi.
 
-<table width="100%">
-<tr>
-  <td>
-
 | **Yil**   | **Android**                      | **Android API** | **iOS**      |
 |-----------|----------------------------------|-----------------|--------------|
 | 2007/2008 | 1.0                              | 1               | iPhone OS 1  |
@@ -396,9 +392,7 @@ kerak bo‘lgan turli fundamental tushunchalarni qamrab oladi.
 | 2024      | 15                               | 35              | iOS 18       |
 | 2025      | 16(beta)                         | 36              | iOS 26(beta) |
 
-</td>
-</tr>
-</table>
+
 Hewlett Packard (HP) tomonidan olib borilgan qiziqarli tadqiqotda bu
 yirik dasturiy ta’minot kompaniyasi 600 dan ortiq kompaniyalarga
 tegishli 2000 dan ortiq mobil ilovani sinovdan o‘tkazgan quyidagi

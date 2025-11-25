@@ -947,7 +947,7 @@ almashish joriy etilgan holatlarda foydalaniladi.
 maqsadga muvofiq emas. “Info.plist” faylida “NSAppTransportSecurity”ning
 barcha qiymatlari “NO” qiymatiga o‘zgartirish.
 
-*Android oynasi xavfsiz bo‘lmagan usulda foydalanilishi*
+**Android oynasi xavfsiz bo‘lmagan usulda foydalanilishi**
 
 Mobil ilovada foydalanuvchi interfeysini shakllantirish maqsadida bir
 nechta ishchi oynalar (Activity, Broadcast Receiver, Service)

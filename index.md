@@ -4466,8 +4466,12 @@ kifoya.
 keytool -list -v -keystore my-release-key.jks
 ```
 
+
+<div align="center">
 <img src="media/media/image94.png"
 style="width:6.5in;height:1.76042in" />
+</div>
+
 
 Agar sizda ham apksigner verify buyrug‘i hech qanday xatolik qaytarmasa
 va terminal jim tursa bu ilovaning to‘g‘ri va muvaffaqiyatli
@@ -4489,8 +4493,11 @@ bu dasturni o‘rnatib oling. Mobsf dasturini o’rnatib bo’lganingizdan
 keyin uni ochib ichiga .apk faylni yuboring va bir necha Soniya kuting
 va natija quydagicha bo’ladi.
 
+
+<div align="center">
 <img src="media/media/image95.png"
 style="width:3.76576in;height:2.3359in" />
+</div>
 
 ### **AndroidManifest.xml faylini tahlil qilish**
 
@@ -4573,8 +4580,12 @@ bosing.
 adb logcat \| grep com.exmaple.app
 ```
 
+
+
+<div align="center">
 <img src="media/media/image96.png"
 style="width:6.49919in;height:2.19764in" />
+</div>
 
 ### **Debug modni tekshirish**
 
@@ -4726,69 +4737,104 @@ ishonch hosil qiling. Buni qilganingizdan so‘ng,
 quyidagi havolaga(<https://www.genymotion.com/product-desktop/download>) o'ting
 va Linux (64-bit) versiyasini yuklab oling.
 
+
+<div align="center">
 <img src="media/media/image97.png"
 style="width:4.89652in;height:1.82317in" />
+</div>
 
 Natijada rasmdagi kabi genymotionni linux uchun versiyasi yuklanmalar
 jildida chiqish kerak. Keyin esa genymotionga chmod +x
 genymotion-x.y.z-linux_64.run deb bu faylga kerakli ruxsatlarni berib
 olishimiz kerak.
 
+
+<div align="center">
 <img src="media/media/image98.png"
 style="width:4.85019in;height:1.36541in" />
+</div>
 
 Yuqoridagi buyruq bajarilganidan keyin quydagi rasmdagi buyruqni yozib
 olishimiz kerak bu orqali genymotion dasturi o‘rnatilishni boshlaydi.
 
+
+<div align="center">
 <img src="media/media/image99.png"
 style="width:5.34736in;height:1.40597in" />
+</div>
 
 Genymotion dasturini ishga tushurish uchun siz quydagi rasmdagi kabi
 qilib ./genymotion buyrug‘ni yozing va genymotion dasturi ishga tushadi.
 
+
+<div align="center">
 <img src="media/media/image100.png"
 style="width:5.11533in;height:0.77058in" />
+</div>
 
+<div align="center">
 <img src="media/media/image101.png"
 style="width:5.0668in;height:2.63982in" />
+</div>
+
 
 Bu yerga yuqorida ro‘yhatdan o‘tgan malumotlaringizni yozing. Keyingi
 kerak bo‘ladigan vositalardan virtualboxni o‘rnatib olishingiz kerak
 bo‘ladi buning uchun terminalga sudo apt install virtualbox buyrug‘ini
 yozishni o‘zi yetarli.
 
+
+<div align="center">
 <img src="media/media/image102.png"
 style="width:4.85085in;height:2.10255in" />
+</div>
 
 Virtualbox dasturi to‘liq o‘rnatilib olingandan keyin Genymotion
 dasturiga qaytib olamiz va bu yerda create tugmasini bosib yangi device
 qo‘shib olamiz.
 
+
+<div align="center">
 <img src="media/media/image103.png"
 style="width:4.20977in;height:2.17143in" />
+</div>
 
+
+
+<div align="center">
 <img src="media/media/image104.png"
 style="width:3.77635in;height:2.12921in" />
+</div>
 
 Yuklab olish to’liq tugaganidan so‘ng start kamandasini bosing va sizda
 ham quydagicha bo‘lib emulator ishga tushadi.
 
+
+<div align="center">
 <img src="media/media/image105.png"
 style="width:2.18603in;height:3.20711in" />
+</div>
+
 
 Emulatorni ishga tushgandan keyin terminalda *adb devices* buyrug‘uni
 bajarib ko‘rish orqali emulator ishga tushgani va uni adb tanib olganini
 ko‘rish mumkin.
 
+
+<div align="center">
 <img src="media/media/image106.png"
 style="width:5.58411in;height:1.62523in" />
+</div>
 
 Emulatorga sinovdan o‘tkizmoqchi bo ‘lgan ilovangizni Play Marketdan
 yuklash yoki *adb install your_app.apk* buyrug‘uni terminalda bajarish
 orqali emulatorga o‘rnatsangiz bo‘ladi.
 
+
+<div align="center">
 <img src="media/media/image107.png"
 style="width:5.56338in;height:1.86222in" />
+</div>
 
 ### **Tarmoq trafikni kuzatish (burp suite, mitmproxy)**
 
@@ -4805,8 +4851,11 @@ havolasi(<https://portswigger.net/burp/communitydownload>). Quydagicha
 bu yerda Community versiyani yuklab olish mumkin. Burpsuite dasturini
 ishga tushuramiz.
 
+
+<div align="center">
 <img src="media/media/image108.png"
 style="width:6.51842in;height:2.19931in" />
+</div>
 
 Burpsuite ilovasi ochilganda Proxy bo‘limiga o‘tib proxy sozlamalariga
 8081 portni yozib All Interface bo’limini tanlab qo’yish kerak yoki
@@ -4814,8 +4863,11 @@ boshqa portni ham yozish mumkin va shu yerdan burpsuite ssl sertifikatni
 yuklab oling yoki <https://burp> sahifasi orqali yuklab olish kerak
 bo‘ladi. Bu orqali https ma’lumotlarni ko‘rishimiz mumkin bo‘ladi.
 
+
+<div align="center">
 <img src="media/media/image109.png"
 style="width:5.07463in;height:2.81382in" />
+</div>
 
 Bu muhim bosqichda biz sertifikatimiz formatini o‘zgartirib olishimiz
 kerak bo‘ladi buni amalga oshirishimiz uchun OpenSSL orqali amalga
@@ -4844,44 +4896,61 @@ Keyin bu sertifikatni adb orqali qurulmaga o‘rnatish kerak bo‘ladi bu
 qurulma root qurulma bo‘lishi kerak agar root qurulma bo‘lmasa xatolik
 beradi.
 
+
+<div align="center">
 <img src="media/media/image110.png"
 style="width:6.5in;height:0.33542in" />
+</div>
 
 Qurulmani qayta ishga tushuring va Sertifikat o‘rnatilganligini
 tekshirish uchun qurulmadan *Settings -\> Security -\>Device
 Security-\>Encryption & Credentials-\>Trusted Credentials* ga kiring
 quydagicha natija chiqishi kerak bo‘ladi.
 
+
+<div align="center">
 <img src="media/media/image111.png"
 style="width:4.67279in;height:3.08209in" />
+</div>
 
 BurpSuiteda port raqamini kiriting va *bind to all interfaces* qatorini
 tanlang .
 
+
+<div align="center">
 <img src="media/media/image112.png"
 style="width:4.72014in;height:1.92537in" />
-
+</div>
 Yangi yaratgan Android qurilmangizda quyidagicha amallar ketma ketligini
 bajaring: Sozlamalar (Settings) → Tarmoq va Internet (Network &
 Internet) → AndroidWifi bo‘limiga o‘ting. Ulab qo‘yilgan tarmoqqa bosing
 va “O‘zgartirish” (“Modify”) qatorini tanlang.
 
+
+<div align="center">
 <img src="media/media/image113.png"
 style="width:3.60438in;height:2.91537in" />
+</div>
 
 “Modify” (O‘zgartirish) qatorini bosganingizdan so‘ng bir nechta
 parametrlar ko‘rinadi. IP manzilini kompyuteringizning IP manziliga,
 port raqamini esa Burp Suiteda hozirgina qo‘shgan port raqamiga
 o‘zgartiring.
 
+
+<div align="center">
 <img src="media/media/image114.png"
 style="width:2.63346in;height:3.26119in" />
+</div>
 
 Android qurulma orqali biror bir ilovaga kiring va burpsuitedan
 malumotlarni ko‘rishingiz mumkin.
 
+
+<div align="center">
 <img src="media/media/image115.png"
 style="width:4.93456in;height:1.10448in" />
+</div>
 
 ### **Xavfsizlik cheklovlarini sinash (root, emulator, vpn, zararli kod deteksiya, SSL pinning)**
 
@@ -5192,9 +5261,11 @@ cd /data/data/com.example.app/
 ls -la
 ```
 
+
+<div align="center">
 <img src="media/media/image116.png"
 style="width:5.72409in;height:1.37411in" />
-
+</div>
 Bu buyruqlar bajarilishi natijasida quydagi kataloglarda,
 *shared_prefs/* – foydalanuvchi sozlamalari (.xml fayllar), ko‘pincha
 tokenlar, login, auth ma’lumotlari bo‘lishi mumkin, *databases/* –
@@ -5205,21 +5276,30 @@ Database (Ma’lumotlar bazasi) katalogi ichini tekshirib ko‘rdik. U yerda
 aGoat nomli fayl mavjudligini ko‘rishimiz mumkin, biroq cat buyrug‘idan
 foydalanganda hech qanday ma’lumot chiqmayapti.
 
+
+<div align="center">
 <img src="media/media/image117.png"
 style="width:5.77115in;height:0.43284in" />
+</div>
 
 Shuning uchun biz ushbu faylni adb pull buyrug‘i yordamida qurilmadan
 nusxalab olsak bo‘ladi.
 
+
+<div align="center">
 <img src="media/media/image118.png"
 style="width:6.5in;height:0.36875in" />
+</div>
 
 aGoat faylini SQLite Browser dasturida oching. Fayl ichida foydalanuvchi
 nomi (username) va parol (password) ochiq matn (plain text) ko‘rinishida
 saqlanganini ko‘rishimiz mumkin.
 
+
+<div align="center">
 <img src="media/media/image119.png"
 style="width:6.5in;height:1.88333in" />
+</div>
 
 SharedPreferences API odatda kichik hajmdagi kalit-qiymat (key-value)
 juftliklarini doimiy saqlash uchun ishlatiladi. SharedPreferences
@@ -5228,14 +5308,21 @@ yoziladi. Bu obyekt barcha ilovalar uchun ochiq (world-readable) yoki
 faqat shu ilovaning o‘ziga xos (private) tarzda e’lon qilinishi mumkin.
 Biz sharedPreferences ichida ba’zi ma’lumotlarni saqladik.
 
+
+<div align="center">
 <img src="media/media/image120.png"
 style="width:6.5in;height:2.88056in" />
+</div>
 
 adb yordamida katalogni toping va users.xml faylini tekshiring — unda
 foydalanuvchi ma’lumotlari (credentials) ko‘rinadi.
 
+
+<div align="center">
 <img src="media/media/image121.png"
 style="width:6.5in;height:2.28958in" />
+</div>
+
 
 Agar ilova Android keystore yoki credential storagedan foydalansa,
 ma’lumotlar tizim darajasida shifrlangan bo‘ladi. Biroq noto‘g‘ri
@@ -5320,9 +5407,12 @@ qanday xavfsizlik choralarini ko‘rayotgani sinchiklab o‘rganiladi. Bu
 ma’lumotlar asosida ilovaning umumiy xavfsizlik darajasi aniqlanadi va
 zarur bo‘lsa, zaif joylar bo‘yicha tavsiyalar beriladi.
 
+
+<div align="center">
 <img src="media/media/image122.png"
 style="width:5.02224in;height:3.33582in"
 alt="Rooted Android traffic proxied with VPN" />
+</div>
 
 **Mitmproxy** – CLI asosida ishlaydigan, kuchli va skriptlab bo‘ladigan
 intercept vosita. Kam resurs talab qiladi. Foydalanish uchun terminalga
@@ -5338,8 +5428,11 @@ mitmproxy --mode transparent --listen-port 8080
 
 - So‘rovlarni real vaqt rejimida kuzating
 
+<div align="center">
 <img src="media/media/image123.png" style="width:6.5in;height:2.28264in"
 alt="mitmproxy-cli-requests-list" />
+</div>
+
 
 ### **Tapjacking hujumiga tekshirish**
 

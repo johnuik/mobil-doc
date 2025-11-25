@@ -1930,7 +1930,9 @@ bo‘lsangiz *adb push fayl_manzili
 faylni_qurulmaga_joylashtirish_manzili* shu kamanda orqali
 joylashtirishingiz mumkin bo‘ladi.
 
-```adb push ./Android.docx /sdcard/Documents```
+```bash 
+adb push ./Android.docx /sdcard/Documents
+```
 
 <img src="media/media/image52.png"
 style="width:6.2431in;height:3.57048in" />
@@ -1944,7 +1946,9 @@ log yozuvlarini ko‘rish uchun terminalga adb logcat buyrug‘ini kiritish
 kifoya. Ushbu buyruq orqali tizimda sodir bo‘layotgan barcha jarayonlar,
 xatoliklar va bildirishnomalar real vaqt rejimida aks etadi.
 
-```adb logcat```
+```bash 
+adb logcat
+```
 
 <img src="media/media/image53.png"
 style="width:5.59138in;height:2.80584in" />
@@ -1952,7 +1956,9 @@ style="width:5.59138in;height:2.80584in" />
 Agar siz faqatgina ma’lum bir ilovaga tegishli log yozuvlarini
 ko‘rmoqchi bo‘lsangiz, quyidagi buyruqdan foydalanishingiz mumkin.
 
-```adb logcat \| grep uz.anormobile.retail```
+```bash 
+adb logcat \| grep uz.anormobile.retail
+```
 
 <img src="media/media/image54.png"
 style="width:6.5in;height:2.20208in" />
@@ -1964,7 +1970,9 @@ bog‘lanishingiz kerak bo‘ladi. Buning uchun birinchi navbatda
 qurilmaning IP manzilini aniqlab, so‘ngra quyidagi buyruq yordamida
 ulanishni amalga oshirasiz.
 
-```adb connect 192.168.160.125:5555```
+```bash 
+adb connect 192.168.160.125:5555
+```
 
 <img src="media/media/image55.png"
 style="width:6.5346in;height:1.53339in" />
@@ -1975,7 +1983,9 @@ bemalol yuborishingiz mumkin bo‘ladi.
 Agar siz qurilmadan ma’lum bir ilovani butunlay o‘chirib tashlamoqchi
 bo‘lsangiz, quyidagi buyruqdan foydalanishingiz mumkin.
 
-```adb shell pm list packages -3```
+```bash 
+adb shell pm list packages -3
+```
 
 <img src="media/media/image56.png"
 style="width:6.5in;height:2.16667in" />
@@ -1983,7 +1993,9 @@ style="width:6.5in;height:2.16667in" />
 Agar siz qurilmaga biror bir .apk faylini o‘rnatmoqchi bo‘lsangiz,
 quyidagi buyruq orqali bu jarayonni amalga oshirishingiz mumkin.
 
-```adb install Android01.apk```
+```bash 
+adb install Android01.apk
+```
 
 <img src="media/media/image57.png"
 style="width:5.51706in;height:1.06097in" />
@@ -1993,7 +2005,9 @@ base.apk va arxitekturaga mos qo‘shimcha modullar (masalan,
 arm64_v8a.apk, x86.apk va boshqalar) ko‘rinishida bo‘lsa, u holda bu
 ilovani quyidagi buyruq orqali to‘g‘ri tarzda o‘rnatishingiz mumkin.
 
-```bash adb install-multiple base.apk split_config.arm64_v8a.apk split_config.xhdpi.apk```
+```bash
+adb install-multiple base.apk split_config.arm64_v8a.apk split_config.xhdpi.apk
+```
 
 <img src="media/media/image58.png"
 style="width:6.60099in;height:0.55784in" />
@@ -2002,7 +2016,9 @@ Agar siz qurilmada allaqachon o‘rnatilgan ilovaning yangilangan (yoki
 yangi) versiyasini o‘rnatmoqchi bo‘lsangiz, ilovani butunlay o‘chirib
 yubormasdan, quyidagi buyruq orqali uni qayta o‘rnatishingiz mumkin.
 
-```bash adb install -r Android01.apk```
+```bash 
+adb install -r Android01.apk
+```
 
 <img src="media/media/image59.png"
 style="width:6.638in;height:1.09691in" />
@@ -2010,7 +2026,9 @@ style="width:6.638in;height:1.09691in" />
 Agar siz qurilmadagi mavjud ilovani ishga tushirmoqchi bo‘lsangiz,
 terminalga quyidagi buyruqni kiriting va Enter tugmasini bosing.
 
-```bash adb shell monkey -p uz.anormobile.retail -v 1```
+```bash 
+adb shell monkey -p uz.anormobile.retail -v 1
+```
 
 <img src="media/media/image60.png"
 style="width:5.64398in;height:2.23588in" />
@@ -2019,7 +2037,9 @@ Agar siz qurilmada Google ilovasini ishga tushirib, unda biror matn
 yozmoqchi bo‘lsangiz, bu jarayonni quyidagi ketma-ket buyruqlar orqali
 amalga oshirishingiz mumkin.
 
-``` bash adb shell input text "Salom Google"```
+``` 
+bash adb shell input text "Salom Google"
+```
 
 <img src="media/media/image61.png"
 style="width:6.5in;height:0.50903in" />
@@ -2571,7 +2591,9 @@ MAVS vositasi juda yengil va soddalashtirilgan CLI (komanda qatori
 interfeysi) orqali ishlaydi. Asosan Linux yoki macOS tizimlarida
 ishlatiladi. Quyidagi buyruq orqali oddiy tahlil boshlab yuboriladi.
 
-```python3 mavs.py -f path/to/app.apk -o output/```
+```bash
+python3 mavs.py -f path/to/app.apk -o output/
+```
 
 Bu yerda *-f* tahlil qilinadigan APK fayl, *-o* hisobot saqlanadigan
 papka.
@@ -3346,20 +3368,26 @@ ko‘rishingiz mumkin:
 Misol uchun, siz quyidagi buyruq orqali biror ilovaning binarida
 ishlatilayotgan kutubxonalarni ko‘rishingiz mumkin.
 
-```otool -L MyApp```
+```bash
+otool -L MyApp
+```
 
 Bu sizga ilova ishlatayotgan barcha .dylib (Dynamic Library) fayllarni
 ro‘yxat qilib beradi. Bu juda muhim, chunki ba’zida zararli yoki nojo‘ya
 kutubxonalar orqali ilovaga ekspluatatsiya yo‘llari ochilishi mumkin.
 
-```otool -Vt MyApp```
+```bash
+otool -Vt MyApp
+```
 
 Bu orqali siz ilovadagi barcha function symbol va ularning xotira
 manzillarini ko‘rishingiz mumkin, ya’ni bu kodni disassembling
 darajasida tahlil qilish imkonini beradi. Shuningdek, quyidagilar ham
 tahlil qilish mumkin.
 
-```otool -arch arm64 -Iv MyApp```
+```bash
+otool -arch arm64 -Iv MyApp
+```
 
 Bu esa ilovaning Info.plist ichidagi entitlements (masalan:
 com.apple.security.application-groups, get-task-allow, aps-environment)
@@ -3512,7 +3540,9 @@ beradi. Keychain Dumper foydali bo‘lgan holatlar:
 
 Oddiy foydalanish:
 
-```./keychain_dumper```
+```bash
+./keychain_dumper
+```
 
 Natijada sizga quyidagilar haqida to‘liq ma’lumot chiqadi:
 
@@ -3574,11 +3604,15 @@ tahlil qilish imkoniyatiga ega bo‘lasiz. Masalan, expr buyrug‘i
 yordamida runtimeda biror o‘zgaruvchining qiymatini ko‘rish yoki
 o‘zgartirish mumkin:
 
-```expr myVar = 123```
+```bash
+expr myVar = 123
+```
 
 Yoki ilova ishga tushganida viewDidLoad funksiyasida to‘xtash uchun:
 
-```breakpoint set --name viewDidLoad```
+```bash 
+breakpoint set --name viewDidLoad
+```
 
 LLDB terminal asosida ishlaydi va odatda Xcode, debugserver, yoki Frida
 kabi vositalar bilan birga qo‘llaniladi. iOS ilovalarda tahlil olib

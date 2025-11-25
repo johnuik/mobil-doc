@@ -4703,13 +4703,17 @@ oshiramiz.
 Endi esa bizga sertifikatning issuer (beruvchi tashkilot) hash qiymatini
 olish kerak bo‘ladi. Quyidagi buyruq bu ishda bizga yordam beradi.
 
-```openssl x509 -inform PEM -subject_hash_old -in cacert.pem \|head -1```
+```bash
+openssl x509 -inform PEM -subject_hash_old -in cacert.pem \|head -1
+```
 
 Keling, avvalgi buyruq natijasi 9a5ba575 deb faraz qilaylik. Endi siz
 sertifikat faylini aynan shu qiymatga qayta nomlashingiz va oxiriga .0
 kengaytmasini qo‘shishingiz kerak bo‘ladi.
 
-```mv cacert.pem 9a5ba575.0```
+```bash
+mv cacert.pem 9a5ba575.0
+```
 
 Keyin bu sertifikatni adb orqali qurulmaga o‘rnatish kerak bo‘ladi bu
 qurulma root qurulma bo‘lishi kerak agar root qurulma bo‘lmasa xatolik

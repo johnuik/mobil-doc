@@ -987,8 +987,10 @@ xos vazifani bajaradi. Ushbu tuzilma tizimni moslashuvchan, xavfsiz va
 samarali qiladi. Android arxitekturasi 5 asosiy qatlamdan tashkil
 topgan.
 
-<img src="media/media/image32.png"
+<div align="center">
+  <img src="media/media/image32.png"
 style="width:6.5in;height:8.89933in" />
+</div>
 
 ### **Linux kernel**
 
@@ -1251,8 +1253,11 @@ ilovaga qaytariladi va foydalanuvchiga ko‘rsatiladi. Shunday qilib,
 Ilovalar qatlami foydalanuvchi funksiyalarini taqdim etib, ortida
 Framework va pastki qatlamlar bilan o‘zaro aloqa qiladi​.
 
-<img src="media/media/image33.png"
+
+<div align="center">
+  <img src="media/media/image33.png"
 style="width:4.6265in;height:5.728in" />
+</div>
 
 ### **Java virtual mashina**
 
@@ -1391,8 +1396,11 @@ qatlamdan tashkil topgan: *Cocoa Touch, Media, Core Services va Core OS
 (Darwin).* Har bir qatlam yuqoridagi qatlamlarga xizmat ko‘rsatadi va
 o‘ziga xos komponentlarga ega.
 
-<img src="media/media/image34.png"
+
+<div align="center">
+  <img src="media/media/image34.png"
 style="width:5.70486in;height:8.792in" />
+</div>
 
 ### **Cocoa Touch**
 
@@ -1529,8 +1537,11 @@ quyidagi texnik xususiyatlarga ega:
     Odatda, quyidagidek o‘rnatish oynasi ko‘rinadi. Next (Keyingi)
     tugmasini bosing.
 
-<img src="media/media/image35.png"
+
+<div align="center">
+  <img src="media/media/image35.png"
 style="width:4.90392in;height:3.77985in" />
+</div>
 
 3.  Ushbu o‘rnatish jarayoni tizimning talablariga javob berishini
     avtomatik tarzda tekshiradi.
@@ -1547,8 +1558,11 @@ style="width:4.90392in;height:3.77985in" />
     Masalan, biz C diskida “Hackbox” nomli papka yaratdik bu quyidagi
     ekranda ko‘rsatilgan:
 
+<div align="center">
 <img src="media/media/image36.png"
 style="width:5.12614in;height:4.00278in" />
+</div>
+
 
 7.  Endi Android tezlashtirilgan muhit (Android-accelerated environment)
     uchun kerakli joy ajratishimiz mumkin, bu esa tezroq ishlashni
@@ -1563,6 +1577,11 @@ style="width:5.12614in;height:4.00278in" />
 
 <img src="media/media/image37.png"
 style="width:4.67685in;height:4.09896in" />
+
+<div align="center">
+<img src="media/media/image37.png"
+style="width:4.67685in;height:4.09896in" />
+</div>
 
 **Android SDK**
 
@@ -1644,39 +1663,57 @@ adbni yuklab oling.
 
 👉 <https://developer.android.com/tools/releases/platform-tools>
 
+<div align="center">
 <img src="media/media/image38.png"
 style="width:6.5in;height:3.31458in" />
+</div>
 
+<div align="center">
 <img src="media/media/image39.png"
 style="width:6.5in;height:2.82292in" />
+</div>
 
 Yuklab bo‘lganingizdan keyin zip faylni rasmdagi kabi zipdan chiqarib
 oling.
 
+
+<div align="center">
 <img src="media/media/image40.png"
 style="width:6.5in;height:3.27431in" />
+</div>
 
+
+<div align="center">
 <img src="media/media/image41.png"
 style="width:6.5in;height:3.70694in" />
+</div>
 
 Keyin adb ni kampyuteringiz tanishi uchun uning turgan joyini pathlar
 ro‘yhatiga qo‘shib qo‘yishingiz kerak bo‘ladi.
 
+
+<div align="center">
 <img src="media/media/image42.png"
 style="width:6.5in;height:4.59375in" />
+</div>
 
 Kampyuteringiz qidiruv bo‘limiga shunday yozing va “*Edit the system
 environment variables*” ni ustiga bosing. Keyin sizda ham quydagicha
 oyna ochiladi.
 
+<div align="center">
 <img src="media/media/image43.png"
 style="width:2.98049in;height:3.40523in" />
+</div>
 
 Siz bu yerdan “*Environment Variables*” ni ustiga bosing va yana bir
 oyna ochiladi.
 
+
+<div align="center">
 <img src="media/media/image44.png"
 style="width:6.40714in;height:6.07376in" />
+</div>
 
 Shunday ochilgandan keyin siz path qismiga adb turgan joyni yozib
 qo‘yishingiz kerak bo‘ladi, va unga qo’shib bo‘lganingizdan keyin barcha
@@ -1685,8 +1722,10 @@ buyrug‘ini yozib adb o‘rnatilganini tekshirib oling agar rasmdagi kabi
 chiqsa kampyuteringizga adb dasturi o‘rnatilgan bo‘ladi va uning
 imkoniyatlaridan foydalanishingiz mumkin.
 
+<div align="center">
 <img src="media/media/image45.png"
 style="width:6.6875in;height:3.05208in" />
+</div>
 
 ### **Qurulmaga ulanish**
 
@@ -1705,8 +1744,11 @@ bo‘limiga kirib, *Build number* ustiga *7 marta ketma-ket bosing.*
 Shundan so‘ng, *Dasturchi parametrlar* menyusi faollashadi va u orqali
 *USB-Debugging* ni yoqishingiz mumkin bo‘ladi.
 
+
+<div align="center">
 <img src="media/media/image46.png"
 style="width:5.30282in;height:3.08376in" />
+</div>
 
 ### **Qurilmaga ilova o‘rnatish**
 
@@ -1714,37 +1756,50 @@ Birinchi navbatda siz qurulmangiz yoki emulator kampyuterga to‘g‘ri
 ulanganligini tekshirib olishingiz kerak bo‘ladi buning uchun *adb
 devices* kamandasini terminalga yozing.
 
+
+<div align="center">
 <img src="media/media/image47.png"
 style="width:4.84443in;height:2.28157in" />
+</div>
 
 Rasmdagi kabi sizda chiqgan bo‘lsa qurulmangiz va kampyuteringiz ulangan
 bo‘ladi. Qurulmaga to‘g‘ridan to‘g‘ri ulanish uchun siz terminalga
 rasmdagi kabi *adb shell* kommandasini yozib ulanishingiz mumkin
 bo‘ladi.
 
+<div align="center">
 <img src="media/media/image48.png"
 style="width:3.47965in;height:1.6669in" />
+</div>
 
 Agar siz qurulmangizga o‘rnatilgan barcha ilovalar ro‘yhatini ko‘rmoqchi
 bo‘lsangiz quydagicha kamandani terminalga yozing.
 
+
+<div align="center">
 <img src="media/media/image49.png"
 style="width:4.16725in;height:2.25031in" />
+</div>
 
 Bu yerda foydalanuvchi o‘zi o‘rnatgan ilovalarni package nemelar
 ro‘yxati chiqadi. Agar siz ilova haqida batafsil ma’lumot (masalan,
 joylashuvi, versiyasi) ko‘rmoqchi bo‘lsangiz, bu buyruqdan foydalaning:
 
+<div align="center">
 <img src="media/media/image50.png"
 style="width:6.5in;height:2.35694in" />
+</div>
 
 ### **Qurilmadan fayllarni olish**
 
 Agar siz qurulmadan fayl olishingiz kerak bo‘lsa quydagicha kamandani
 yozasiz.
 
+
+<div align="center">
 <img src="media/media/image51.png"
 style="width:6.5in;height:1.14306in" />
+</div>
 
 Bu rasmda biz qurulmadagi rasmni yuklab olibganmiz. Agar siz biror bir
 ilovani yuklab olmoqchi bo‘lsangiz ham xuddi shunday yuklab olishingiz
@@ -1762,8 +1817,10 @@ joylashtirishingiz mumkin bo‘ladi.
 adb push ./Android.docx /sdcard/Documents
 ```
 
+<div align="center">
 <img src="media/media/image52.png"
 style="width:6.2431in;height:3.57048in" />
+</div>
 
 ### **Log ma’lumotlarini ko‘rish**
 
@@ -1778,8 +1835,10 @@ xatoliklar va bildirishnomalar real vaqt rejimida aks etadi.
 adb logcat
 ```
 
+<div align="center">
 <img src="media/media/image53.png"
 style="width:5.59138in;height:2.80584in" />
+</div>
 
 Agar siz faqatgina ma’lum bir ilovaga tegishli log yozuvlarini
 ko‘rmoqchi bo‘lsangiz, quyidagi buyruqdan foydalanishingiz mumkin.
@@ -1788,8 +1847,10 @@ ko‘rmoqchi bo‘lsangiz, quyidagi buyruqdan foydalanishingiz mumkin.
 adb logcat \| grep uz.anormobile.retail
 ```
 
+<div align="center">
 <img src="media/media/image54.png"
 style="width:6.5in;height:2.20208in" />
+</div>
 
 Agar siz emulatorni asosiy operatsion tizimingizdan alohida muhitda,
 masalan, Windows tizimida VMware orqali ishga tushirilgan Ubuntu ichida
@@ -1802,8 +1863,11 @@ ulanishni amalga oshirasiz.
 adb connect 192.168.160.125:5555
 ```
 
+
+<div align="center">
 <img src="media/media/image55.png"
 style="width:6.5346in;height:1.53339in" />
+</div>
 
 Ushbu amaldan so‘ng, siz virtual muhit orqali qurilmaga adb buyruqlarini
 bemalol yuborishingiz mumkin bo‘ladi.

@@ -1339,11 +1339,13 @@ maxfiyligiga katta xavf tug‘dirmaydi.
 | android.permission.WRITE_SYNC_SETTINGS        | Sync sozlamalarini o‘zgartirish                      |
 | android.permission.EXPAND_STATUS_BAR          | Status barni ochish yoki yopish                      |
 | android.permission.GET_PACKAGE_SIZE           | Ilovaning o‘lchamini aniqlash                        |
+
 Bu ruxsatlar avtomatik beriladi, foydalanuvchi alohida tasdiqlamaydi.
 
 Xavfli (Dangerous) ruxsatlar – Foydalanuvchi shaxsiy ma’lumotlariga yoki
 qurilma resurslariga kira oladi. Bu ruxsatlar foydalanuvchidan
 so‘raladi.
+
 | **Permission**                                        | **Vazifasi**                                                       |
 |-------------------------------------------------------|--------------------------------------------------------------------|
 | android.permission.RECORD_AUDIO                       | Mikrofon orqali ovoz yozish                                        |
@@ -1384,6 +1386,7 @@ so‘raladi.
 | android.permission.REORDER_TASKS                      | Ilovalar tasklarini o'zgartirish (Activity Stack)                  |
 | android.permission.RESTART_PACKAGES                   | Ilovalarni to'xtatish va qayta ishga tushirish (deprecated)        |
 | android.permission.DEVICE_POWER                       | Qurilmani o'chirish yoki yoqish (faqat system apps uchun)          |
+
 ## **iOS arxitekturasi**
 
 iOS operatsion tizimining tuzilishi qatlamli (layered) asosda qurilgan.

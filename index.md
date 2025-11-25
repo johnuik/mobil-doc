@@ -198,7 +198,7 @@ deteksiya, SSL pinning)](#xavfsizlik-cheklovlarini-sinash-root-emulator-vpn-zara
 
 [Tapjacking hujumiga tekshirish](#tapjacking-hujumiga-tekshirish)
 
-[Dinamik zaifliklar [165](#dinamik-zaifliklar)](#dinamik-zaifliklar)
+[Dinamik zaifliklar](#dinamik-zaifliklar)
 
 **VI-BOB.** [**Hisobot shakllantirish**](#hisobot-shakllantirish)
 

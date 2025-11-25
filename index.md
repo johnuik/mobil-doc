@@ -466,9 +466,10 @@ zaifliklar roʻyxati keltirilgan.
 
 10. Insufficient Cryptography – Kriptografiya himoyasi yetarli emasligi.
 
-<img src="media/media/image5.png"
-style="width:6.88225in;height:3.80443in" />
 
+<div align="center">
+  <img src="media/media/image5.png" width="400">
+</div>
 1-rasm. OWASP Mobile Top 10
 
 **Improper Credential Usage (**Login ma’lumotlaridan noto‘g‘ri

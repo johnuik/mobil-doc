@@ -5071,13 +5071,21 @@ ilovaning xususiy fayllari (internal storage) saqlanadi. Faqat rootli
 qurilmada kirish mumkin. Terminal orqali quydagi buyruqlar
 ketma-ketligini yozish kerak bo‘ladi.
 
-```adb shell```
+```bash
+adb shell
+```
 
-```su```
+```bash
+su
+```
 
-```cd /data/data/com.example.app/```
+```bash
+cd /data/data/com.example.app/
+```
 
-```ls -la```
+```bash
+ls -la
+```
 
 <img src="media/media/image116.png"
 style="width:5.72409in;height:1.37411in" />
@@ -5128,9 +5136,13 @@ Agar ilova Android keystore yoki credential storagedan foydalansa,
 ma’lumotlar tizim darajasida shifrlangan bo‘ladi. Biroq noto‘g‘ri
 sozlamalarda ularga ham kirish mumkin.
 
-```adb shell```
+```bash
+adb shell
+```
 
-```su```
+```bash
+su
+```
 
 strings /data/misc/keystore/user_0/\*
 

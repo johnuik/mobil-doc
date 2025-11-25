@@ -2054,8 +2054,7 @@ base.apk va arxitekturaga mos qo‘shimcha modullar (masalan,
 arm64_v8a.apk, x86.apk va boshqalar) ko‘rinishida bo‘lsa, u holda bu
 ilovani quyidagi buyruq orqali to‘g‘ri tarzda o‘rnatishingiz mumkin.
 
-```adb install-multiple base.apk split_config.arm64_v8a.apk
-split_config.xhdpi.apk```
+```bash adb install-multiple base.apk split_config.arm64_v8a.apk split_config.xhdpi.apk```
 
 <img src="media/media/image58.png"
 style="width:6.60099in;height:0.55784in" />
@@ -2064,7 +2063,7 @@ Agar siz qurilmada allaqachon o‘rnatilgan ilovaning yangilangan (yoki
 yangi) versiyasini o‘rnatmoqchi bo‘lsangiz, ilovani butunlay o‘chirib
 yubormasdan, quyidagi buyruq orqali uni qayta o‘rnatishingiz mumkin.
 
-```adb install -r Android01.apk```
+```bash adb install -r Android01.apk```
 
 <img src="media/media/image59.png"
 style="width:6.638in;height:1.09691in" />
@@ -2072,7 +2071,7 @@ style="width:6.638in;height:1.09691in" />
 Agar siz qurilmadagi mavjud ilovani ishga tushirmoqchi bo‘lsangiz,
 terminalga quyidagi buyruqni kiriting va Enter tugmasini bosing.
 
-```adb shell monkey -p uz.anormobile.retail -v 1```
+```bash adb shell monkey -p uz.anormobile.retail -v 1```
 
 <img src="media/media/image60.png"
 style="width:5.64398in;height:2.23588in" />
@@ -2081,7 +2080,7 @@ Agar siz qurilmada Google ilovasini ishga tushirib, unda biror matn
 yozmoqchi bo‘lsangiz, bu jarayonni quyidagi ketma-ket buyruqlar orqali
 amalga oshirishingiz mumkin.
 
-```adb shell input text "Salom Google"```
+``` bash adb shell input text "Salom Google"```
 
 <img src="media/media/image61.png"
 style="width:6.5in;height:0.50903in" />

@@ -665,484 +665,298 @@ generallardir: ular tahlil qilish zarur bo‘lgan katta hajmdagi texnik
 ma’lumotlarni ajratib olish, baholash va amaliy xulosalar chiqarishda
 samarali bo‘lishi kerak.
 
-### **Android ilovalardagi zaifliklari**
+### **Android va iOS ilovalardagi zaifliklari**
 
-Android ilovalarda ko‘p uchraydigan zaifliklar quydagilar. Ilovada
+Mobil ilovalarda ko‘p uchraydigan zaifliklar quydagilar. Ilovada
 parollar, tokenlar yoki kriptografiya kalitlari kabi maxfiy
-ma’lumotlarni kod ichiga hard kod qilib yozib qo‘yish (hardcoding) keng
-tarqalgan zaiflik hisoblanadi. Bunday holatda hujumchi oddiygina APK
-faylini dekompilyatsiya qilib, ichidan maxfiy ma’lumotlarni topib olishi
-mumkin. Android Developer sahifasida ta’kidlanishicha, dasturchilar
-ko‘pincha aniq paket fayllarda yoki strings.xml kabi resurslarda maxfiy
+ma’lumotlarni kod ichiga qattiq kod qilib yozib qo‘yish keng tarqalgan
+zaiflik hisoblanadi. Bunday holatda hujumchi oddiygina APK faylini
+dekompilyatsiya qilib, ichidan maxfiy ma’lumotlarni topib olishi mumkin.
+Android Developer sahifasida ta’kidlanishicha, dasturchilar ko‘pincha
+aniq paket fayllarda yoki strings.xml kabi resurslarda maxfiy
 ma’lumotlarni matn yoki bayt massiv ko‘rinishida saqlaydi. Bu Kerchoff
 prinsipiga zid bo‘lib, ilovaning xavfsizlik modelini tubdan buzadi.
 JADX-GUIni ochish uchun siz shunchaki jadx-guiterminalga kirishingiz
 mumkin. Ushbu vosita bizga APKdan ma’lumot olish va dekompilyatsiya
 qilingan kodni ko‘rish imkonini beradi.
 
-**Lokal ma’lumotlarni saqlash**
-
-Mobil ilovalarda xavfsizlik masalasi doimo dolzarb bo‘lib kelgan.
-Ayniqsa, autentifikatsiya belgilarini (masalan, tokenlar, parollar),
-shaxsiy ma’lumotlarni va boshqa nozik axborotlarni himoya qilish mobil
-xavfsizlikning eng asosiy ustunlaridan biridir. Ushbu bobda Android
-tizimi lokal ma’lumotlarni saqlash uchun taqdim etadigan vositalar,
-ularning imkoniyatlari va ularni xavfsiz tarzda qo‘llash bo‘yicha eng
-yaxshi amaliyotlar bayon etiladi.
-
-Ma’lumotlarni saqlash borasida quyidagi sodda, ammo muhim qoida
-mavjud:  
-Umumiy ma’lumotlar bemalol foydalanish uchun ochiq bo‘lishi mumkin,
-biroq maxfiy va shaxsiy ma’lumotlar doimo himoyalangan bo‘lishi, hattoki
-iloji bo‘lsa, umuman qurilma xotirasiga yozilmasligi kerak. Quyida
-Androidda keng tarqalgan ma’lumotlarni saqlash usullari keltirilgan:
-
-- *Umumiy afzalliklar (SharedPreferences)* — oddiy kalit-qiymat
-  juftliklarini saqlash uchun qulay, ayniqsa foydalanuvchi sozlamalarini
-  yozib borishda keng qo‘llaniladi.
-
-- *SQLite ma’lumotlar bazalari* — murakkab va tuzilgan ma’lumotlarni
-  saqlash uchun ishlatiladi. SQL sintaksisi asosida ishlaydi.
-
-- *Firebase ma’lumotlar bazalari* — real vaqtli, bulutga asoslangan
-  ma’lumotlar bilan ishlovchi ilovalar uchun samarali tanlov.
-
-- *Realm ma’lumotlar bazalari* — tezkor, yengil va obyektga
-  yo‘naltirilgan ma’lumotlar ombori bo‘lib, oson integratsiyalanadi.
-
-- *Ichki xotira (Internal Storage)* — faqat ilovaning o‘ziga tegishli
-  bo‘lgan fayllarni saqlash uchun xavfsiz va yopiq muhit.
-
-- *Tashqi xotira (External Storage)* — foydalanuvchi yoki boshqa
-  ilovalar bilan baham ko‘riladigan fayllar uchun.
-
-- *Android Keystore* — kriptografik kalitlar va maxfiy ma’lumotlarni
-  xavfsiz tarzda saqlashga mo‘ljallangan tizim.
-
-***Qo‘shimcha saqlash nuqtalari***
-
-Bularning ustiga, Android tizimi turli kontekstlarda avtomatik ravishda
-yoki ilova orqali nozik ma’lumotlarni saqlab qo‘yishi mumkin bo‘lgan
-boshqa holatlarni ham o‘z ichiga oladi. Bunday holatlar quyidagilardan
-iborat:
-
-- *Ro‘yxatga olish (log) funktsiyalari* — noto‘g‘ri sozlangan loglar
-  maxfiy ma’lumotlarni ochib qo‘yishi mumkin.
-
-- *Android zaxira nusxalari (backups)* — avtomatik saqlanadigan
-  ma’lumotlar orqali nozik axborotlar tarqalib ketishi mumkin.
-
-- *Xotirani qayta ishlash (memory management)* — vaqtinchalik
-  saqlanayotgan ma’lumotlar noto‘g‘ri boshqarilsa, zaiflik manbaiga
-  aylanishi mumkin.
-
-- *Klaviatura keshlari* — foydalanuvchi kiritgan ma’lumotlar (jumladan
-  parollar) vaqtincha saqlanib qolishi mumkin.
-
-- *Skrinshotlar* — maxfiy ekranlar tasodifan yoki ruxsatsiz suratga
-  olinishi ehtimoli mavjud.
-
-Har bir saqlash mexanizmi o‘ziga xos xavfsizlik tahdidlariga ega.
-Shuning uchun, ularni to‘liq tushunish va ular bilan bog‘liq sinov
-holatlarini aniq va to‘g‘ri bajara olish sinovchilarning asosiy
-vazifasidir. Bu umumiy ko‘rinish har bir saqlash usulining qisqacha
-tavsifini beradi va kerakli hollarda chuqurroq hujjat yoki manbalarga
-murojaat qilish uchun boshlang‘ich nuqta bo‘lib xizmat qiladi.
-
-**Autentifikatsiya muammolari**
-
-Mobil ilovalar foydalanuvchi xavfsizligini ta’minlashda autentifikatsiya
-muhim rol o‘ynaydi. Bu jarayonda ilova foydalanuvchining qurilmada
-saqlangan hisob ma’lumotlariga nisbatan tekshiruv o‘tkazadi ya’ni,
-foydalanuvchi o‘z PIN-kodi, paroli yoki biometrik belgilarini (masalan,
-yuz tanish yoki barmoq izi) taqdim etish orqali ilovani yoki ilova
-ichidagi muhim funksiyalarni “qulfdan chiqaradi”. Autentifikatsiya,
-odatda, quyidagi vaziyatlarda qo‘llaniladi:
-
-- Ilovaga kirishdan oldin foydalanuvchini tezda tasdiqlash
-
-- Muayyan maxfiy funksiyalar (masalan, to‘lov, sozlamalar, shifrlangan
-  fayllar) uchun qo‘shimcha xavfsizlik bosqichi
-
-- Foydalanuvchi ilgari autentifikatsiyadan o‘tgan bo‘lsa ham, mavjud
-  seansni himoyalash yoki davom ettirish
-
-Bu autentifikatsiya turi foydalanuvchiga qulaylik va xavfsizlikni bir
-vaqtning o‘zida taqdim etadi. Ammo bu imkoniyat xavfsiz deb hisoblanishi
-uchun muhim bir narsa yodda tutilishi kerak: mahalliy autentifikatsiya
-hech qachon mustaqil xavfsizlik chorasiga aylantirilmasligi kerak. Avval
-“Mobil ilovalarni autentifikatsiya qilish arxitekturasi” bo‘limida
-ta’kidlanganidek, sinovchilar doimo shuni yodda tutishlari kerak.
-Mahalliy autentifikatsiya faqat kriptografik ibtidoiy asosga yoki
-masofaviy (server) tekshiruvga bog‘langandagina ishonchli bo‘ladi.
-
-Agar foydalanuvchi autentifikatsiyasidan keyin ilova hech qanday
-tasdiqlovchi ma’lumotni olmasa, tajovuzkor oddiygina kodni teskari
-muhandislik orqali tahlil qilib, bu autentifikatsiyani chetlab o‘tishi
-mumkin. Ya’ni, faqat ilova ichidagi if-else shartlari orqali amalga
-oshirilgan PIN yoki biometrik tekshiruv xavfsizlik kafolati bo‘la
-olmaydi.
-
-**Androidda mahalliy autentifikatsiyaning mexanizmlari**
-
-Android platformasi mahalliy autentifikatsiya uchun ikkita asosiy
-mexanizmni taklif etadi.
-
-**1. Hisob ma’lumotlarini tasdiqlash oqimi (Device Credential
-Authentication)**
-
-Bu mexanizm foydalanuvchining qurilma xavfsizlik sozlamalariga tayangan
-holda ishlaydi. PIN-kod, grafik naqsh yoki parol kabi elementlar orqali
-autentifikatsiya amalga oshiriladi. Foydalanuvchi qurilmani qanday
-qulfdan chiqarishni bilsa u bu autentifikatsiyani ham o‘ta oladi.
-
-**2. Biometrik autentifikatsiya oqimi (Biometric Authentication Flow)**
-
-Yuzni tanish, barmoq izini aniqlash yoki ko‘z skaneri orqali
-foydalanuvchini tasdiqlovchi zamonaviy yondashuv. Bu mexanizm
-foydalanuvchi tajribasini sezilarli darajada yengillashtiradi va
-xavfsizlikni oshiradi.
-
-Android biometrik autentifikatsiya API’lari quyidagilarni ta’minlaydi:
-
-- BiometricPrompt orqali soddalashtirilgan interfeys
-
-- Biometrik ma’lumotlar hech qachon ilova darajasida ko‘rinmaydi — ular
-  faqat ishonchli apparat va tizim qatlamida saqlanadi.
-
-**Yakuniy Tavsiyalar**
-
-- Mahalliy autentifikatsiya faqat foydalanuvchini tezkor tekshirish
-  uchun ishlatilishi kerak, ammo asosiy qarorlarni qabul qilish
-  (masalan, token berish, maxfiy ma’lumotlarga kirish) server yoki
-  ishonchli kriptografik modulga tayanishi lozim.
-
-- Sinovchi ilova qanday autentifikatsiya usulidan foydalanayotganini, bu
-  usul tashqi tasdiqlov bilan bog‘langanmi yo‘qmi, kodni tahlil qilish
-  orqali aniqlashi kerak.
-
-- Har qanday holatda ham, foydalanuvchi interfeysi orqali berilgan
-  signal (masalan, “barmoq izi tasdiqlandi”) asosiy xavfsizlik manbasi
-  emas, balki faqat kirish nuqtasi bo‘lishi kerak.
-
-**Tarmoq Xavfsizligi muammolari**
-
-Bugungi kunda deyarli har bir Android ilovasi biror masofaviy xizmat
-bilan doimiy aloqada ishlaydi. Bu xizmatlar odatda foydalanuvchi ilovada
-amalga oshiradigan harakatlarga javob beradigan serverlar bo‘lib, ular
-tarmoq orqali ko‘pincha ishonchsiz yoki ochiq Wi-Fi tarmoqlari orqali
-ulanadi.
-
-Aynan shu sababli, mobil ilovalarda tarmoq xavfsizligi muhim xavfsizlik
-masalalaridan biriga aylanadi. Foydalanuvchining nozik ma’lumotlari
-(masalan, autentifikatsiya tokenlari, parollar yoki shaxsiy ma’lumotlar)
-noto‘g‘ri sozlangan tarmoq konfiguratsiyasi tufayli osongina fosh
-bo‘lishi mumkin.
-
-**HTTP Protokollar va zamonaviy yondashuvlar**
-
-Ko‘pgina Android ilovalari bugungi kunda HTTP(S) asosidagi
-veb-xizmatlardan foydalanadi. Ushbu protokollar keng qo‘llaniladi,
-yaxshi hujjatlashtirilgan va ko‘plab platformalarda
-qo‘llab-quvvatlanadi. Shu bilan birga, ular bilan ishlashda xavfsizlikka
-oid maxsus ehtiyot choralarini ko‘rish zarur.
-
-**Android Tarmoq xavfsizligi konfiguratsiyasi**
-
-Android 7.0 (API darajasi 24) va undan yuqori versiyalarda, ishlab
-chiquvchilar uchun ilova tarmoq xavfsizligini nazorat qilish imkonini
-beruvchi maxsus funksional: Network Security Configuration joriy
-etilgan.
-
-Bu konfiguratsiya ilovaga quyidagi muhim xavfsizlik sozlamalarini
-qo‘llash imkonini beradi:
-
-**1. Aniq matn trafiki (Cleartext traffic)**
-
-- Aniq matnda (ya’ni shifrlanmagan HTTP) yuborilayotgan ma’lumotlar
-  foydalanuvchi uchun xavf tug‘diradi.
-
-- Ilova ishlab chiquvchisi ushbu trafiga ruxsat berishni yoki uni to‘liq
-  taqiqlashni belgilashi mumkin.
-
-**2. Maxsus ishonch langarlari (Custom trust anchors)**
-
-- Ilova qanday sertifikat idoralariga (CA – Certificate Authority)
-  ishonishini aniq belgilaydi.
-
-- Bu orqali, masalan, o‘z-o‘zidan imzolangan sertifikatlarni ishonchli
-  deb belgilash yoki faqat muayyan CA’larni qabul qilish mumkin.
-
-**3. Sertifikatni mahkamlash (Certificate pinning)**
-
-- Ilova faqat oldindan belgilangan sertifikat(lar) bilan ulanadi. Bu
-  MITM (Man-In-The-Middle) hujumlariga qarshi samarali himoya chorasi
-  hisoblanadi.
-
-**4. Faqat disk raskadrovka uchun bekor qilish (Debug-only overrides)**
-
-- Disk raskadrovka (debug) rejimida xavfsizlik qatlamlarini vaqtinchalik
-  chetlab o‘tish imkonini beradi.
-
-- Bu ishlab chiqish davrida ishni qulaylashtiradi, ammo ishlab chiqarish
-  (production) versiyada o‘chirib qo‘yilishi kerak.
-
-**Tarmoq Xavfsizligi Konfiguratsiyasini Qanday Topish Mumkin?**
-
-Agar ilovada network_security_config mavjud bo‘lsa, uni quyidagicha
-aniqlash mumkin:
-
-**AndroidManifest.xml** faylida application tegida bunday yozuv mavjud
-bo‘ladi:
-
-\<application
-android:networkSecurityConfig="@xml/network_security_config" ... \>
-
-Bu yerda *xml/network_security_config* bu faylning joylashuvi bo‘lib, u
-odatda quyidagi yo‘ldan topiladi: *res/xml/network_security_config.xml.*
-Ushbu faylni tahlil qilib, siz quyidagi narsalarni bilib olishingiz
-mumkin:
-
-- Ilova HTTP (aniq matn) trafiga ruxsat beradimi?
-
-- Qanday sertifikatlar yoki CAlar ishonchli deb belgilangan?
-
-- Sertifikat pinlash mavjudmi?
-
-- Disk raskadrovka uchun qanday cheklovlar berilgan?
-
-Bundan tashqari, ilova ishga tushganda tizim loglarida (masalan,
-Logcatda) konfiguratsiyaga oid hodisalarni ko‘rishingiz mumkin. Bu
-sinovchilar uchun qo‘shimcha signal bo‘lib xizmat qiladi.
-
-Dinamik kod yuklash ilova ishga tushgach, istalgan vaqtda tashqi kod
-(Java/DEX yoki o‘zga modul)ni yuklab olib bajara olish imkoniyatidir. Bu
-oddiy ilova uchun keng tarqalgan xususiyat emas, biroq ko‘plab zararli
-ilovalar buni o‘z foydasiga ishlatadi. Masalan, hujumchi o‘z dasturini
-ilova ichidan alohida modullar shaklida yuklab, DexClassLoader yordamida
-ishga tushirishi mumkin. Shunday qilib, u dasturga orqa fonda zararli
-kod qo‘shadi. Android Developers manbaiga ko‘ra, dinamik yuklangan kodni
-xakerlar osongina manipulyatsiya qilib, ma’lumotlarni o‘g‘irlashga yoki
-ilgari ko‘zda tutilmagan amallar bajarishga moyil bo‘lishi mumkin.
-
-Ko‘p Android ilovalari foydalanuvchi ma’lumotlarini qurilmada, ochiq
-ko‘rinishda, shifrlanmagan holda saqlaydi. Masalan, SQLite bazasi,
-fayllar, *SharedPreferences* yoki log fayllarda foydalanuvchi
-ism-sharifi, parollar yoki tokenlar ochiq nusxada yozilishi mumkin. Har
-qanday ilova (yoki hatto telefonni kompyuterga ulangandan keyin oddiy
-dastur yordamida) ushbu fayllarni o‘qishi mumkin. Root qilingan qurilma
-esa bu ma’lumotlarni ko‘rishi va yuklab olishi mumkin bo‘ladi.
-
-SSL/TLS (Secure Sockets Layer / Transport Layer Security) bu internetda
-xavfsiz aloqani ta’minlovchi kriptografik protokol bo‘lib, u
-ma’lumotlarning shifrlangan holda uzatilishini va serverning
-haqiqiyligini tekshirishni kafolatlaydi.
-
-“SSL certificate validation” bu foydalanuvchi qurilmasi yoki ilovasi
-serverdan olingan sertifikatni tekshiradi (masalan, domen mosligi,
-ishonchli CA (Certificate Authority) tomonidan berilganligi va amal
-qilish muddati). Agar bu tekshiruv ataylab o‘chirilsa yoki noto‘g‘ri
-sozlansa, bu juda xavfli xavfsizlik zaifligiga olib keladi.
-
-Dastur kodini obfusikatsiya qilmaslik bu Android ilovalarda ilova kodi
-ochiq yoki tushunarli shaklda qoldirilgan bo‘lib, uni oson teskari
-muhandislik (reverse engineering) qilish mumkinligini bildiradi. Ya’ni,
-ilovani .apk fayli orqali yuklab olib, jadx, APKTool, yoki MobSF kabi
-vositalar bilan dekompilyatsiya qilib, kodni o‘qib olish mumkin. Agar
-kodda hech qanday chalkashtirish (obfuscation) qilinmagan bo‘lsa,
-loyihaning ichki logikasi, API kalitlari, autentifikatsiya mexanizmlari
-va boshqa muhim komponentlar oson ochib olinadi.
-
-### **iOS ilovalardagi zaifliklari**
-
-**Insecure Data Storage(**Ma’lumotlarni himoyalanmagan tarzda
-saqlash**)** **-** Foydalanuvchi hisob ma’lumotlari kabi maxfiy
-ma’lumotlarni xavfsiz tarzda saqlash ma’lumotlarning buzilishiga olib
-kelishi mumkin.
-
-*Yechim*** :** Maxfiy maʼlumotlarni xavfsiz saqlash uchun Keychain
-Services APIdan foydalaning. Muammo kodi:
-
-<img src="media/media/image9.png"
-style="width:4.98138in;height:1.00109in" />
-
-Yechim kodi:
-
-<img src="media/media/image10.png"
-style="width:5.02829in;height:2.47769in" />
-
-**Improper Certificate validation(**Sertifikatni yetarlicha
-tekshirmaslik**).** SSL/TLS sertifikatlarini to‘g‘ri tekshirib
-bo‘lmaslik ilovangizni o‘rtadagi odam hujumlariga qarshi himoyasiz
-qoldirishi mumkin.
-
-*Yechim*: to‘g‘ri SSL pinlashni amalga oshiring.
-
-Muammo kodi:
-
-<img src="media/media/image11.png"
-style="width:4.77014in;height:1.29618in" />
-
-Yechim kodi:
-
-<img src="media/media/image12.png"
-style="width:4.78773in;height:2.38391in" />
-
-**Insufficient Input Validation(**Kiritilgan ma’lumotlarni yetarli
-darajada tekshirmaslik**).** Foydalanuvchi ma’lumotlarini to‘g‘ri
-tasdiqlamasdan qabul qilish va qayta ishlash SQL in’ektsiyasi, bufer
-to‘lib ketishi va boshqalar kabi muammolarga olib kelishi mumkin.
-
-*Yechim*: Kirishni toʻliq tekshirish va tozalashni amalga oshiring.
-
-Muammo kodi:
-
-<img src="media/media/image13.png"
-style="width:4.35519in;height:1.24434in" />
-
-Yechim kodi:
-
-<img src="media/media/image14.png"
-style="width:4.31196in;height:2.36097in" />
-
-**Insecure API Usage(**APIdan noto‘g‘ri va zaif tarzda foydalanish).
-Ishonchsiz APIlardan foydalanish yoki API javoblarini noto‘g‘ri
-ishlatish ilovangizni turli xil hujumlarga duchor qilishi mumkin.
-
-Yechim : Har doim xavfsiz, autentifikatsiya qilingan APIlardan
-foydalaning va javoblarni ehtiyotkorlik bilan bajaring.
-
-Muammo kodi:
-
-<img src="media/media/image15.png"
-style="width:4.65893in;height:1.45592in" />
-
-Yechim kodi:
-
-<img src="media/media/image16.png"
-style="width:4.60705in;height:3.27548in" />
-
-**Weak Cryptographic Practices(**Kriptografiyada noto‘g‘ri va zaif
-usullardan foydalanish**)**: Eskirgan yoki zaif kriptografik
-algoritmlardan foydalanish ma’lumotlaringiz xavfsizligini buzishi
+*Maxfiy ma’lumotlarning shifrlanmagan holda ilova ichki xotirasiga
+saqlash*
+
+Android mobil ilovada kritik ma'lumotlarni ochiq holatda saqlash — bu
+xavfsizlik zaifligi hisoblanadi. Mazkur turdagi zaiflik *“MASWE-0006”*
+(inglizcha. *Sensitive Data Stored Unencrypted in Private Storage
+Locations* – *Maxfiy ma’lumotlarning shifrlanmagan holda ilova ichki
+xotirasiga saqlash* ) identifikator raqamiga ega kategoriyaga mansub.
+Shuningdek, “Open Web Application Security Project” (Veb-ilovalarning
+xavfsizligini ta’minlashning ochiq loyihasi)ning *OWASP Mobile Top 10
+2024* reytingida *9-o‘rinda* (inglizcha. *Insecure Data Storage* –
+*Ma’lumotlarni xavfsiz saqlamaslik*) zaiflik turiga kiritilgan.
+
+*Ekspluatatsiya oqibatida* kritik ma’lumotlarni qo'lga kiritiladi.
+
+*Tavsiya:* Kritik ma’lumotlarni shifrlangan holatda saqlash
+
+*Xavfsiz bo‘lmagan sertifikat tekshiruvi*
+
+Ekpertiza davrida mobil ilova va server o‘rtasida uchinchi tomonning
+aralashuvi bilan tarmoqdagi trafikni qo‘lga olish va ta’sir o‘tkazish
+imkoniyati mavjud ekanligi aniqlandi va mazkur imkoniyat “Man-in-the
+middle” (MITM) hujumiga asoslangan.
+
+Joriy holat bo‘yicha mobil ilovani o‘rganish davrida uning tarmoqda
+ma’lumotlarini MITM hujumi orqali qo‘lga kiritish imkoniyati yuzaga
+keltirishi aniqlandi.
+
+Mazkur turdagi zaiflik *“MASWE-0052”* (inglizcha*. Insecure Certificate
+Validation* - *Xavfsiz bo‘lmagan sertifikat tekshiruvi*) identifikator
+raqamiga ega kategoriyaga mansub. Shuningdek *OWASP Mobile Top 10 2024*
+reytingida 5-o‘rinda (inglizcha. *Insecure Communication* – *Ishonchsiz
+aloqa* ) zaiflik turiga kiritilgan.
+
+*Ekspluatatsiya oqibatida* ma’lumotlarni uzatish jarayonida ularni sizib
+chiqish holatiga olib kelishi mumkin.
+
+*Tavsiya:* Ma’lumotlarni uzatish jarayonini “SSL pinning”
+texnologiyasidan foydalanish.
+
+*Ilova so‘nggi platforma talqiniga moslashtirilmaganligi*
+
+Mobil ilova android operatsion tizimining 5 versiyasi uchun xavfsizlik
+yangilanishlari to‘xtatilgan bo‘lib, mobil ilovani joriy muhitda ishga
+tushirilishi oqidatida, operatsion tizimda aniqlangan mavjud zaifliklar
+ta’siriga tushish ehtimoli mavjud. Maskur turdagi zaiflik *“MASWE-0078”*
+(inglizcha. *Latest Platform Version Not Targeted* – Ilova so‘nggi
+platforma talqiniga moslashtirilmaganligi) identifikator raqamiga ega
+kategoriyaga mansub. Shuningdek, “Open Web Application Security Project”
+(Veb-ilovalarning xavfsizligini ta’minlashning ochiq loyihasi)ning
+*OWASP Mobile Top 10 2024* reytingida *8-o‘rinda* (inglizcha. *Security
+Misconfiguration* – *Noto‘g‘ri xavfsizlik konfiguratsiyasi*) zaiflik
+turiga kiritilgan.
+
+*Ekspluatatsiya oqibatida* maxsus dasturiy vositalar yordamida ilova
+o‘rnatilgan muhitning xavfsizlik talablarini chetlab o‘tilishiga hamda
+ilovaning tashqi ta’sirlarga uchrashiga olib keladi.
+
+*Tavsiya:* Mobil ilovani ishlab chiqish jarayonida minimal “SDK”
+talqinini axborot xavfsizligi yangilanishlari amal qiluvchisini
+o‘rnatish. Mobil ilova ish jarayonida, ilova o‘rnatilgan muhitning
+xavfsiz ekanligini tekshiruvchi metod va funksiyalardan foydalanish
+orqali ma’lumotlar xavfsizligni ta’minlashni joriy etish.
+
+*Maxfiy ma’lumotlar jurnalga yozilishi*
+
+Mobil ilovada muhim turdagi ma’lumotlarni jurnallarga yozish xavfsizlik
+xavfini tug‘diradi. Mazkur turdagi zaiflik *“MASWE-0001”* (inglizcha.
+*Insertion of Sensitive Data into Logs* – Maxfiy ma’lumotlar jurnalga
+yozilishi ) identifikator raqamiga ega kategoriyaga mansub. Shuningdek,
+“Open Web Application Security Project” (Veb-ilovalarning xavfsizligini
+ta’minlashning ochiq loyihasi)ning *OWASP Mobile Top 10 2024* reytingida
+*9-o‘rinda* (inglizcha. *Insecure Data Storage* – *Ma’lumotlarni xavfsiz
+saqlamaslik*) zaiflik turiga kiritilgan.
+
+*Ekspluatatsiya oqibatida* Loglar dasturchilar tomonidan ishlov berish
+jarayonida foydali bo‘lishi mumkin, ammo ushbu jurnallarda muhim
+ma’lumotlarni (masalan, foydalanuvchi ismlari, parollar, tokenlar,
+kredit karta ma’lumotlari va boshqalar) saqlash ilova xavfsizligini
+zaiflashtirishi mumkin.
+
+*Tavsiya:* Jurnal faqat tizimni kuzatish va xatoliklarni diagnostika
+qilish uchun foydalanilishi kerak. Ilova foydalanuvchilarga
+foydalanishga chiqarilganda jurnalni olib tashlash talab etiladi.
+
+*Xavfsiz bo‘lmagan havolalar*
+
+Ilovadagi URL manzillar teskari muhandislik usulini ishlatgan holda
+oxirgi nuqtalar va kutubxonalar haqida maʼlumotlarni olish imkoniyatini
+beradi. Ushbu ma'lumotlardan uchinchi tomon ruxsatsiz ilovalar yoki
+skriptlar yozish uchun foydalanishi mumkin.
+
+Bundan tashqari, agar shifrlash to‘g‘ri sozlanmagan bo‘lsa, tarmoqdagi
+tajovuzkor barcha aloqalarni ko‘rishi va tarkibni o‘zboshimchalik bilan
+o‘zgartirishi mumkin. Agar ma’lumotlar ilovaning nozik joylarida
+ishlatilsa yoki ma’lumotlar ijroga ta’sir qilsa, bu ilovada jiddiy
+oqibatlarga olib kelishi mumkin.
+
+Maskur turdagi zaiflik *“MASWE-0058”* (inglizcha. *Insecure Deep Links*
+– Xavfsiz bo‘lmagan havolalar) identifikator raqamiga ega kategoriyaga
+mansub. Shuningdek, *OWASP Mobile Top 10 2024* reytingida *8-o‘rinda*
+(inglizcha. *Security Misconfiguration* – *Noto‘g‘ri xavfsizlik
+konfiguratsiyasi*) zaiflik turiga kiritilgan.
+
+*Ekspluatatsiya oqibatida* ochiq havolalar to‘g‘risida ma’lumotlarni
+qo‘lga kiritish holatiga olib kelishi mumkin.
+
+*Tavsiya:* Ilovada foydalanilayotgan tashqi va ichki resurs havolalarini
+ochiq matn shaklida saqlamaslik.
+
+*Xeshlash jarayoni noto‘g‘ri bajarilishi*
+
+Mobil ilovada *SHA-1, MD5* kabi zaif xeshlash algoritmlaridan
+foydalanilgan*. SHA-1* hozirda zaif hisoblanadi va bir xil xesh
+qiymatiga ega bo‘lgan har xil kirish ma’lumotlarini yaratishga imkon
+beruvchi xesh kolliziyalari mavjudligi sababli tavsiya etilmaydi.
+
+Maskur turdagi zaiflik *“MASWE-0021”* (inglizcha. Improper Hashing –
+Xeshlash jarayoni noto‘g‘ri bajarilishi) identifikator raqamiga ega
+kategoriyaga mansub. Shuningdek, *OWASP Mobile Top 10 2024* reytingida
+*5-o‘rinda* (inglizcha. *Insufficient Cryptography* – *Yetarlicha
+bo‘lmagan kriptografiya*) zaiflik turiga kiritilgan.
+
+*Ekspluatatsiya oqibatida* xesh algoritmlarida o‘zgartirilgan
+ma’lumotlarni asl qiymatiga ega bo‘lish holatiga, shuningdek xesh
+kolliziyasi, ya’ni ikki xil ma’lumot bir xil xesh qoymatini hosil
+qiladigan holatlarga olib kelishi mumkin.
+
+*Tavsiya:* Zaif bo‘lmagan *SHA256 , SHA512 , SHA3* kabi algoritmlardan
+foydalanish.
+
+*Root/Jailbreak tekshiruvi joriy etilmaganligi*
+
+Ekspertiza davrida mobil ilovada qurilma muhiti rootlangan ekanligini
+aniqlash uchun zarur xavfsizlik tekshiruvlari yetarli darajada amalga
+oshirilmaganligi aniqlandi. Mazkur turdagi zaiflik *“MASWE-0097*”
+(inglizcha. *Root/Jailbreak Detection Not Implemented* – Root/Jailbreak
+tekshiruvi joriy etilmaganligi) identifikator raqamiga ega kategoriyaga
+mansub. Shuningdek *OWASP Mobile Top 10 2024* reytingida *7-o‘rinda*
+(inglizcha. *Insufficient Binary Protections* – Ikkilik himoya tizimi
+yetarli darajada emasligi) zaiflik turiga kiritilgan.
+
+*Ekspluatatsiya oqibatida* Ilovani rootlangan maxsus tahlil uchun
+tayyorlangan muhitda ishga tushirish, oddiy foydalanuvchi sifatida qabul
+qilish imkonsiz bo‘lgan ilova haqida ma’lumotlarga olishga imkonini
+beradi.
+
+*Tavsiya:* Ilova o‘zi o‘rnagan muhitni rootlanganligiga quyi
+darajadagi(Native c++) dasturlash tillaridan foydalangan holda tekshiruv
+mexanizmini joriy etish.
+
+*Emulator tekshiruvi joriy etilmaganligi*
+
+Ekspertiza davrida mobil ilovada qurilma muhiti emulyator ekanligini
+aniqlash uchun zarur xavfsizlik tekshiruvlari yetarli darajada amalga
+oshirilmaganligi aniqlandi. Mazkur turdagi zaiflik *“MASWE-0099”*
+(inglizcha. *Emulator Detection Not Implemented* - Emulator tekshiruvi
+joriy etilmaganligi) identifikator raqamiga ega kategoriyaga mansub.
+Shuningdek *OWASP Mobile Top 10 2024* reytingida *7-o‘rinda* (inglizcha.
+*Insufficient Binary Protections* – Ikkilik himoya tizimi yetarli
+darajada emasligi) zaiflik turiga kiritilgan.
+
+*Ekspluatatsiya oqibatida* Ilovani emulyatsiya qilingan maxsus tahlil
+uchun tayyorlangan muhitda ishga tushirish imkonini beradi.
+
+*Tavsiya:* Ilova o‘zi o‘rnagan muhitni emulatorligiga tekshiruv
+mexanizmini quyi darajadagi(Native c++) dasturlash tillaridan
+foydalangan holda joriy etish.
+
+*Debugga tegishli belgilar o‘chirilmaganligi*
+
+Ekspertiza davrida mobil ilovaning ommaga chiqarilgan (production)
+talqinida debug rejimi yoqilganligi yoki debug-ga tegishli belgilar
+(symbols) to‘liq olib tashlanmaganligi aniqlangan. Mazkur turdagi
+zaiflik “MASWE-0093” (inglizcha. Debugging Symbols Not Removed -
+Debug-ga tegishli belgilar o’chirilmaganligi) identifikator raqamiga ega
+kategoriyaga mansub. Shuningdek *OWASP Mobile Top 10 2024* reytingida
+*8-o‘rinda* (inglizcha. *Security Misconfiguration* - Noto‘g‘ri bo‘lgan
+xavfsizlik konfiguratsiyasi) zaiflik turiga kiritilgan.
+
+*Ekspluatatsiya oqibatida* Ilova kodidagi debug belgilarining
+saqlanishi, ilovaning ichki ishlash prinsiplari, API kalitlari, IP
+manzillar va boshqa shu kabi muhim ma’lumot toplash, shuningdek
+to’plangan ma’lumotlardan uchinchi tomon ruxsatsiz ilovalar yoki
+skriptlar yozish uchun foydalanishi mumkin
+
+*Tavsiya:* Ilova kodini qayta ko'rib chiqish, debuggable flagni
+o‘chirish.
+
+*Maxfiy ma’lumotlar zaxira nusxasida saqlanishi*
+
+Mobil ilova ekspertizasi davrida *android:allowBackup="true"* parametri
+“*AndroidManifest.xml*”da mavjudligi aniqlandi. Bu android tizimiga
+foydalanuvchi ilova ma’lumotlarini zaxiralashga ruxsat beradi. Zaiflik
+“*MASWE-0004*” (inglizcha. Sensitive Data Not Excluded From Backup -
+*Maxfiy ma’lumotlar zaxira nusxasida saqlanishi*) identifikator raqamiga
+ega. Shuningdek, *OWASP Mobile Top 10* *2024* reytingida *9-o‘rinda*
+(inglizcha. *Insecure Data Storage* – *Ma’lumotlarni himoyasiz
+saqlanishi*) zaiflik turiga kiritilgan.
+
+*Ekspluatatsiya oqibatida* foydalanuvchining ma’lumotlari saqlangan
+zaxira faylini olish, o'g'irlash yoki qayta ishlatish mumkin.
+
+*Tavsiya:* *android:allowBackup="false"* qilish va API orqali
+foydalanuvchi ma'lumotlarini zaxiralash tizimini yaratish.
+
+*Shifrlanmagan tarmoq trafiki*
+
+Ilovada *\[android:usesCleartextTraffic=true\]* holatda belgilangan. Bu
+esa ilovada shifrlanmagan trafikni o‘tishiga ruxsat beradi. Zaiflik
+*“MASWE-0050”* (inglizcha. Cleartext Traffic - *Shifrlanmagan tarmoq
+trafiki*) identifikator raqamiga ega. Shuningdek, *OWASP Mobile Top 10
+2024* reytingida *5-o‘rinda* (inglizcha. *Insecure Communication* -
+*Ishonchsiz aloqa*) zaiflik turiga kiritilgan.
+
+*Ekspluatatsiya oqibatida* ilovada shifrlanmagan ma’lumotlarni uzatish
+va qabul qilish holati muhim ma’lumotlarni ochiqlanishiga olib kelishi
 mumkin.
 
-Yechim : Zamonaviy kriptografik kutubxonalar va algoritmlardan
-foydalaning.
+*Tavsiya:* Ilovada *\[android:usesCleartextTraffic=false\]* holatda
+belgilash, https va boshqa shunday himoyalangan trafikdan foydalanish
+kerak.
 
-*Muammo kodi:*
+*Shifrlanmagan tarmoq trafiki*
 
-<img src="media/media/image17.png"
-style="width:3.6097in;height:2.26947in" />
+“App Transport Security” (ATS) muhim iOS xavfsizlik xususiyati boʻlib,
+ilova va server oʻrtasidagi tarmoq ulanishlarini xavfsiz bo‘lishini va
+eng yaxshi amaliyotlarga amal qilinishini ta’minlaydi. iOS muhitida
+“NSURLConnection”, “NSURLSession” va “WekKit” tomonidan amalga
+oshirilgan barcha tarmoq ulanishlari ishonchli sertifikatlar va
+shifrlardan foydalangan holda “Transport Layer Security” (TLS) protokoli
+bilan himoyalanganligini talab qiladi. Agar “ATS” o‘chirilgan bo‘lsa,
+tarmoq ulanishlari sertifikatlarni tasdiqlay olmasligi, xavfsiz
+bo‘lmagan shifrlardan foydalanishi yoki traffikni umuman shifrlanmasligi
+mumkin. Bu uchinchi tomonga uzatilayotgan ma’lumotlarni o‘qish yoki
+hatto o‘zgartirish mumkin bo‘lgan o‘rtadagi odam hujumini (MITM) amalga
+oshirishga imkon beradi. Zaiflik *“MASWE-0050”* (inglizcha. Cleartext
+Traffic – *Shifrlanmagan tarmoq trafiki*) identifikator raqamiga ega.
+Shuningdek, *OWASP Mobile Top 10 2024* reytingida *5-o‘rinda*
+(inglizcha. *Insecure Communication* – *Ishonchsiz aloqa*) zaiflik
+turiga kiritilgan.
 
-Yechim kodi:
+*Ekspluatatsiya oqibatida* yuqoridagi zaiflik mobil ilova va server
+o‘rtasida uchinchi tomonning aralashuvi bilan ma’lum muhitlarda
+tarmoqdagi trafikni qo‘lga olish va tasir o‘tkazish imkoniyatini
+yaratadi. Mazkur imkoniyat “Man-in-the middle” (MITM) hujumiga
+asoslangan bo‘lib mobil ilovada tarmoqdagi ma’lumotlarni ochiq holda
+almashish joriy etilgan holatlarda foydalaniladi.
 
-<img src="media/media/image18.png"
-style="width:5.20934in;height:5.86186in" />
+*Tavsiya:* Mobil ilovalarda ma’lumot uzatish xavfsizligini o‘chirish
+maqsadga muvofiq emas. “Info.plist” faylida “NSAppTransportSecurity”ning
+barcha qiymatlari “NO” qiymatiga o‘zgartirish.
 
-**Hardcoded Sensitive Information(**Kod ichida bevosita yozilgan maxfiy
-ma’lumotlar**).** API kalitlari yoki manba kodingizdagi parollar kabi
-nozik ma'lumotlarni qattiq kodlash, agar tajovuzkorlar kodga kirish
-imkoniga ega bo'lsa, ularga oson kirishiga olib kelishi mumkin.
+*Android oynasi xavfsiz bo‘lmagan usulda foydalanilishi*
 
-Yechim : Xavfsiz saqlash va xiralashtirish usullaridan foydalaning.
+Mobil ilovada foydalanuvchi interfeysini shakllantirish maqsadida bir
+nechta ishchi oynalar (Activity, Broadcast Receiver, Service)
+qo‘llanilgan bo‘lib, ularning quyidagilariga to‘g‘ridan-to‘g‘ri murojaat
+qilish orqali boshqa ilovadan o‘tish mumkin:
+uz.eskishahar.app.yulovchideklaratsiyasi.MainMenu. Zaiflik CWE dasturiy
+va apparat ta’minotlarning zaifliklarini kategoriyalash tizimida
+*“CWE-926”* (inglizcha. *Improper Export of Android Application
+Components* - *Android ilova komponentlarini noto‘g‘ri eksport qilish*)
+identifikator raqamiga va *“MASWE-0060”* (inglizcha. *Insecure Use of
+UIActivity* – *Android oynasi xavfsiz bo’lmagan usulda foydalanilishi*)
+identifikator raqamiga ega. Shuningdek, *OWASP Mobile Top 10 2024*
+reytingida 5-o‘rinda (inglizcha. *Insecure Communication* – *Ishonchsiz
+aloqa*) zaiflik turiga kiritilgan.
 
-Muammo kodi:
+*Ekspluatatsiya oqibatida* boshqa ilovalardan “Activity, Broadcast
+Receiver, Service”larga murojaat etish va ulardan foydalanishga olib
+kelishi mumkin
 
-<img src="media/media/image19.png"
-style="width:4.95903in;height:1.51063in" />
+*Tavsiya:*\[android:exported=true\] qiymatini \[android:exported=false\]
+ga o‘zgartirish, hamda dasturiy kodni qayta ko‘rib chiqish va
+muqobillashtirish.
 
-Yechim kodi:
-
-<img src="media/media/image20.png"
-style="width:5.50077in;height:2.89624in" />
-
-**Insecure Communication(**Xavfsiz bo‘lmagan aloqa**).** Maxfiy
-ma’lumotlarni himoyalanmagan kanallar orqali uzatish zararli shaxslar
-tomonidan tutib olinishiga olib kelishi mumkin.
-
-Yechim**:** Barcha aloqalar uchun HTTPS dan foydalaning va SSL pinning
-o‘rnatilganligiga ishonch hosil qiling.
-
-*Muammo kodi:*
-
-<img src="media/media/image21.png"
-style="width:5.47993in;height:1.87526in" />
-
-*Yechim kodi:*
-
-<img src="media/media/image22.png"
-style="width:4.80122in;height:2.13584in" />
-
-**Lack of Multi-Factor Authentication(**Ko‘p bosqichli
-autentifikatsiyaning yo‘qligi**).** Autentifikatsiya qilish uchun faqat
-foydalanuvchi nomi va parolga tayanish xavfli bo'lishi mumkin.
-
-Yechim** :** Ko‘p faktorli autentifikatsiyani (MFA) amalga oshirish.
-
-Muammo kodi:
-
-<img src="media/media/image23.png"
-style="width:4.87234in;height:1.21982in" />
-
-Yechim kodi:
-
-<img src="media/media/image24.png"
-style="width:5.37866in;height:2.82777in" />
-
-**Missing App Transport Security(**Ilovada xavfsiz ma’lumot uzatish
-himoyasi yo‘q**).** ATS konfiguratsiyasisiz xavfsiz ulanishlarga ruxsat
-berish ilovangizni tarmoq hujumlariga duchor qilishi mumkin. Yechim :
-ATS ni to‘g‘ri sozlang va faqat zarur hollarda istisnolarga ruxsat
-bering.
-
-Muammo kodi:
-
-<img src="media/media/image25.png"
-style="width:4.31537in;height:3.56656in" />
-
-**Hardcoded Credentials(**Kod ichida bevosita yozilgan login va
-parollar**).** Plist faylida iOS mobil ilovasi uchun muhim
-konfiguratsiya tafsilotlari, jumladan, qo‘llab-quvvatlanadigan iOS
-versiyalari va qurilma mosligi mavjud. Ushbu ma’lumot operatsion
-tizimning ilova bilan samarali ishlashi uchun juda muhimdir. Ushbu
-.plist fayllar qattiq kodlangan hisob ma’lumotlarini ham o‘z ichiga
-olishi mumkin.
-
-Quyidagi buyruq yordamida siz ilova identifikatorini topishingiz mumkin
-
-<img src="media/media/image26.png"
-style="width:5.35859in;height:0.60641in" alt="IMG_256" />
-
-Endi biz .plist fayllarini topish va o‘qish uchun objectiondan
-foydalanamiz:
-
-<img src="media/media/image27.png"
-style="width:5.76042in;height:1.72014in" alt="IMG_256" />
-
-<img src="media/media/image28.png"
-style="width:5.75524in;height:3.0615in" alt="IMG_256" />
-
-Endi esa ios plist cat userInfo.plist orqali biz parol va foydalanuvchi
-nomini ko\`rishimiz mumkin.
-
-**Insecure Touch/Face ID Fallbacks(**Touch ID yoki Face ID tizimlarida
-zaif zaxira (fallback) autentifikatsiya**).** Touch ID yoki Face ID bu
-iOS’ning biometrik autentifikatsiya mexanizmlari. Dasturchilar
-foydalanuvchilarni identifikatsiya qilish uchun LocalAuthentication
-kutubxonasidan foydalanadilar. Ammo, fallback (ya’ni biometrik
-autentifikatsiya muvaffaqiyatsiz bo‘lsa) noto‘g‘ri amalga oshirilsa, bu
-zaif autentifikatsiya yoki auth bypass holatiga olib kelishi mumkin.
-
-> Dasturchi LAContext.evaluatePolicy() funksiyasida foydalanuvchi
-> biometrik autentifikatsiyani rad etsa yoki u ishlamasa, uni automat
-> tarzda tizimga kiritadi yoki true deb qabul qiladi.
->
-> Yoki noto‘g‘ri fallback mexanizmini (masalan, UIAlert orqali oddiy
-> “yes” tugmasi) qo‘llaydi.
-
-<img src="media/media/image29.png"
-style="width:5.72997in;height:4.70899in" />
 
 # **II-BOB. Android va iOS arxitekturasi**
 

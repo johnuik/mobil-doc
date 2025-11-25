@@ -355,6 +355,8 @@ Android va iOSdagi turli xil zaifliklarni ko‘rib chiqishdan oldin, ushbu
 bo‘lim sizni Android va iOSni operatsion tizim sifatida tanishtiradi va
 mobil ilovalar xavfsizligi bo‘yicha tajriba orttirish uchun tushunilishi
 kerak bo‘lgan turli fundamental tushunchalarni qamrab oladi.
+<div align="center">
+
 
 | **Yil**   | **Android**                      | **Android API** | **iOS**      |
 |-----------|----------------------------------|-----------------|--------------|
@@ -392,6 +394,7 @@ kerak bo‘lgan turli fundamental tushunchalarni qamrab oladi.
 | 2024      | 15                               | 35              | iOS 18       |
 | 2025      | 16(beta)                         | 36              | iOS 26(beta) |
 
+</div>
 
 Hewlett Packard (HP) tomonidan olib borilgan qiziqarli tadqiqotda bu
 yirik dasturiy ta’minot kompaniyasi 600 dan ortiq kompaniyalarga
